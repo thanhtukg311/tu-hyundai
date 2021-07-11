@@ -5,7 +5,7 @@
                 <div class="h_box">
                     <h1>
                         <a href="#">
-                            <img src="images/logo.png" width="250px" alt="logo">
+                            <img src="./../assets/images/logo.png" width="250px" alt="logo">
                         </a>
                     </h1>
                 </div>
@@ -18,38 +18,20 @@
                 </div>
                 <nav id="gnavi">
                     <ul class="gnavi_pc">
-                        <li><a href="">Trang chủ</a></li>
-                        <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Sản phẩm</a></li>
-                        <li><a href="">Mua xe</a></li>
-                        <li><a href="">Dịch vụ</a></li>
-                        <li><a href="">Tin tức</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li id="close">x 閉じる</li>
+                        <li><router-link to="/">Trang chủ</router-link></li>
+                        <li><router-link to="/">Giới thiệu</router-link></li>
+                        <li><router-link :to="{name: 'san-pham', params:{slug: 'i10-2020'}}">Sản phẩm</router-link></li>
+                        <li><router-link to="/">Mua xe</router-link></li>
+                        <li><router-link to="/">Dịch vụ</router-link></li>
+                        <li><router-link to="/">Tin tức</router-link></li>
+                        <li><router-link to="/">Liên hệ</router-link></li>
                     </ul>
                 </nav>
                 <div class="btn_search">
-                    <img src="images/search.png" alt="search" width="15px">
+                    <img src="./../assets/images/search.png" alt="search" width="15px">
                 </div>
             </div>
         </header>
-        <div class="container">
-                <ul class="topic_path">
-                    <li><a href="./">Trang chủ</a></li>
-                    <li>Sản phẩm</li>
-                    <li>i10 2020</li>
-                    <li>Nổi bật</li>
-                </ul>
-            </div>
-            <div id="mainvisual">
-                <ul class="slider_main">
-                    <li class="bg01"></li>
-                    <li class="bg02"></li>
-                    <li class="bg03"></li>
-                </ul>
-                <h2 class="tlt_slider_main">All New Grand<br/>
-                i10 Sedan</h2>
-            </div>
     </div>
 </template>
 
