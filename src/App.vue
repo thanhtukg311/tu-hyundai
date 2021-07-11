@@ -5,10 +5,6 @@
 </template>
 
 <script>
-    @import './assets/js/common.js';
-    @import './assets/js/jquery-2.0.0.min.js';
-    @import './assets/js/slick.js';
-    @import './assets/js/top.js';
 export default {
   name: 'App',
   components: {
