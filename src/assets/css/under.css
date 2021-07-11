@@ -1,0 +1,62 @@
+.under #content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.image_r {
+    float: right;
+    margin: 10px 0 10px 30px;
+    line-height: 0;
+}
+
+.image_l {
+    float: left;
+    margin: 10px 30px 10px 0;
+    line-height: 0;
+}
+
+.under section,
+.under .section {
+    margin-bottom: 65px;
+    overflow: hidden;
+}
+
+section p:last-child,
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+.under_tbl th,
+.under_tbl td {
+    padding: 12px;
+    border: 1px solid #eee;
+    line-height: 1.6em
+}
+
+.under_tbl th {
+    color: #fff;
+    background: #004a9f;
+}
+
+.under_list li {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 0 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.under_list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background: #16b3e3
+}
+
+.under_list li:last-child {
+    margin-bottom: 0
+}
