@@ -1,6 +1,7 @@
 <template>
     <div>
        <!--footer-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <footer id="footer">
             <div class="f_box01">
                 <div class="container f_menu_flex">
@@ -76,7 +77,6 @@
                     <img src="./../assets/images/img_bcn.png" width="140">
                 </div>
             </div>
-            <p id="totop"><a href="#"><img src="images/totop.png" alt="to top" /></a></p>
             <ul class="sliderbar_fix">
                 <li class="tel"> <a href="tel:482298830" onclick="ga('send', 'event', 'sp', 'tel');"><span class="call">048-229-8830</span>
                     <p class="hours">9:00～13:00/15:00～19:00</p>
