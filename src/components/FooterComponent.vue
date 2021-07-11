@@ -58,7 +58,7 @@
                     <div class="dow_app">
                         <p>Tải và cài đặt Ứng dụng Hyundai ME!</p>
                         <div class="img_app">
-                            <img src="images/qr_code.png" width="170">
+                            <img src="./../assets/images/qr_code.png" width="170">
                             <p class="btn_app">
                                 <a class="btn_store" href="#">Apple Store<i class="fab fa-apple"></i></a>
                                 <a class="btn_store" href="#">Google Play<i class="fab fa-google-play"></i></a>
@@ -73,7 +73,7 @@
                         <span>Chính sách bảo mật thông tin</span>
                         <span>© Copyright 2021 Hyundai TC Motor. All rights Reserved</span>
                     </div>
-                    <img src="images/img_bcn.png" width="140">
+                    <img src="./../assets/images/img_bcn.png" width="140">
                 </div>
             </div>
             <p id="totop"><a href="#"><img src="images/totop.png" alt="to top" /></a></p>
