@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'App',
   components: {
@@ -14,5 +13,14 @@ export default {
 </script>
 
 <style>
-
+  @import './assets/css/animation.css';
+  @import './assets/css/base.css';
+  @import './assets/css/fonts.css';
+  @import './assets/css/normalize.css';
+  @import './assets/css/responsive.css';
+  @import './assets/css/slider_main.css';
+  @import './assets/css/styles.css';
+  @import './assets/css/under.css';
+  @import './assets/css/under_responsive.css';
 </style>
+
