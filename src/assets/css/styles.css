@@ -406,7 +406,7 @@ p:last-child {
     background: #11ba39;
     color: #fff
 }
-.img_main img{
-    width: 100%;
+#mainvisual{
+    height:570px;
 }
 
