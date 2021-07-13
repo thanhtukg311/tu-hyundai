@@ -1,5 +1,7 @@
 <template>
-    <div>Nổi bật</div>
+    <div>
+        Nổi Bật
+    </div>
 </template>
 
 <script>

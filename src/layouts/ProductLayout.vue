@@ -1,12 +1,12 @@
 <template>
     <div>
         <menu-nav-layout :prod="this.prod" :menu-slug="this.menuSlug"/>
-        <highlights v-if="this.menuSlug == 'noi-bat'"/>
-        <exterior v-if="this.menuSlug == 'ngoai-that'"/>
-        <furniture v-if="this.menuSlug == 'noi-that'"/>
-        <operate v-if="this.menuSlug == 'van-hanh'"/>
-        <utilities v-if="this.menuSlug == 'tien-nghi'"/>
-        <specifications v-if="this.menuSlug == 'thong-so'"/>
+        <highlights v-if="this.menuSlug == 'noi-bat'" :prod="this.prod"/>
+        <exterior v-if="this.menuSlug == 'ngoai-that'" :prod="this.prod"/>
+        <furniture v-if="this.menuSlug == 'noi-that'" :prod="this.prod"/>
+        <operate v-if="this.menuSlug == 'van-hanh'" :prod="this.prod"/>
+        <utilities v-if="this.menuSlug == 'tien-nghi'" :prod="this.prod"/>
+        <specifications v-if="this.menuSlug == 'thong-so'" :prod="this.prod"/>
     </div>
 </template>
 
