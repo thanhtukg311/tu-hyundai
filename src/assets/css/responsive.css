@@ -11,6 +11,9 @@
     .sub_menu_cnt_top li a:hover{
         color:#3cafd5;
     }
+    .btn_down:hover{
+        text-decoration: underline;
+    }
 }
 @media only screen and (min-width: 641px) and (max-width: 1200px) {}
 
@@ -349,8 +352,6 @@
     .next_cate {
         padding-right: 30px;
     }
-    .idx_h3 {}
-
     .box01 {
         padding: 45px 10px;
         padding-bottom:0;

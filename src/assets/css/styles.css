@@ -3,8 +3,6 @@
 @import "fonts.css";
 @import "normalize.css";
 @import "animation.css";
-@import "under.css";
-@import "under_responsive.css";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
@@ -196,10 +194,15 @@ p:last-child {
    transform: translate(-42%);
 }
 .img_main{
-    height:540px;
+    height:580px;
+    position: relative;
+    overflow: hidden;
 }
 .img_main img{
     width:100%;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
 }
 .menu_content{
     background:#0c2b5e;
@@ -255,10 +258,12 @@ p:last-child {
 }
 .tlt_center{
     text-align: center;
-    margin-bottom:40px;
+    width:735px;
+    margin-top:0 !important;
+    margin:40px auto;
 }
 .tlt_h3{
-    font-size:36px;
+    font-size:44px;
     font-weight:bold;
     line-height: 1.2em;
     margin-bottom:30px;
@@ -278,10 +283,23 @@ section,.section{
 }
 .blog_col03{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.img_blog{
+    width:100%;
+    height:240px;
+    overflow: hidden;
+    margin-bottom:10px;
+    text-align: center;
+    background:#fff;
+}
+.img_blog img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
 }
 .blog_col03 .blog_box{
-    width:30%;
+    width:31%;
 }
 .blog_col03 .blog_box a{
     text-decoration: none;
@@ -298,6 +316,7 @@ section,.section{
     font-size:14px;
     padding-right:20px;
     display:inline-block;
+    line-height: 1.5em;
 }
 .prev-next-cate{
     background:#E3DCD3;
@@ -335,8 +354,49 @@ section,.section{
 .next_cate i{
     right:0;
 }
-
-
+.fr_video{
+    width:100%;
+    height:500px;
+    overflow: hidden;
+    position: relative;
+}
+.fr_video img{
+    object-fit: cover;
+    position: absolute;
+    top:-100px;
+}
+.img_center{
+    height:600px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:50px;
+}
+.img_center img{
+    position: absolute;
+    top:-130px;
+}
+.bg_02{
+    background:#F6F3F2;
+    padding:80px 0;
+}
+.box03{
+    padding:40px 0;
+}
+.btn_r{
+    margin-top:10px;
+    text-align: right;
+}
+.btn_down{
+    color:#000;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:16px;
+    display: inline-block;
+    padding-left: 23px;
+    vertical-align: top;
+    line-height: 1;
+}
 /******************************Footer********************************/
 
 /*******************************************************************/
@@ -483,8 +543,5 @@ section,.section{
     margin-bottom: 0;
     background: #11ba39;
     color: #fff
-}
-#mainvisual{
-    height:585px;
 }
 
