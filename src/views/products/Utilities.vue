@@ -3,14 +3,18 @@
         <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
         <section>
             <div class="container">
+                <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
                 <img :src="prod.utilities.main_img" style="margin-bottom: 20px">
-                <div class="tlt_center">
-                    <h4 class="tlt_h4">{{prod.utilities.main_title}}</h4>
-                    <span>{{prod.utilities.main_desc}}</span>
-                </div>
             </div>
         </section>
-        <triple-component :list-desc="prod.utilities.list_desc"/>
+        <section>
+            <div class="container">
+                <sub-title-component :desc="prod.utilities.main_desc" :title="prod.utilities.main_title"/>
+            </div>
+        </section>
+        <section class="box02">
+            <triple-component :list-desc="prod.utilities.list_desc"/>
+        </section>
         <prev-next-component/>
     </div>
 </template>
@@ -18,9 +22,10 @@
     import TitleComponent from "@/components/TitleComponent";
     import TripleComponent from "@/components/TripleComponent";
     import PrevNextComponent from "@/components/PrevNextComponent";
+    import SubTitleComponent from "@/components/SubTitleComponent";
     export default {
         name: "Utilities",
-        components: {PrevNextComponent, TripleComponent, TitleComponent},
+        components: {SubTitleComponent, PrevNextComponent, TripleComponent, TitleComponent},
         props:['prod'],
     }
 </script>
