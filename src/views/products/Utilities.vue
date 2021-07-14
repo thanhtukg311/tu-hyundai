@@ -1,7 +1,6 @@
 <template>
     <div>
-        <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
-        <section>
+        <section class="box01">
             <div class="container">
                 <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
                 <img :src="prod.utilities.main_img" style="margin-bottom: 20px">
