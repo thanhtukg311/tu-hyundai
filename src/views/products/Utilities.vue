@@ -12,7 +12,9 @@
             </div>
         </section>
         <section class="box02">
-            <triple-component :list-desc="prod.utilities.list_desc"/>
+            <div class="container">
+                <triple-component :list-desc="prod.utilities.list_desc"/>
+            </div>
         </section>
         <prev-next-component/>
     </div>

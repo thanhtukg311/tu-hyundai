@@ -1,5 +1,4 @@
 <template>
-        <div class="container">
             <ul class="blog_col03">
                 <li class="blog_box" v-for="(desc,index) in listDesc" :key="index">
                     <a href="#">
@@ -13,7 +12,6 @@
                     </a>
                 </li>
             </ul>
-        </div>
 </template>
 
 <script>
