@@ -85,6 +85,23 @@ const products = [
             'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
             'main_title': 'Màn hình trung tâm cảm ứng 8 inch',
             'main_desc': 'màn hình cảm ứng trung tâm kích cỡ 8 inch đa chức năng, hỗ trợ giải trí với các kết nối các chức năng Bluetooth/MP3/Radio, hỗ trợ kết nối Apple Carplay và Android Auto, cùng với bản đồ tích hợp',
+            'img_slide': [
+                {
+                    'title': 'Màn hình trung tâm cảm ứng 8 inch',
+                    'desc': 'màn hình cảm ứng trung tâm kích cỡ 8 inch đa chức năng, hỗ trợ giải trí với các kết nối các chức năng Bluetooth/MP3/Radio, hỗ trợ kết nối Apple Carplay và Android Auto, cùng với bản đồ tích hợp',
+                    'img': '/product/fu_i2.jpg',
+                },
+                {
+                    'title': 'Màn hình trung tâm cảm ứng 8 inch',
+                    'desc': 'màn hình cảm ứng trung tâm kích cỡ 8 inch đa chức năng, hỗ trợ giải trí với các kết nối các chức năng Bluetooth/MP3/Radio, hỗ trợ kết nối Apple Carplay và Android Auto, cùng với bản đồ tích hợp',
+                    'img': '/product/fu_i2_2.jpg',
+                },
+                {
+                    'title': 'Màn hình trung tâm cảm ứng 8 inch',
+                    'desc': 'màn hình cảm ứng trung tâm kích cỡ 8 inch đa chức năng, hỗ trợ giải trí với các kết nối các chức năng Bluetooth/MP3/Radio, hỗ trợ kết nối Apple Carplay và Android Auto, cùng với bản đồ tích hợp',
+                    'img': '/product/fu_i2_3.jpg',
+                },
+            ]
         },
         'operate': {
             'title': 'Khả năng vận hành xuất sắc',
