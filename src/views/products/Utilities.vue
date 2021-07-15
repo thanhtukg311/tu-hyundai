@@ -3,16 +3,23 @@
         <section class="box01">
             <div class="container">
                 <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
-                <img :src="prod.utilities.main_img" style="margin-bottom: 20px">
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <sub-title-component :desc="prod.utilities.main_desc" :title="prod.utilities.main_title"/>
             </div>
         </section>
         <section class="box02">
-            <triple-component :list-desc="prod.utilities.list_desc"/>
+            <div class="container">
+                <slide-image-component :items="prod.furniture.img_slide"
+                                       :settings="carouselSettings"/>
+            </div>
+        </section>
+<!--        <section>-->
+<!--            <div class="container">-->
+<!--                <sub-title-component :desc="prod.utilities.main_desc" :title="prod.utilities.main_title"/>-->
+<!--            </div>-->
+<!--        </section>-->
+        <section class="box02">
+            <div class="container">
+                <triple-component :list-desc="prod.utilities.list_desc"/>
+            </div>
         </section>
         <prev-next-component/>
     </div>
@@ -21,11 +28,25 @@
     import TitleComponent from "@/components/TitleComponent";
     import TripleComponent from "@/components/TripleComponent";
     import PrevNextComponent from "@/components/PrevNextComponent";
-    import SubTitleComponent from "@/components/SubTitleComponent";
+    //import SubTitleComponent from "@/components/SubTitleComponent";
+    import SlideImageComponent from "@/components/SlideImageComponent";
     export default {
         name: "Utilities",
-        components: {SubTitleComponent, PrevNextComponent, TripleComponent, TitleComponent},
+        components: {SlideImageComponent,  PrevNextComponent, TripleComponent, TitleComponent},
         props:['prod'],
+        data(){
+            return {
+                carouselSettings: {
+                    autoplay: true,
+                    items_per_set: "1",
+                    autoplay_speed: "4000",
+                    items_to_scroll: "1",
+                    infinite_scrolling: true,
+                    show_pagination_dots: false,
+                    show_pagination_arrows: true
+                },
+            }
+        }
     }
 </script>
 
