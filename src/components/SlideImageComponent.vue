@@ -20,6 +20,10 @@
                 type: Array,
                 default: () => []
             },
+            settings: {
+                type: Object,
+                default: () => {}
+            }
         },
     }
 </script>
