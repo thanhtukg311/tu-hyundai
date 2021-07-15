@@ -54,7 +54,7 @@
         props: ['prod'],
         data() {
             return{
-                isOpen: {}
+                isOpen: false
             }
         },
         methods: {
