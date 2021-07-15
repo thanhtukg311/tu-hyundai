@@ -6,10 +6,16 @@
                 <image-center-component :img-url="prod.furniture.img1"/>
             </div>
         </section>
+<!--        <section class="box02">-->
+<!--            <div class="container">-->
+<!--                <image-center-component :img-url="prod.furniture.img2"/>-->
+<!--                <title-component :desc="prod.furniture.main_desc" :title="prod.furniture.main_title"/>-->
+<!--            </div>-->
+<!--        </section>-->
         <section class="box02">
             <div class="container">
-                <image-center-component :img-url="prod.furniture.img2"/>
-                <title-component :desc="prod.furniture.main_desc" :title="prod.furniture.main_title"/>
+            <slide-image-component :items="prod.furniture.img_slide"
+                               :settings="carouselSettings"/>
             </div>
         </section>
     </div>
@@ -18,10 +24,24 @@
 <script>
     import TitleComponent from "@/components/TitleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
+    import SlideImageComponent from "@/components/SlideImageComponent";
     export default {
         name: "Furniture",
-        components: {ImageCenterComponent, TitleComponent},
+        components: {SlideImageComponent, ImageCenterComponent, TitleComponent},
         props:['prod'],
+        data(){
+            return {
+                carouselSettings: {
+                    autoplay: true,
+                    items_per_set: "1",
+                    autoplay_speed: "4000",
+                    items_to_scroll: "1",
+                    infinite_scrolling: true,
+                    show_pagination_dots: false,
+                    show_pagination_arrows: true
+                },
+            }
+        }
     }
 </script>
 

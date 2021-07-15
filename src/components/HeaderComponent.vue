@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header id="header">
+        <header id="header" v-if="!isMobileCheck()">
             <div class="container header_main">
                 <div class="h_box">
                     <h1>

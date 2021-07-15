@@ -452,6 +452,23 @@ section, .section {
     vertical-align: top;
     line-height: 1;
 }
+.VueCarousel-pagination{
+    position: absolute;
+    bottom:230px;
+}
+.VueCarousel-dot.VueCarousel-dot--active{
+    background-color:#37AAD2 !important;
+}
+.VueCarousel-navigation-button.VueCarousel-navigation-prev{
+    left: 35px !important;
+    background: #000;
+    color: #fff !important;
+}
+.VueCarousel-navigation-button.VueCarousel-navigation-next{
+    right: 35px !important;
+    background: #000;
+    color: #fff !important;
+}
 
 /******************************Footer********************************/
 
