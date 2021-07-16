@@ -117,9 +117,50 @@ const products = [
             'desc': 'Mọi đường nét trên Grand i10 đều để lại ấn tượng về sự cá tính, thời trang và phong cách',
             'img1': '/product/op_i1.jpg',
             'img2': '/product/op_i2.png',
-            'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
-            'main_title': 'Động cơ Kappa 1.2L',
-            'main_desc': 'Động cơ 4 xylanh Kappa dung tích 1.2L, đi cùng công nghệ van biến thiên Dual VTVT, cho công suất cực đại 87 mã lực tại 6.000 vòng/phút và moment xoắn 120 Nm tại 4.000 vòng/phút.\n',
+            'main_img': '/product/c799fdcc50ef7dba5bd13dea37b46c43.jpg',
+            'main_title': 'Mặt trước thiết kế thể thao mạnh mẽ',
+            'main_desc': 'Kích thích thị giác bằng lưới tản nhiệt thác nước mới cùng cụm đèn ban ngày DRL thiết kế phá cách dạng boomerang và đèn sương mù.',
+            'list_desc' : [
+                {
+                    'img': '/product/ex_i1.jpg',
+                    'title': 'Cụm đèn ban ngày DRL (Daytime Running Light) được thiết kế phá cách dạng boomerang',
+                    'desc': '',
+                },
+                {
+                    'img': '/product/ex_i2.jpg',
+                    'title': 'Đèn sương mù tích hợp trên cản trước thể thao',
+                    'desc': '',
+                },
+            ],
+            'list_desc2' : [
+                {
+                    'img': '/product/ex_i3.jpg',
+                    'title': 'Gương chiếu hậu gập điện tích hợp sưởi gương',
+                    'desc': '',
+                },
+                {
+                    'img': '/product/ex_i4.jpg',
+                    'title': 'Tay nắm cửa mạ chrome',
+                    'desc': '',
+                },
+                {
+                    'img': '/product/hightligt3.jpg',
+                    'title': 'Vành hợp kim 15 inch cao cấp tạo hình trẻ trung',
+                    'desc': '',
+                },
+            ],
+            'list_desc3' : [
+                {
+                    'img': '/product/highligt2.jpg',
+                    'title': 'Đèn hậu dạng LED thiết kế cách điệu, đồng bộ với cụm đèn phía trước',
+                    'desc': '',
+                },
+                {
+                    'img': '/product/ex_i5.jpg',
+                    'title': 'Đèn phanh trên cao',
+                    'desc': '',
+                },
+            ],
         },
     },
     {
