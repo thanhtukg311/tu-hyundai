@@ -60,6 +60,7 @@
             <double-component :list-desc="prod.exterior.list_desc3"/>
             </div>
         </div>
+        <prev-next-component :prev="{slug:prod.slug, menu:'noi-bat', name:'Nổi bật'}" :next="{slug:prod.slug, menu:'noi-that', name:'Nội thất'}"/>
     </div>
 </template>
 <script>
@@ -67,10 +68,11 @@
     import DoubleComponent from "@/components/DoubleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import TripleComponent from "@/components/TripleComponent";
+    import PrevNextComponent from "@/components/PrevNextComponent";
 
     export default {
         name: "Exterior",
-        components: {TripleComponent, ImageCenterComponent, DoubleComponent, TitleComponent},
+        components: {PrevNextComponent, TripleComponent, ImageCenterComponent, DoubleComponent, TitleComponent},
         props: ['prod'],
         data() {
             return{
@@ -78,8 +80,13 @@
             }
         },
         methods: {
-            myFilter: function() {
-                this.isOpen = !this.isOpen;
+            myFilter: function(event) {
+                console.log(event.target.parentElement.parentElement.className)
+                if(event.target.parentElement.parentElement.className === 'item_box_tgle'){
+                    event.target.parentElement.parentElement.className += ' on';
+                }else {
+                    event.target.parentElement.parentElement.className = 'item_box_tgle';
+                }
             }
         }
     }

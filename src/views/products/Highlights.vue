@@ -31,7 +31,7 @@
                 </p>
             </div>
         </section>
-        <prev-next-component/>
+        <prev-next-component :prev="false" :next="{slug:prod.slug, menu:'ngoai-that', name:'Ngoại thất'}"/>
     </div>
 </template>
 

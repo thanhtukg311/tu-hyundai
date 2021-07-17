@@ -34,7 +34,7 @@
                         </ul>
             </div>
         </section>
-        <prev-next-component/>
+        <prev-next-component :prev="{slug:prod.slug, menu:'van-hanh', name:'Vận hành'}" :next="{slug:prod.slug, menu:'thong-so', name:'Thông số'}"/>
     </div>
 </template>
 <script>

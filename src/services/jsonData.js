@@ -111,6 +111,18 @@ const products = [
             'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
             'main_title': 'Động cơ Kappa 1.2L',
             'main_desc': 'Động cơ 4 xylanh Kappa dung tích 1.2L, đi cùng công nghệ van biến thiên Dual VTVT, cho công suất cực đại 87 mã lực tại 6.000 vòng/phút và moment xoắn 120 Nm tại 4.000 vòng/phút.\n',
+            'list_desc' : [
+                {
+                    'img': '/product/op_i4.jpg',
+                    'title': 'Hộp số sàn',
+                    'desc': 'Gồm 5 cấp số với các bước chuyển số được tinh chỉnh làm tăng khả năng phản ứng và sự nhạy bén khi di chuyển, đồng thời giúp tiết kiệm nhiên liệu tối đa.',
+                },
+                {
+                    'img': '/product/op_i5.jpg',
+                    'title': 'Hộp số tự động',
+                    'desc': 'Gồm 4 cấp số đảm bảo sự kết hợp hoàn hảo giữa tính năng vận hành mạnh mẽ, tiết kiệm nhiên liệu cùng sự bền bỉ bằng các công nghệ tiên tiến nhất như van điện từ và bộ chuyển đổi momen xoắn phẳng.',
+                },
+            ],
         },
         'exterior': {
             'title': 'Ấn tượng từ cái nhìn đầu tiên',

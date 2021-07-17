@@ -18,6 +18,7 @@
                                :settings="carouselSettings"/>
             </div>
         </section>
+        <prev-next-component :prev="{slug:prod.slug, menu:'ngoai-that', name:'Ngoại thất'}" :next="{slug:prod.slug, menu:'van-hanh', name:'Vận hành'}"/>
     </div>
 </template>
 
@@ -25,9 +26,10 @@
     import TitleComponent from "@/components/TitleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import SlideImageComponent from "@/components/SlideImageComponent";
+    import PrevNextComponent from "@/components/PrevNextComponent";
     export default {
         name: "Furniture",
-        components: {SlideImageComponent, ImageCenterComponent, TitleComponent},
+        components: {PrevNextComponent, SlideImageComponent, ImageCenterComponent, TitleComponent},
         props:['prod'],
         data(){
             return {
