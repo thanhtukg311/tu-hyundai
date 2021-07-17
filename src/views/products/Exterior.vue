@@ -26,7 +26,7 @@
                       
             </div>
         </section>
-        <div class="item_box_tgle" v-bind:class="{'on': isOpen}">
+        <div class="item_box_tgle on">
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img01.png">
                 <p class="tlt_item">Mặt trước</p>
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="item_box_tgle" v-bind:class="{'on': isOpen}">
+        <div class="item_box_tgle">
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img02.png">
                 <p class="tlt_item">Cạnh bên</p>
@@ -50,7 +50,7 @@
                 <triple-component :list-desc="prod.exterior.list_desc2"/>
             </div>
         </div>
-        <div class="item_box_tgle" v-bind:class="{'on': isOpen}">
+        <div class="item_box_tgle">
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img03.png">
                 <p class="tlt_item">Mặt sau</p>

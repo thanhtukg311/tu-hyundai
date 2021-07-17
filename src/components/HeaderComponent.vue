@@ -32,6 +32,9 @@
                 </div>
             </div>
         </header>
+        <header v-else>
+            Mobile nè DŨng
+        </header>
     </div>
 </template>
 
