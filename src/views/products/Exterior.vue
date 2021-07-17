@@ -1,8 +1,29 @@
+
 <template>
     <div>
         <section class="box01">
             <div class="container">
                 <title-component :desc="prod.exterior.desc" :title="prod.exterior.title"/>
+                <div>  
+                            <div id="circlr">
+                              <img data-src="./../../assets/images/scroll_img01.png">
+                              <img data-src="./../../assets/images/scroll_img02.png">
+                              <img data-src="./../../assets/images/scroll_img03.png">
+                              <img data-src="./../../assets/images/scroll_img04.png">
+                              <div id="loader"></div>
+                          </div>
+                          <div class="car_color">
+                              <div class="tlt_choose_cl">
+                                  <p>Chọn màu sắc
+                                    <span>Fiery Red R4R</span>
+                                  </p>
+                              </div>
+                              <div class="sl_color">
+                                  color màu slide
+                              </div>
+                          </div>
+                      </div>
+                      
             </div>
         </section>
         <div class="item_box_tgle" v-bind:class="{'on': isOpen}">
@@ -41,7 +62,6 @@
         </div>
     </div>
 </template>
-
 <script>
     import TitleComponent from "@/components/TitleComponent";
     import DoubleComponent from "@/components/DoubleComponent";
