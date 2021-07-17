@@ -81,7 +81,6 @@
         },
         methods: {
             myFilter: function(event) {
-                console.log(event.target.parentElement.parentElement.className)
                 if(event.target.parentElement.parentElement.className === 'item_box_tgle'){
                     event.target.parentElement.parentElement.className += ' on';
                 }else {

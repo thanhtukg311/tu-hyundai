@@ -174,6 +174,106 @@ const products = [
                 },
             ],
         },
+        'specification': [
+            {
+                'version_id': 1,
+                'version_name': '1.2 MT Tiêu Chuẩn',
+                'version_table':
+                    {'name': 'Kích thước & Trọng lượng',
+                      "content":[
+                          {
+                              "title": "Kích thước tổng thể (DxRxC) (mm)",
+                              "desc": "3,995 x 1,680 x 1,520"
+                          },
+                          {
+                              "title": "Chiều dài cơ sở (mm)",
+                              "desc": "2,450"
+                          },
+                          {
+                              "title": "Khoảng sáng gầm xe (mm)",
+                              "desc": "157"
+                          },
+                          {
+                              "title": "Dung tích bình nhiên liệu (Lít)",
+                              "desc": "37"
+                          },
+                      ]
+                    },
+                'version_compare':
+                    {
+                        'name': 'Kích thước & Trọng lượng',
+                        "content":[
+                            {
+                                "title": "Kích thước tổng thể (DxRxC) (mm)",
+                                "desc": ["3,995 x 1,680 x 1,520"],
+                            },
+                            {
+                                "title": "Chiều dài cơ sở (mm)",
+                                "desc":["2222","5444"]
+                            },
+                            {
+                                "title": "Khoảng sáng gầm xe (mm)",
+                                "desc":["2,450", "2222","3333"]
+
+                            },
+                            {
+                                "title": "Dung tích bình nhiên liệu (Lít)",
+                                "desc":["2", "3","4"]
+                            },
+                        ]
+                },
+            },
+            {
+                'version_id': 2,
+                'version_name': '1.2 MT',
+                'version_table':
+                    {'name': 'Kích thước & Trọng lượng',
+                        "content":[
+                            {
+                                "title": "Kích thước tổng thể (DxRxC) (mm)",
+                                "desc": "2"
+                            },
+                            {
+                                "title": "Chiều dài cơ sở (mm)",
+                                "desc": "2"
+                            },
+                            {
+                                "title": "Khoảng sáng gầm xe (mm)",
+                                "desc": "2"
+                            },
+                            {
+                                "title": "Dung tích bình nhiên liệu (Lít)",
+                                "desc": "2"
+                            },
+                        ]
+                    },
+            },
+            {
+                'version_id': 3,
+                'version_name': '1.2 AT',
+                'version_table':
+                    {'name': 'Kích thước & Trọng lượng',
+                        "content":[
+                            {
+                                "title": "Kích thước tổng thể (DxRxC) (mm)",
+                                "desc": "3"
+                            },
+                            {
+                                "title": "Chiều dài cơ sở (mm)",
+                                "desc": "3"
+                            },
+                            {
+                                "title": "Khoảng sáng gầm xe (mm)",
+                                "desc": "3"
+                            },
+                            {
+                                "title": "Dung tích bình nhiên liệu (Lít)",
+                                "desc": "3"
+                            },
+                        ]
+                    },
+            },
+        ]
     },
     {
         'slug' : 'accent-2020',
