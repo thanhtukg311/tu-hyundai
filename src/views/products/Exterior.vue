@@ -5,12 +5,8 @@
             <div class="container">
                 <title-component :desc="prod.exterior.desc" :title="prod.exterior.title"/>
                 <div>  
-                            <div id="circlr">
-                              <img data-src="./../../assets/images/scroll_img01.png">
-                              <img data-src="./../../assets/images/scroll_img02.png">
-                              <img data-src="./../../assets/images/scroll_img03.png">
-                              <img data-src="./../../assets/images/scroll_img04.png">
-                              <div id="loader"></div>
+                            <div class="img_carcl">
+                                <img src="./../../assets/images/car_cl.jpg">
                           </div>
                           <div class="car_color">
                               <div class="tlt_choose_cl">
@@ -19,7 +15,38 @@
                                   </p>
                               </div>
                               <div class="sl_color">
-                                  color màu slide
+                                  <ul class="list_color">
+                                  <li class="cl_1">
+                                      <p class="ac_cl">
+                                          <img src="./../../assets/images/cl_1.jpg" width="70">
+                                      </p>
+                                  </li>
+                                  <li class="cl_2">
+                                      <p>
+                                          <img src="./../../assets/images/cl_2.jpg" width="70">
+                                      </p>
+                                  </li>
+                                  <li class="cl_3">
+                                      <p>
+                                          <img src="./../../assets/images/cl_3.jpg" width="70">
+                                      </p>
+                                  </li>
+                                  <li class="cl_4">
+                                      <p>
+                                          <img src="./../../assets/images/cl_4.jpg" width="70">
+                                      </p>
+                                  </li>
+                                  <li class="cl_5">
+                                      <p>
+                                          <img src="./../../assets/images/cl_2.jpg" width="70">
+                                      </p>
+                                  </li>
+                                  <li class="cl_6">
+                                      <p>
+                                          <img src="./../../assets/images/cl_1.jpg" width="70">
+                                      </p>
+                                  </li>
+                              </ul>
                               </div>
                           </div>
                       </div>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header id="header" v-if="!isMobileCheck()">
+        <header id="header">
             <div class="container header_main">
                 <div class="h_box">
                     <h1>
@@ -9,12 +9,8 @@
                         </a>
                     </h1>
                 </div>
-                <div class="container header_sp">
-                    <p class="logo"><a href=""><img src="" alt=""></a></p>
-                    <div class="ico_menu_click">
-                        <label class="icon_menu closes"><span></span></label>
-                        <label class="icon_menu open"><span></span></label>
-                    </div>
+                <div class="tlt_page_top">
+                    <span>Nổi bật</span>
                 </div>
                 <nav id="gnavi">
                     <ul class="gnavi_pc">
@@ -30,11 +26,16 @@
                 <div class="btn_search">
                     <img src="./../assets/images/search.png" alt="search" width="15px">
                 </div>
+                <div class="header_sp">
+                    <p class="logo"><a href=""><img src="" alt=""></a></p>
+                    <div class="ico_menu_click">
+                        <label class="icon_menu closes"><span></span></label>
+                        <label class="icon_menu open"><span></span></label>
+                    </div>
+                </div>
             </div>
         </header>
-        <header v-else>
-            Mobile nè DŨng
-        </header>
+        
     </div>
 </template>
 

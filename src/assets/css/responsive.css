@@ -65,7 +65,7 @@
         margin: 5px 0 0 0
     }
 
-    .header_sp{
+    #header .header_sp{
         display:block;
     }
     .header_main{
@@ -81,6 +81,7 @@
         transform: translate(-50%);
         font-size:16px;
         font-weight:bold;
+        display:block !important;
     }
     .btn_search{
         position: absolute;
@@ -95,7 +96,7 @@
     }
     /******************Gnavi********************************/
     .ico_menu_click {
-        display: inline-block;
+        display: inline-block !important;
         float: right;
 
     }
@@ -192,7 +193,7 @@
         padding: 15px;
     }
 
-    #gnavi {
+    .header_main #gnavi {
         position: fixed;
         left: 0;
         width: 100%;
@@ -200,9 +201,14 @@
         z-index: 10;
         display: none;
         top: 59px;
-        height: calc(100% - 121px);
         background: #fff;
         animation: none
+    }
+    .tlt_page_top{
+        display:block;
+    }
+    .header_main #gnavi.open{
+        display:block
     }
 
     .gnavi_pc {
@@ -258,7 +264,7 @@
     }
 
     .gnavi_pc > li > a {
-        color: #fff;
+        color: #fff !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
         display: block;
         padding: 15px 25px 15px 15px;
