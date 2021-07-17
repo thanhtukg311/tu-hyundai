@@ -16,12 +16,25 @@
 <!--                <sub-title-component :desc="prod.utilities.main_desc" :title="prod.utilities.main_title"/>-->
 <!--            </div>-->
 <!--        </section>-->
-        <section class="box02">
+        <section class="box02"  v-if="!isMobileCheck()">
             <div class="container">
                 <triple-component :list-desc="prod.utilities.list_desc"/>
+
+                <ul class="blog_slide">
+                            <li class="blog_box">
+                                <a href="#">
+                                    <p class="img_blog">
+                                        <img src="images/noibat_img07.jpg">
+                                    </p>
+                                    <p class="tlt_blog">
+                                        Cụm điểu chỉnh media tích hợp nhận diện giọng nói
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
             </div>
         </section>
-        <prev-next-component/>
+        <prev-next-component :prev="{slug:prod.slug, menu:'van-hanh', name:'Vận hành'}" :next="{slug:prod.slug, menu:'thong-so', name:'Thông số'}"/>
     </div>
 </template>
 <script>

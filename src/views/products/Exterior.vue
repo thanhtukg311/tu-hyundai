@@ -1,8 +1,29 @@
+
 <template>
     <div>
         <section class="box01">
             <div class="container">
                 <title-component :desc="prod.exterior.desc" :title="prod.exterior.title"/>
+                <div>  
+                            <div id="circlr">
+                              <img data-src="./../../assets/images/scroll_img01.png">
+                              <img data-src="./../../assets/images/scroll_img02.png">
+                              <img data-src="./../../assets/images/scroll_img03.png">
+                              <img data-src="./../../assets/images/scroll_img04.png">
+                              <div id="loader"></div>
+                          </div>
+                          <div class="car_color">
+                              <div class="tlt_choose_cl">
+                                  <p>Chọn màu sắc
+                                    <span>Fiery Red R4R</span>
+                                  </p>
+                              </div>
+                              <div class="sl_color">
+                                  color màu slide
+                              </div>
+                          </div>
+                      </div>
+                      
             </div>
         </section>
         <div class="item_box_tgle" v-bind:class="{'on': isOpen}">
@@ -39,18 +60,19 @@
             <double-component :list-desc="prod.exterior.list_desc3"/>
             </div>
         </div>
+        <prev-next-component :prev="{slug:prod.slug, menu:'noi-bat', name:'Nổi bật'}" :next="{slug:prod.slug, menu:'noi-that', name:'Nội thất'}"/>
     </div>
 </template>
-
 <script>
     import TitleComponent from "@/components/TitleComponent";
     import DoubleComponent from "@/components/DoubleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import TripleComponent from "@/components/TripleComponent";
+    import PrevNextComponent from "@/components/PrevNextComponent";
 
     export default {
         name: "Exterior",
-        components: {TripleComponent, ImageCenterComponent, DoubleComponent, TitleComponent},
+        components: {PrevNextComponent, TripleComponent, ImageCenterComponent, DoubleComponent, TitleComponent},
         props: ['prod'],
         data() {
             return{
@@ -58,8 +80,12 @@
             }
         },
         methods: {
-            myFilter: function() {
-                this.isOpen = !this.isOpen;
+            myFilter: function(event) {
+                if(event.target.parentElement.parentElement.className === 'item_box_tgle'){
+                    event.target.parentElement.parentElement.className += ' on';
+                }else {
+                    event.target.parentElement.parentElement.className = 'item_box_tgle';
+                }
             }
         }
     }
