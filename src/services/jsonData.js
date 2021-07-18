@@ -173,6 +173,12 @@ const products = [
                     'desc': '',
                 },
             ],
+            'prod_360' : {
+                'first_img': '/product/typhoon-silver_0.png',
+                'total_img': '35',
+                'file_name': 'typhoon-silver_{index}.png',
+                'file_url': 'http://ydigital.vn/360/'
+            }
         },
         'specification': [
             {
