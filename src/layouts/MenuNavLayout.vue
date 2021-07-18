@@ -34,6 +34,7 @@
                     <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'ngoai-that' }}" v-bind:class="{'active': menuSlug == 'ngoai-that'}">Ngoại thất</router-link></li>
                     <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'noi-that' }}" v-bind:class="{'active': menuSlug == 'noi-that'}">Nội thất</router-link></li>
                     <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'van-hanh' }}" v-bind:class="{'active': menuSlug == 'van-hanh'}">Vận hành</router-link></li>
+                    <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'an-toan' }}" v-bind:class="{'active': menuSlug == 'an-toan'}">An toàn</router-link></li>
                     <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'tien-nghi' }}" v-bind:class="{'active': menuSlug == 'tien-nghi'}">Tiện nghi</router-link></li>
                     <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'thong-so' }}" v-bind:class="{'active': menuSlug == 'thong-so'}">Thông số xe</router-link></li>
                 </ul>

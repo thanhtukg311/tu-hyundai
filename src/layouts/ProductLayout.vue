@@ -5,6 +5,7 @@
         <exterior v-if="this.menuSlug == 'ngoai-that'" :prod="this.prod"/>
         <furniture v-if="this.menuSlug == 'noi-that'" :prod="this.prod"/>
         <operate v-if="this.menuSlug == 'van-hanh'" :prod="this.prod"/>
+        <safe v-if="this.menuSlug == 'an-toan'" :prod="this.prod"/>
         <utilities v-if="this.menuSlug == 'tien-nghi'" :prod="this.prod"/>
         <specifications v-if="this.menuSlug == 'thong-so'" :prod="this.prod"/>
     </div>
@@ -19,9 +20,10 @@
     import Utilities from "@/views/products/Utilities";
     import Specifications from "@/views/products/Specifications";
     import jsonData from "@/services/jsonData";
+    import Safe from "@/views/products/Safe";
     export default {
         name: "ProductLayout",
-        components: {Specifications, Utilities, Operate, Furniture, Exterior, Highlights, MenuNavLayout},
+        components: {Safe, Specifications, Utilities, Operate, Furniture, Exterior, Highlights, MenuNavLayout},
         data() {
             return {
                 prod: {},

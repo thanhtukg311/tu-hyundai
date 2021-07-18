@@ -21,7 +21,7 @@
                 <triple-component :list-desc="prod.utilities.list_desc"/>
             </div>
         </section>
-        <prev-next-component :prev="{slug:prod.slug, menu:'van-hanh', name:'Vận hành'}" :next="{slug:prod.slug, menu:'thong-so', name:'Thông số'}"/>
+        <prev-next-component :prev="{slug:prod.slug, menu:'an-toan', name:'An toàn'}" :next="{slug:prod.slug, menu:'thong-so', name:'Thông số'}"/>
     </div>
 </template>
 <script>

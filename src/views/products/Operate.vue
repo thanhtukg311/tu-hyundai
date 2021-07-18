@@ -13,7 +13,7 @@
                 <double-component :list-desc="prod.operate.list_desc"/>
             </div>
         </section>
-        <prev-next-component :prev="{slug:prod.slug, menu:'noi-that', name:'Nội thất'}" :next="{slug:prod.slug, menu:'tien-nghi', name:'Tiện nghi'}"/>
+        <prev-next-component :prev="{slug:prod.slug, menu:'noi-that', name:'Nội thất'}" :next="{slug:prod.slug, menu:'an-toan', name:'An toàn'}"/>
     </div>
 </template>
 

@@ -175,7 +175,7 @@ const products = [
             ],
             'prod_360' : {
                 'first_img': '/product/typhoon-silver_0.png',
-                'total_img': '35',
+                'total_img': 35,
                 'file_name': 'typhoon-silver_{index}.png',
                 'file_url': 'http://ydigital.vn/360/'
             }
@@ -279,7 +279,11 @@ const products = [
                         ]
                     },
             },
-        ]
+        ],
+        'safe': {
+            'title': 'Ấn tượng từ cái nhìn đầu tiên',
+            'desc': 'Mọi đường nét trên Grand i10 đều để lại ấn tượng về sự cá tính, thời trang và phong cách',
+        }
     },
     {
         'slug' : 'accent-2020',
