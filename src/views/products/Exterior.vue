@@ -10,6 +10,9 @@
                                 :imagePath="prod.exterior.prod_360.file_url"
                                 :fileName="prod.exterior.prod_360.file_name"
                         />
+                        <span class="scroll360"  v-bind:class="{'hide': isOpen}" @click="play">
+                            <img src="./../../assets/images/scroll360.png">
+                        </span>
                         <img class="img_abso" v-bind:class="{'hide': isOpen}" @click="play" :src="prod.exterior.prod_360.first_img">
                     </div>
                     <div class="car_color">
