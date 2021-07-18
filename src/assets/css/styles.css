@@ -851,6 +851,21 @@ section, .section {
    -webkit-transform: rotate(45deg);
 
 }
+.img_carcl{
+    position: relative;
+}
+.img_abso{
+    position: absolute;
+    top:40px;
+    right:0;
+    width:100%;
+}
+.img_abso.hide{
+    display:none
+}
+.v360-fullscreen-toggle-btn i{
+    display:none;
+}
 /******************************Footer********************************/
 
 /*******************************************************************/
