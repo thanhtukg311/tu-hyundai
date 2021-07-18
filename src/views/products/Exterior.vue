@@ -10,7 +10,7 @@
                                 :imagePath="prod.exterior.prod_360.file_url"
                                 :fileName="prod.exterior.prod_360.file_name"
                         />
-                        <img class="img_abso" :src="prod.exterior.prod_360.first_img">
+                        <img class="img_abso" v-bind:class="{'hide': isOpen}" @click="play" :src="prod.exterior.prod_360.first_img">
                     </div>
                     <div class="car_color">
                         <div class="tlt_choose_cl">
@@ -118,6 +118,9 @@
                 } else {
                     event.target.parentElement.parentElement.className = 'item_box_tgle';
                 }
+            },
+            play(){
+                this.isOpen = true;
             }
         }
     }
