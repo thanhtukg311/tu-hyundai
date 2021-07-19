@@ -14,7 +14,7 @@
                 </span>
             </div>
         </div>
-        <div class="thumb_img">
+        <div class="thumbnails">
             <div
                     v-for="(image, index) in  images"
                     :key="image.id"
@@ -179,11 +179,6 @@
     .thumbnail-image.active > img {
         opacity: 0.6;
         box-shadow: 2px 2px 6px 1px rgba(0,0,0, 0.5);
-    }
-
-    .card-img {
-        position: relative;
-        margin-bottom: 15px;
     }
 
     .card-img > img {
