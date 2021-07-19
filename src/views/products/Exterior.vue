@@ -5,16 +5,12 @@
                 <title-component :desc="prod.exterior.desc" :title="prod.exterior.title"/>
                 <div>
                     <div class="img_carcl">
-                        <vue-three-sixty
+                        <tree-sixty-component
                                 :amount="prod.exterior.prod_360.total_img"
                                 :imagePath="prod.exterior.prod_360.file_url"
                                 :fileName="prod.exterior.prod_360.file_name"
-                                :autoplay="prod.exterior.prod_360.total_img"
+                                :disableZoom="true"
                         />
-<!--                        <span class="scroll360"  v-bind:class="{'hide': isOpen}" @click="play">-->
-<!--                            <img src="./../../assets/images/scroll360.png">-->
-<!--                        </span>-->
-<!--                        <img class="img_abso" v-bind:class="{'hide': isOpen}" @click="play" :src="prod.exterior.prod_360.first_img">-->
                     </div>
                     <div class="car_color">
                         <div class="tlt_choose_cl">
@@ -105,10 +101,13 @@
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import TripleComponent from "@/components/TripleComponent";
     import PrevNextComponent from "@/components/PrevNextComponent";
+    import TreeSixtyComponent from "@/components/TreeSixtyComponent";
 
     export default {
         name: "Exterior",
-        components: {PrevNextComponent, TripleComponent, ImageCenterComponent, DoubleComponent, TitleComponent},
+        components: {
+            TreeSixtyComponent,
+            PrevNextComponent, TripleComponent, ImageCenterComponent, DoubleComponent, TitleComponent},
         props: ['prod'],
         data() {
             return {
