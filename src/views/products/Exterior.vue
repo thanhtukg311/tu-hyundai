@@ -61,11 +61,11 @@
 
             </div>
         </section>
-        <div class="item_box_tgle on">
+        <div class="item_box_tgle">
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img01.png">
                 <p class="tlt_item">Mặt trước</p>
-                <button class="btnShow" v-on:click="myFilter"></button>
+                <a href="#item_anchor" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
             </div>
             <div id="item_anchor" class="item_content container">
                 <div class="transition">
@@ -79,9 +79,9 @@
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img02.png">
                 <p class="tlt_item">Cạnh bên</p>
-                <button class="btnShow" v-on:click="myFilter"></button>
+                <a href="#item_anchor_second" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
             </div>
-            <div class="item_content container">
+            <div class="item_content container" id="item_anchor_second">
                 <triple-component :list-desc="prod.exterior.list_desc2"/>
             </div>
         </div>
@@ -89,9 +89,9 @@
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img03.png">
                 <p class="tlt_item">Mặt sau</p>
-                <button class="btnShow" v-on:click="myFilter"></button>
+                <a href="#item_anchor_third" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
             </div>
-            <div class="item_content container">
+            <div class="item_content container" id="item_anchor_third">
                 <double-component :list-desc="prod.exterior.list_desc3"/>
             </div>
         </div>
