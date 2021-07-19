@@ -75,6 +75,23 @@ const products = [
                     'title': '2 túi khí cho hàng ghế trước',
                     'desc': '',
                 },
+            ],
+            'gallery' : [
+                {
+                    'id': '1',
+                    'big': '/product/hi_desc1.jpg',
+                    'thumb': '/product/hi_desc1.jpg'
+                },
+                {
+                    'id': '2',
+                    'big': '/product/hi_desc2.jpg',
+                    'thumb': '/product/hi_desc2.jpg'
+                },
+                {
+                    'id': '3',
+                    'big': '/product/hi_desc3.jpg',
+                    'thumb': '/product/hi_desc3.jpg'
+                },
             ]
         },
         'furniture': {

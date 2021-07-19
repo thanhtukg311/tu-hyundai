@@ -31,6 +31,9 @@
                     <li><img src="/product/hi_desc1.jpg"></li>
                     <li><img src="/product/hi_desc1.jpg"></li>
                 </ul>
+                <slide-thump-component :starting-image="2"
+                                       :images="prod.highlights.gallery"
+                                       :auto-slide-interval="1500"/>
                 <p class="btn_r">
                     <a class="btn_down" href="#"><span><img src="./../../assets/images/btn_download.png"></span>Tải
                         Catalog</a>
@@ -46,9 +49,10 @@
     import PrevNextComponent from "@/components/PrevNextComponent";
     import TripleComponent from "@/components/TripleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
+    import SlideThumpComponent from "@/components/SlideThumpComponent";
     export default {
         name: "Highlights",
-        components: {ImageCenterComponent, PrevNextComponent, TitleComponent, TripleComponent},
+        components: {SlideThumpComponent, ImageCenterComponent, PrevNextComponent, TitleComponent, TripleComponent},
         props: ['prod'],
     }
 </script>
