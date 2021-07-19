@@ -92,6 +92,16 @@ const products = [
                     'big': '/product/hi_desc3.jpg',
                     'thumb': '/product/hi_desc3.jpg'
                 },
+                {
+                    'id': '4',
+                    'big': '/product/hi_desc2.jpg',
+                    'thumb': '/product/hi_desc2.jpg'
+                },
+                {
+                    'id': '5',
+                    'big': '/product/hi_desc3.jpg',
+                    'thumb': '/product/hi_desc3.jpg'
+                },
             ]
         },
         'furniture': {

@@ -3,7 +3,7 @@
         <div class="progressbar" v-if="autoSlideInterval && showProgressBar">
             <div :style="{width: progressBar + '%' }"></div>
         </div>
-        <div class="card-img">
+        <div class="img_center">
             <img :src="currentImage" alt="">
             <div class="actions">
                 <span @click="prevImage" class="prev">
@@ -14,7 +14,7 @@
                 </span>
             </div>
         </div>
-        <div class="thumbnails">
+        <div class="thumb_img">
             <div
                     v-for="(image, index) in  images"
                     :key="image.id"
