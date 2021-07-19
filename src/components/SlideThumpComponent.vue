@@ -3,7 +3,7 @@
         <div class="progressbar" v-if="autoSlideInterval && showProgressBar">
             <div :style="{width: progressBar + '%' }"></div>
         </div>
-        <div class="img_center">
+        <div class="img_center img_lib">
             <img :src="currentImage" alt="">
             <div class="actions">
                 <span @click="prevImage" class="prev">
@@ -137,6 +137,9 @@
 </script>
 
 <style scoped>
+.img_lib{
+    margin-bottom:0;
+}
     .card-carousel {
         user-select: none;
         position: relative;
@@ -166,12 +169,14 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        height:190px;
     }
 
     .thumbnail-image > img {
         width: 100%;
-        height: auto;
+        height: 100%;
         transition: all 250ms;
+        object-fit: cover;
     }
 
     .thumbnail-image:hover > img,
