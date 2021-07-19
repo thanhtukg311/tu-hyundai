@@ -11,6 +11,9 @@
                                 :fileName="prod.exterior.prod_360.file_name"
                                 :disableZoom="true"
                         />
+                        <span class="scroll360"  v-bind:class="{'hide': isOpen}" @click="play">
+                            <img src="./../../assets/images/scroll360.png">
+                        </span>
                     </div>
                     <div class="car_color">
                         <div class="tlt_choose_cl">
