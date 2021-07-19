@@ -77,11 +77,7 @@ const products = [
                 },
             ],
             'gallery' : [
-                {
-                    'id': '1',
-                    'big': '/product/hi_desc1.jpg',
-                    'thumb': '/product/hi_desc1.jpg'
-                },
+
                 {
                     'id': '2',
                     'big': '/product/hi_i1.jpg',
