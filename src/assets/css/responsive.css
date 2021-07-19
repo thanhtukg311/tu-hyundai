@@ -44,11 +44,11 @@
     }
 
     #wrapper {
-        min-width: 100%
+        min-width: 100% !important
     }
 
     .container {
-        width: 100%;
+        width: 100%  !important;
 
     }
 
@@ -320,8 +320,18 @@
     .menu_cnt_top{
         justify-content: space-around;
     }
+    .img_main {
+        height: 360px !important;
+    }
+    .img_main img {
+        top: 180px !important;
+        height: 100%;
+    }
+    .h_box h1 {
+        padding-left: 10px;
+    }
     .sub_menu_cnt_top{
-        width:800px;
+        width:800px !important;
         justify-content: space-around;
     }
     .tlt_slider_main {
@@ -332,8 +342,17 @@
         overflow: scroll;
     }
     .tlt_h3{
-        font-size:28px;
-        margin-bottom: 15px;
+        font-size:28px !important;
+        margin-bottom: 15px !important;
+    }
+    .img_center img {
+        top: 0 !important;
+    }
+    .img_center {
+        height: 400px !important;
+    }
+    .tlt_blog {
+        font-size: 18px !important;
     }
     .tlt_center span{
         font-size:14px;

@@ -233,7 +233,7 @@ p:last-child {
 
 .menu_cnt_top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 15px 0;
 }
@@ -458,6 +458,9 @@ section, .section {
     vertical-align: top;
     line-height: 1;
 }
+.btn_down span{
+    margin-right:8px;
+}
 .VueCarousel-pagination{
     position: absolute;
     bottom:230px;
@@ -537,7 +540,8 @@ section, .section {
     color:#333;
 }
 .item_box_tgle.on .btnShow{
-    background-position: -40px 0;
+    background-position: center;
+    background: url(./../../assets/images/close_toggle.png) no-repeat;
 }
 .item_box_tgle.on .item_content {
     display:block;
