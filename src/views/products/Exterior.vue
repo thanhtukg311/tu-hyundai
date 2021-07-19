@@ -4,15 +4,15 @@
             <div class="container">
                 <title-component :desc="prod.exterior.desc" :title="prod.exterior.title"/>
                 <div>
-                    <div class="img_carcl">
+                    <div class="img_carcl" @click="play">
                         <tree-sixty-component
                                 :amount="prod.exterior.prod_360.total_img"
                                 :imagePath="prod.exterior.prod_360.file_url"
                                 :fileName="prod.exterior.prod_360.file_name"
                                 :disableZoom="true"
                         />
-                        <span class="scroll360"  v-bind:class="{'hide': isOpen}" @click="play">
-                            <img src="./../../assets/images/scroll360.png">
+                        <span class="scroll360"  v-bind:class="{'hide': isOpen}"  style="width: 100%;">
+                            <img src="./../../assets/images/scroll360.png" style="opacity: 0.5;">
                         </span>
                     </div>
                     <div class="car_color">
