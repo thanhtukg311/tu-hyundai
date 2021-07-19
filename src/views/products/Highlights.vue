@@ -25,6 +25,12 @@
             <div class="container">
                 <title-component :title="'Thư Viện'"/>
                 <image-center-component :img-url="prod.highlights.img4"/>
+                <ul class="thumb_img">
+                    <li><img src="/product/hi_desc1.jpg"></li>
+                    <li><img src="/product/hi_desc1.jpg"></li>
+                    <li><img src="/product/hi_desc1.jpg"></li>
+                    <li><img src="/product/hi_desc1.jpg"></li>
+                </ul>
                 <p class="btn_r">
                     <a class="btn_down" href="#"><span><img src="./../../assets/images/btn_download.png"></span>Tải
                         Catalog</a>
