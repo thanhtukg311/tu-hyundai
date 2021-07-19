@@ -166,7 +166,6 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        padding: 2px;
     }
 
     .thumbnail-image > img {

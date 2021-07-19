@@ -84,8 +84,8 @@ const products = [
                 },
                 {
                     'id': '2',
-                    'big': '/product/hi_desc2.jpg',
-                    'thumb': '/product/hi_desc2.jpg'
+                    'big': '/product/hi_i1.jpg',
+                    'thumb': '/product/hi_i1.jpg'
                 },
                 {
                     'id': '3',
@@ -94,13 +94,13 @@ const products = [
                 },
                 {
                     'id': '4',
-                    'big': '/product/hi_desc2.jpg',
-                    'thumb': '/product/hi_desc2.jpg'
+                    'big': '/product/hi_i4.jpg',
+                    'thumb': '/product/hi_i4.jpg'
                 },
                 {
                     'id': '5',
-                    'big': '/product/hi_desc3.jpg',
-                    'thumb': '/product/hi_desc3.jpg'
+                    'big': '/product/c799fdcc50ef7dba5bd13dea37b46c43.jpg',
+                    'thumb': '/product/c799fdcc50ef7dba5bd13dea37b46c43.jpg'
                 },
             ]
         },
