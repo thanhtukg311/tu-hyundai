@@ -11,7 +11,7 @@
                 <title-component :desc="prod.operate.main_desc" :title="prod.operate.main_title"/>
                 <image-center-component :img-url="prod.operate.img2"/>
                 <double-component :list-desc="prod.operate.list_desc" v-if="!isMobile()"/>
-                <slide-image-component :items="prod.operate.list_desc" v-else/>
+                <slide-image-mobile-component :items="prod.operate.list_desc" v-else/>
             </div>
         </section>
         <prev-next-component :prev="{slug:prod.slug, menu:'noi-that', name:'Nội thất'}" :next="{slug:prod.slug, menu:'an-toan', name:'An toàn'}"/>
@@ -23,10 +23,11 @@
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import PrevNextComponent from "@/components/PrevNextComponent";
     import DoubleComponent from "@/components/DoubleComponent";
-    import SlideImageComponent from "@/components/SlideImageComponent";
+    import SlideImageMobileComponent from "@/components/SlideImageMobileComponent";
     export default {
         name: "Operate",
-        components: {SlideImageComponent, DoubleComponent, PrevNextComponent, ImageCenterComponent, TitleComponent},
+        components: {
+            SlideImageMobileComponent, DoubleComponent, PrevNextComponent, ImageCenterComponent, TitleComponent},
         props: ['prod'],
         methods: {
             isMobile() {

@@ -13,9 +13,6 @@
                     &#8250;
                 </span>
             </div>
-            <div class="stt_slide">
-                <span>1/5</span>
-            </div>
         </div>
         <div class="thumbnails">
             <div

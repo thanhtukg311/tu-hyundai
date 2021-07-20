@@ -70,7 +70,8 @@
                 <div class="transition">
                     <title-component :desc="prod.exterior.main_desc" :title="prod.exterior.main_title"/>
                     <image-center-component :img-url="prod.exterior.main_img"/>
-                    <double-component :list-desc="prod.exterior.list_desc"/>
+                    <double-component :list-desc="prod.exterior.list_desc" v-if="!isMobile()"/>
+                    <slide-image-mobile-component :items="prod.exterior.list_desc" v-else/>
                 </div>
             </div>
         </div>
@@ -81,7 +82,8 @@
                 <a href="#item_anchor_second" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
             </div>
             <div class="item_content container" id="item_anchor_second">
-                <triple-component :list-desc="prod.exterior.list_desc2"/>
+                <triple-component :list-desc="prod.exterior.list_desc2" v-if="!isMobile()"/>
+                <slide-image-mobile-component :items="prod.exterior.list_desc2" v-else/>
             </div>
         </div>
         <div class="item_box_tgle">
@@ -91,7 +93,8 @@
                 <a href="#item_anchor_third" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
             </div>
             <div class="item_content container" id="item_anchor_third">
-                <double-component :list-desc="prod.exterior.list_desc3"/>
+                <double-component :list-desc="prod.exterior.list_desc3" v-if="!isMobile()"/>
+                <slide-image-mobile-component :items="prod.exterior.list_desc3" v-else/>
             </div>
         </div>
         <prev-next-component :prev="{slug:prod.slug, menu:'noi-bat', name:'Nổi bật'}"
@@ -105,10 +108,12 @@
     import TripleComponent from "@/components/TripleComponent";
     import PrevNextComponent from "@/components/PrevNextComponent";
     import TreeSixtyComponent from "@/components/TreeSixtyComponent";
+    import SlideImageMobileComponent from "@/components/SlideImageMobileComponent";
 
     export default {
         name: "Exterior",
         components: {
+            SlideImageMobileComponent,
             TreeSixtyComponent,
             PrevNextComponent, TripleComponent, ImageCenterComponent, DoubleComponent, TitleComponent},
         props: ['prod'],
@@ -128,6 +133,14 @@
             play(){
                 //document.getElementsByClassName('fa-sync').add;
                 this.isOpen = true;
+            },
+            isMobile() {
+                if( screen.width <= 760 ) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
             }
         }
     }

@@ -11,7 +11,7 @@
                 <title-component :desc="prod.highlights.main_desc" :title="prod.highlights.main_title"/>
                 <image-center-component :img-url="prod.highlights.img2"/>
                 <triple-component :list-desc="prod.highlights.list_desc" v-if="!isMobile()"/>
-                <slide-image-component :items="prod.highlights.list_desc" v-else/>
+                <slide-image-mobile-component :items="prod.highlights.list_desc" v-else/>
             </div>
         </section>
         <section class="box03">
@@ -45,13 +45,11 @@
     import TripleComponent from "@/components/TripleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import SlideThumpComponent from "@/components/SlideThumpComponent";
-    import SlideImageComponent from "@/components/SlideImageComponent";
     import SlideImageMobileComponent from "@/components/SlideImageMobileComponent";
     export default {
         name: "Highlights",
         components: {
             SlideImageMobileComponent,
-            SlideImageComponent,
             SlideThumpComponent, ImageCenterComponent, PrevNextComponent, TitleComponent, TripleComponent},
         props: ['prod'],
         methods: {
