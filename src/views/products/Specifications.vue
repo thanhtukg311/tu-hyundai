@@ -15,14 +15,13 @@
                                 <div class="arrow" style="pointer-events:none"></div>
                             </div>
                             <div class="custom-options">
-                                <span v-for="(version,index) in this.prod.specification" :key="index" class="custom-option" v-bind:class="{'selected': versionSelected.version_id == version.version_id}" v-on:click="selectVersion(version.version_id)">{{version.version_name}}</span>
+                                <span v-for="(version,index) in this.prod.specification.version_info" :key="index" class="custom-option" v-bind:class="{'selected': versionSelected.version_id == version.version_id}" v-on:click="selectVersion(version.version_id)">{{version.version_name}}</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tbl_select">
-                    <table-single-component :data="this.versionSelected.version_table"/>
-                    <table-single-component :data="this.versionSelected.version_table"/>
+                    <table-single-component v-for="(version,index) in this.versionSelected.version_table" :key="index" :data="version"/>
                 </div>
             </div>
         </section>
@@ -32,10 +31,9 @@
                     <h3 class="tlt_h3">So sánh các phiên bản</h3>
                 </div>
                 <div class="tab_ver">
-                    <p class="btn_tab" v-for="(version,index) in this.prod.specification" :key="index" >{{version.version_name}}</p>
+                    <p class="btn_tab" v-for="(version,index) in this.prod.specification.version_info" :key="index" >{{version.version_name}}</p>
                 </div>
-                <table-multi-component :data="this.prod.specification[0].version_compare"/>
-                <table-multi-component :data="this.prod.specification[0].version_compare"/>
+                <table-multi-component v-for="(version,index) in this.prod.specification.version_compare" :key="index" :data="version"/>
             </div>
         </section>
         <prev-next-component :prev="{slug:prod.slug, menu:'tien-nghi', name:'Tiện nghi'}" :next="false"/>
@@ -63,11 +61,11 @@
         },
         methods: {
             getVersionDefault () {
-                this.versionSelected = this.prod.specification[0]
+                this.versionSelected = this.prod.specification.version_info[2]
             },
             selectVersion(versionId){
                 let vm = this
-                this.prod.specification.forEach(function (e) {
+                this.prod.specification.version_info.forEach(function (e) {
                     if(e.version_id == versionId){
                         vm.versionSelected = e
                     }
