@@ -207,7 +207,7 @@ p:last-child {
 .tlt_slider_main {
     position: absolute;
     top: 70px;
-    left: 27%;
+    left: calc(50% - 445px);
     font-size: 52px;
     font-weight: bold;
     color: #fff;
@@ -219,7 +219,9 @@ p:last-child {
     position: relative;
     overflow: hidden;
 }
-
+.img_center2{
+    top:0
+}
 .img_main img {
     width: 100%;
     position: relative;
@@ -233,7 +235,7 @@ p:last-child {
 
 .menu_cnt_top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
@@ -431,7 +433,7 @@ section, .section {
 
 .img_center img {
     position: absolute;
-    top: -130px;
+    top: 0;
 }
 
 .bg_02 {

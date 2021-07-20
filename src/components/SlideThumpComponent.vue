@@ -13,6 +13,9 @@
                     &#8250;
                 </span>
             </div>
+            <div class="stt_slide">
+                <span>1/5</span>
+            </div>
         </div>
         <div class="thumbnails">
             <div
@@ -137,6 +140,15 @@
 </script>
 
 <style scoped>
+.stt_slide{
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
 .img_lib{
     margin-bottom:0;
 }
@@ -177,11 +189,12 @@
         height: 100%;
         transition: all 250ms;
         object-fit: cover;
+        opacity: 0.4;
     }
 
     .thumbnail-image:hover > img,
     .thumbnail-image.active > img {
-        opacity: 0.6;
+        opacity: 1;
         box-shadow: 2px 2px 6px 1px rgba(0,0,0, 0.5);
     }
 

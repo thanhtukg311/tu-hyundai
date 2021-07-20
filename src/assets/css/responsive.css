@@ -18,14 +18,46 @@
 @media only screen and (min-width: 641px) and (max-width: 1580px) {
     .img_main img {
         top: 50% !important;
-        height:100% !important;
     }
 }
 
 
 
-@media only screen and (max-width: 640px) {
 
+@media only screen and (max-width:414px) {
+    .menu_cnt_top li a p i {
+        margin: 0;
+        font-size: 26px;
+    }
+    .img_app img{
+        width:120px;
+    }
+    .btn_app{
+        margin-left:15px;
+    }
+    .btn_app .btn_store{
+        padding:10px;
+        font-size:11px;
+    }
+    .cate_btn {
+        font-size: 21px;
+    }
+    .cate_btn i {
+        top: 7px;
+        font-size: 19px;
+    }
+    .prev_cate {
+        padding-left: 25px;
+    }
+    .next_cate {
+        padding-right: 25px;
+    }
+    .tlt_h3 {
+        font-size: 24px;
+    }
+    .tlt_h4 {
+        font-size: 21px;    
+    }
     h1,
     h2,
     h3,
@@ -78,7 +110,7 @@
         justify-content: space-between;
     }
     .h_box h1 img{
-        width:180px;
+        width:130px;
     }
     .tlt_page_top{
         position: absolute;
@@ -90,7 +122,7 @@
     }
     .btn_search{
         position: absolute;
-        right: 13%;
+        right: 15%;
         transform: translate(50%);
     }
     .topic_path{
@@ -109,7 +141,7 @@
     .icon_menu {
         display: inline-block;
         float: right;
-        padding: 15px 5px 7px;
+        padding: 10px 5px 7px;
         margin: 0px 0 0 0;
         width: 45px;
         text-align: center;
@@ -323,7 +355,7 @@
         font-size:36px;
     }
     .menu_cnt_top{
-        justify-content: space-around;
+        justify-content: space-around !important;
     }
     .img_main {
         height: 360px !important;
@@ -338,6 +370,7 @@
     .sub_menu_cnt_top{
         width:800px !important;
         justify-content: space-around;
+        padding:15px !important;
     }
     .tlt_slider_main {
         left: 35%;
@@ -438,60 +471,6 @@
     }
     .tlt_center {
         margin-bottom: 20px;
-    }
-
-
-
-
-
-
-}
-
-@media only screen and (max-width:530px) {
-
-    /*************under*******/
-
-}
-
-@media only screen and (max-width:414px) {
-    .menu_cnt_top li a p i {
-        margin: 0;
-        font-size: 26px;
-    }
-    .img_app img{
-        width:120px;
-    }
-    .btn_app{
-        margin-left:15px;
-    }
-    .btn_app .btn_store{
-        padding:10px;
-        font-size:11px;
-    }
-    .cate_btn {
-        font-size: 21px;
-    }
-    .cate_btn i {
-        top: 7px;
-        font-size: 19px;
-    }
-    .prev_cate {
-        padding-left: 25px;
-    }
-    .next_cate {
-        padding-right: 25px;
-    }
-    .h_box h1 img {
-        width: 155px;
-    }
-    .btn_search {
-        right: 16%;
-    }
-    .tlt_h3 {
-        font-size: 24px;
-    }
-    .tlt_h4 {
-        font-size: 21px;    
     }
 
 }
