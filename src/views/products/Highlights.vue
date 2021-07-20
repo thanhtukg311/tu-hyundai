@@ -10,14 +10,16 @@
             <div class="container">
                 <title-component :desc="prod.highlights.main_desc" :title="prod.highlights.main_title"/>
                 <image-center-component :img-url="prod.highlights.img2"/>
-                <triple-component :list-desc="prod.highlights.list_desc"/>
+                <triple-component :list-desc="prod.highlights.list_desc" v-if="!isMobile()"/>
+                <slide-image-component :items="prod.highlights.list_desc" v-else/>
             </div>
         </section>
         <section class="box03">
             <div class="container">
                 <title-component :desc="prod.highlights.main_desc2" :title="prod.highlights.main_title2"/>
                 <image-center-component :img-url="prod.highlights.img3"/>
-                <triple-component :list-desc="prod.highlights.list_desc_2"/>
+                <triple-component :list-desc="prod.highlights.list_desc_2" v-if="!isMobile()"/>
+                <slide-image-component :items="prod.highlights.list_desc_2" v-else/>
             </div>
         </section>
         <!--box03-->
@@ -43,10 +45,23 @@
     import TripleComponent from "@/components/TripleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import SlideThumpComponent from "@/components/SlideThumpComponent";
+    import SlideImageComponent from "@/components/SlideImageComponent";
     export default {
         name: "Highlights",
-        components: {SlideThumpComponent, ImageCenterComponent, PrevNextComponent, TitleComponent, TripleComponent},
+        components: {
+            SlideImageComponent,
+            SlideThumpComponent, ImageCenterComponent, PrevNextComponent, TitleComponent, TripleComponent},
         props: ['prod'],
+        methods: {
+            isMobile() {
+                if( screen.width <= 760 ) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        },
     }
 </script>
 
