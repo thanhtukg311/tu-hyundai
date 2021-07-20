@@ -42,10 +42,6 @@
     .cate_btn {
         font-size: 21px;
     }
-    .cate_btn i {
-        top: 7px;
-        font-size: 19px;
-    }
     .prev_cate {
         padding-left: 25px;
     }
@@ -53,7 +49,7 @@
         padding-right: 25px;
     }
     .tlt_h3 {
-        font-size: 24px;
+        font-size: 24px !important;
     }
     .tlt_h4 {
         font-size: 21px;    
@@ -380,20 +376,41 @@
         overflow: scroll;
     }
     .tlt_h3{
-        font-size:28px !important;
         margin-bottom: 15px !important;
     }
     .img_center img {
-        top: 0 !important;
+        height:100%;
+        object-fit: cover;
+    }
+    canvas {
+        width: 100%;
+    }
+    .scroll360 img {
+        width: 15%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .tlt_choose_cl p {
+        font-size: 18px;
+        line-height: 1.6em;
+        margin-bottom:10px
+    }
+    .tlt_choose_cl p span {
+        font-size: 14px;
+    }
+    .car_color{
+        width:100%;
+        flex-direction: column;
     }
     .img_center {
-        height: 400px !important;
+        height: 285px !important;
+        margin-bottom: 25px !important;
     }
     .tlt_blog {
         font-size: 18px !important;
     }
     .tlt_center span{
-        font-size:14px;
+        font-size:14px !important;
     }
     .tlt_h4 {
         font-size: 24px;
@@ -403,21 +420,27 @@
         padding:40px 10px;
     }
     .cate_btn{
-        font-size:24px;
+        font-size:18px !important;
     }
     .cate_btn i {
-        top: 8px;
-        font-size: 21px;
+        top: 2px !important;
+        font-size: 21px !important;
+    }
+    .prev_cate i {
+        left: 3px !important;
+    }
+    .next_cate i {
+        right: 3px !important;
     }
     .prev_cate {
-        padding-left: 30px;
+        padding-left: 30px !important;
     }
     .next_cate {
-        padding-right: 30px;
+        padding-right: 30px !important;
     }
-    .box01 {
-        padding: 45px 10px;
-        padding-bottom:0;
+    .box01,.box02,.box03,.box04{
+        padding: 45px 10px !important;
+        padding-bottom:0 !important;
     }
 
     .box02 {
@@ -445,10 +468,10 @@
         width:50%;
     }
     .f_box01, .f_box02, .f_box03{
-        padding:15px;
+        padding:15px !important;
     }
     .f_intro{
-        width:100%;
+        width:100% !important;
     }
     .f_box03_flex{
         text-align: center;
