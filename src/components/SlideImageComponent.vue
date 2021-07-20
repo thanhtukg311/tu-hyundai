@@ -4,7 +4,7 @@
                     <img :src="item.img" alt="" title="" style="margin-bottom: 30px">
                     <div class="tlt_center">
                         <h3 class="tlt_h3">{{item.title}}</h3>
-                        <span>{{item.desc}}</span>
+                        <span class="cnt_slide">{{item.desc}}</span>
                     </div>
                 </slide>
             </carousel>

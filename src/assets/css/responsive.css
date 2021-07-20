@@ -460,7 +460,7 @@
         margin-top:0 !important;
     }
     .VueCarousel-pagination {
-        bottom: 255px !important;
+        bottom: 0px !important;
     }
     .select_ver{
         flex-direction: column;
@@ -531,8 +531,8 @@
         font-size: 34px !important;
         font-weight: bold;
     }
-    .cnt_slide{
-        font-size:14px;
+    .VueCarousel-wrapper .cnt_slide{
+        font-size:16px !important;
         display:block;
         margin-top:10px !important;
     }
@@ -557,6 +557,12 @@
     }
     .tbl_border{
         width:600px;
+    }
+    #slide_pc .tlt_center{
+        text-align: left;
+    }
+    #slide_pc .tlt_center .tlt_h3{
+        font-size:24px !important
     }
     /*******************************************************/
     /******************Footer********************************/
