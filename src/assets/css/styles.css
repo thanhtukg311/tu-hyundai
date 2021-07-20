@@ -432,8 +432,9 @@ section, .section {
 }
 
 .img_center img {
-    position: absolute;
-    top: 0;
+    object-fit: cover;
+    height:100%;
+    width:100%;
 }
 
 .bg_02 {
