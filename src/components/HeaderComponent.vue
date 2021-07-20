@@ -29,8 +29,8 @@
                 <div class="header_sp">
                     <p class="logo"><a href=""><img src="" alt=""></a></p>
                     <div class="ico_menu_click">
-                        <label class="icon_menu closes" @click="openMenuMobile()"><span></span></label>
-                        <label class="icon_menu open" @click="openMenuMobile()"><span></span></label>
+                        <label class="icon_menu closes" v-bind:class="{'active' : this.isOpen}" @click="openMenuMobile()"><span></span></label>
+                        <label class="icon_menu open" v-bind:class="{'active' : this.isOpen}" @click="openMenuMobile()"><span></span></label>
                     </div>
                 </div>
             </div>

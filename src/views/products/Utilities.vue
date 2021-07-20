@@ -3,10 +3,6 @@
         <section class="box01">
             <div class="container">
                 <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
-            </div>
-        </section>
-        <section class="box02">
-            <div class="container">
                 <slide-image-component :items="prod.furniture.img_slide"
                                        :settings="carouselSettings"/>
             </div>
