@@ -182,6 +182,7 @@
         align-items: center;
         cursor: pointer;
         height:190px;
+        background:#000
     }
 
     .thumbnail-image > img {

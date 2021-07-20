@@ -369,10 +369,6 @@
         justify-content: space-around;
         padding:15px !important;
     }
-    .tlt_slider_main {
-        left: 35%;
-        font-size: 45px;
-    }
     .sub_menu_content{
         overflow: scroll;
     }
@@ -460,7 +456,8 @@
         padding: 45px 10px
     }
     .tlt_slider_main {
-        left: calc(50% - 90px) !important;
+        left: 0 !important;
+        margin-left: 120px;
         font-size: 38px !important;
     }
 
@@ -503,4 +500,5 @@
 
 }
 
-@media only screen and (max-width:374px) {}
+@media only screen and (max-width:374px) {
+}
