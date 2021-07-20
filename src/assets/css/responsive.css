@@ -472,8 +472,11 @@
     .custom-select-wrapper{
         width:100% !important;
     }
+    .scroll_tab{
+        overflow:scroll;
+    }
     .tab_ver{
-        flex-direction: column;
+        width:600px;
     }
     #slide_sp .VueCarousel-slide{
         height:100%;

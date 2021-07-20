@@ -30,7 +30,8 @@
                 <div class="tlt_left">
                     <h3 class="tlt_h3">So sánh các phiên bản</h3>
                 </div>
-                <div class="tab_ver">
+                    <div class="row_cnt tab">
+                    <p ></p>
                     <p class="btn_tab" v-for="(version,index) in this.prod.specification.version_info" :key="index" >{{version.version_name}}</p>
                 </div>
                 <table-multi-component v-for="(version,index) in this.prod.specification.version_compare" :key="index" :data="version"/>

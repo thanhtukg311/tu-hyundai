@@ -769,6 +769,12 @@ section, .section {
     display:flex;
     width:100%;
 }
+.row_cnt.tab p{
+    border:none;
+    color:#fff;
+    line-height:60px;
+    border-right:1px solid #fff
+}
 .row_cnt p:first-child{
     font-weight:600;
 }
