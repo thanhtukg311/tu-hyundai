@@ -500,6 +500,30 @@
         font-size: 12px;
         background: #0009;
     }
+    #slide_pc .VueCarousel-navigation-button{
+        top:25%;
+        font-size: 12px;
+        background-color: #0009 !important;
+    }
+    .item_box_tgle{
+        height:380px !important;
+    }
+    .item_box_tgle.on{
+        height:100% !important
+    }
+    .item_toggle{
+        height:100% !important;
+    }
+    .btnShow{
+        top:300px !important
+    }
+    .item_content{
+        padding:30px 10px !important;
+    }
+    .tlt_item {
+        font-size: 34px !important;
+        font-weight: bold;
+    }
     /*******************************************************/
     /******************Footer********************************/
     .f_menu_flex, .f_box02_flex, .f_box03_flex{
