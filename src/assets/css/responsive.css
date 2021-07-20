@@ -354,11 +354,12 @@
         justify-content: space-around !important;
     }
     .img_main {
-        height: 360px !important;
+        height: 540px !important;
     }
     .img_main img {
-        top: 180px !important;
+        top: 50% !important;
         height: 100%;
+        object-fit: cover;
     }
     .h_box h1 {
         padding-left: 10px;
@@ -457,6 +458,10 @@
 
     .box05 {
         padding: 45px 10px
+    }
+    .tlt_slider_main {
+        left: calc(50% - 90px) !important;
+        font-size: 38px !important;
     }
 
     /*******************************************************/

@@ -890,6 +890,16 @@ section, .section {
 .thumb_img{
     display:flex;
 }
+.prev, .next{
+    background: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px !important;
+}
 /******************************Footer********************************/
 
 /*******************************************************************/
