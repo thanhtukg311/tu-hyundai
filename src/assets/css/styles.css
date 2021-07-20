@@ -377,6 +377,7 @@ section, .section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:0 20px;
 }
 
 .cate_btn {
@@ -899,6 +900,18 @@ section, .section {
     justify-content: center;
     color: #fff;
     font-size: 32px !important;
+}
+.lib_img{
+    position: relative;
+}
+.stt_slide{
+    position: absolute;
+    color: #fff;
+    right: 15px;
+    bottom: 195px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.1em;
 }
 
 /******************************Footer********************************/

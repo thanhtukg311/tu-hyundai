@@ -48,12 +48,6 @@
     .next_cate {
         padding-right: 25px;
     }
-    .tlt_h3 {
-        font-size: 24px !important;
-    }
-    .tlt_h4 {
-        font-size: 21px;    
-    }
     h1,
     h2,
     h3,
@@ -123,9 +117,6 @@
     }
     .topic_path{
         display:none !important;
-    }
-    section,.section{
-        margin-bottom:20px;
     }
     /******************Gnavi********************************/
     .ico_menu_click {
@@ -228,20 +219,25 @@
 
     .header_main #gnavi {
         position: absolute;
-        left: 0;
-        width: 100%;
+        right: -100%;
+        width: calc(100% - 50px);
         overflow: auto;
         z-index: 10;
-        display: none;
-        top: 59px;
-        background: #fff;
-        animation: none
+        opacity: 0;
+        display: block;
+        top: 68px;
+        background: #f7f3f2;
+        -webkit-animation: none;
+        animation: none;
+        height: 101vh;
+        transition: 1s;
     }
     .tlt_page_top{
         display:block;
     }
     .header_main #gnavi.open{
-        display:block
+        right:0;
+        opacity: 1;
     }
 
     .gnavi_pc {
@@ -250,7 +246,7 @@
     }
 
     .gnavi_pc > li {
-        background: #000
+        background: #f7f3f2
     }
 
     .gnavi_pc label,
@@ -297,14 +293,15 @@
     }
 
     .gnavi_pc > li > a {
-        color: #fff !important;
+        color: #7d7b7c !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
         display: block;
         padding: 15px 25px 15px 15px;
         letter-spacing: 1px;
         font-size: 16px;
         position: relative;
-        text-align: left
+        text-align: left;
+        font-weight:600
     }
 
     .gnavi_pc > li > label {
@@ -437,7 +434,6 @@
     }
     .box01,.box02,.box03,.box04{
         padding: 25px 10px !important;
-        padding-bottom:0 !important;
     }
 
     .box02 {
@@ -492,8 +488,19 @@
         font-size:18px !important;
         margin-bottom:0 !important;
     }
+    #slide_sp{
+        margin-bottom:30px;
+    }
     #slide_sp .VueCarousel-pagination{
-        display:none;
+        bottom:-25px !important;
+    }
+    #slide_sp .VueCarousel-dot{
+        border: 1px solid #c6c6c6;
+        padding: 0 !important;
+        margin: 0 5px;
+    }
+    #slide_sp .VueCarousel-dot.VueCarousel-dot--active{
+        border:none !important;
     }
     #slide_sp .VueCarousel-navigation-button {
         top: 42%;
@@ -512,7 +519,7 @@
         height:100% !important
     }
     .item_toggle{
-        height:100% !important;
+        height:380px !important;
     }
     .btnShow{
         top:300px !important
@@ -523,6 +530,33 @@
     .tlt_item {
         font-size: 34px !important;
         font-weight: bold;
+    }
+    .cnt_slide{
+        font-size:14px;
+        display:block;
+        margin-top:10px !important;
+    }
+    .stt_slide {
+        right: 10px !important;
+        bottom: 100px !important;
+        font-size: 15px !important;
+    }
+    .img_lib{
+        margin-bottom:0 !important;
+    }
+    .thumbnail-image{
+        height:100px !important;
+    }
+    .prev, .next {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 28px !important;
+    }
+    .tbl_select {
+        overflow: scroll;
+    }
+    .tbl_border{
+        width:600px;
     }
     /*******************************************************/
     /******************Footer********************************/
@@ -543,10 +577,10 @@
         justify-content: center !important;
     }
     .f_intro span {
-        font-size: 11px;
+        font-size: 13px !important;
     }
     .f_box02{
-        padding:35px 15px;
+        padding:35px 15px !important;
     }
     .copyright {
         padding: 10px 0;
@@ -559,6 +593,10 @@
     }
     .tlt_center {
         margin-bottom: 20px;
+        width:100% !important;
+    }
+    .item_toggle img{
+        height:100% !important; 
     }
 
 }

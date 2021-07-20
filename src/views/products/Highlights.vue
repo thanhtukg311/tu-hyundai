@@ -26,9 +26,12 @@
         <section class="box04">
             <div class="container">
                 <title-component :title="'Thư Viện'"/>
+                <div class="lib_img">
                 <slide-thump-component :starting-image="2"
                                        :images="prod.highlights.gallery"
                                        :auto-slide-interval="5500"/>
+                <p class="stt_slide">1/5</p>
+                </div>
                 <p class="btn_r">
                     <a class="btn_down" href="#"><span><img src="./../../assets/images/btn_download.png"></span>Tải
                         Catalog</a>
