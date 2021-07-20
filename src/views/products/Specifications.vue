@@ -26,7 +26,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="box02">
             <div class="container">
                 <div class="tlt_left">
                     <h3 class="tlt_h3">So sánh các phiên bản</h3>

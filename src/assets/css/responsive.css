@@ -460,7 +460,25 @@
         margin-left: 120px;
         font-size: 38px !important;
     }
-
+    .VueCarousel-dot{
+        margin-top:0 !important;
+    }
+    .VueCarousel-pagination {
+        bottom: 255px !important;
+    }
+    .select_ver{
+        flex-direction: column;
+    }
+    .tlt_ver{
+        font-size:21px !important;
+        margin-bottom:10px !important;
+    }
+    .custom-select-wrapper{
+        width:100% !important;
+    }
+    .tab_ver{
+        flex-direction: column;
+    }
     /*******************************************************/
     /******************Footer********************************/
     .f_menu_flex, .f_box02_flex, .f_box03_flex{
