@@ -1,8 +1,8 @@
 <template>
-    <carousel :per-page="1" :mouse-drag="false" :autoplay="true"  :autoplayTimeout="2000" v-if="items.length > 0"  :navigationEnabled="true" :loop="true">
+    <carousel :per-page="1" :mouse-drag="false" :autoplay="true"  :autoplayTimeout="2000" v-if="items.length > 0"  :navigationEnabled="true" :loop="true" id="slide_sp">
         <slide v-for="(item, index) in items" :key="index">
-            <img :src="item.img" alt="" title="" style="margin-bottom: 30px">
-            <div class="tlt_center">
+            <img :src="item.img" alt="" title="">
+            <div>
                 <h3 class="tlt_h3">{{item.title}}</h3>
                 <span>{{item.desc}}</span>
             </div>

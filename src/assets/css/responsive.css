@@ -436,7 +436,7 @@
         padding-right: 30px !important;
     }
     .box01,.box02,.box03,.box04{
-        padding: 45px 10px !important;
+        padding: 25px 10px !important;
         padding-bottom:0 !important;
     }
 
@@ -479,6 +479,27 @@
     .tab_ver{
         flex-direction: column;
     }
+    #slide_sp .VueCarousel-slide{
+        height:100%;
+    }
+    #slide_sp .VueCarousel-slide img{
+        height:250px;
+        width:100%;
+        object-fit: cover;
+        margin-bottom:10px !important;
+    }
+    #slide_sp .VueCarousel-slide .tlt_h3{
+        font-size:18px !important;
+        margin-bottom:0 !important;
+    }
+    #slide_sp .VueCarousel-pagination{
+        display:none;
+    }
+    #slide_sp .VueCarousel-navigation-button {
+        top: 42%;
+        font-size: 12px;
+        background: #0009;
+    }
     /*******************************************************/
     /******************Footer********************************/
     .f_menu_flex, .f_box02_flex, .f_box03_flex{
@@ -495,7 +516,7 @@
     }
     .f_box03_flex{
         text-align: center;
-        justify-content: center;
+        justify-content: center !important;
     }
     .f_intro span {
         font-size: 11px;
