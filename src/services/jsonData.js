@@ -2,8 +2,8 @@ const products = [
     {
         'slug' : 'i10-2020',
         'code' : 'i10 2020',
-        'name' : 'i10 Sedan',
-        'description' : 'All New Grand',
+        'name' : 'TẬN HƯỞNG HÀNH TRÌNH MỚI',
+        'description' : 'All New Grand i10',
         'img_url' : '/product/i10-ac3-highlights-kv-pc.jpg',
         'utilities': {
             'title': 'Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn',
