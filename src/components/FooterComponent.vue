@@ -7,44 +7,113 @@
                 <div class="container f_menu_flex">
                     <ul class="f_menu">
                         <li>Sản phẩm</li>
-                        <li class="f_menu_h"><a href="#">Xe du lịch</a>
+                        <li class="f_menu_h"><a>Xe du lịch</a>
                         <ul class="sub_menu">
-                            <li><a href="#">Xe du lịch</a></li>
-                            <li><a href="#">Xe du lịch</a></li>
-                            <li><a href="#">Xe du lịch</a></li>
+                            <li><a href="/san-pham/elantra">Elantra</a></li>
+                            <li><a href="/san-pham/elantra-sport">Elantra Sport</a></li>
+                            <li><a href="/san-pham/accent">Accent</a></li>
+                            <li><a href="/san-pham/i10-2017">Grand i10 2017</a></li>
+                            <li><a href="/san-pham/grand-i10-sedan">Grand i10 sedan</a></li>
                         </ul>
                         </li>
-                        <li><a href="#">Xe SUV, Xe MPV</a></li>
-                        <li><a href="#">Xe chuyên dụng, tải nhẹ</a></li>
-                        <li><a href="#">Xe thương mại</a></li>
+                        <li class="f_menu_h"><a>Xe SUV, Xe MPV</a>
+                        <ul class="sub_menu">
+                            <li><a href="/san-pham/santa-fe">Santa Fe</a></li>
+                            <li><a href="/san-pham/tucson">Tucson</a></li>
+                            <li><a href="/san-pham/kona">Kona</a></li>
+                            <li><a href="/san-pham/starex-h1">Starex (H1)</a></li>
+                        </ul>
+                        </li>
+                        <li class="f_menu_h"><a>Xe chuyên dụng, tải nhẹ</a>
+                        <ul class="sub_menu">
+                            <li><a href="/san-pham/santa-fe-cho-tien">Santa fe chở tiền</a></li>
+                            <li><a href="/san-pham/starex-cho-tien">Starex chở tiền</a></li>
+                            <li><a href="/san-pham/starex-cuu-thuong">Starex cứu thương</a></li>
+                        </ul>
+                        </li>
+                        <li class="f_menu_h"><a href="#">Xe thương mại</a>
+                        <ul class="sub_menu">
+                                    <li>
+                                        <a href="/san-pham/new-mighty-75s-110s">NEW MIGHTY 75S &amp; 110S</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/universe">Universe</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/HD700-1000%20tractor">HD700-1000 Đầu kéo</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/hd270-Dump">HD270 Tự đổ</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/hd270-mixer">HD270 Trộn bê tông</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/new-county">New County</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/hd260-320">HD260-320</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/hd210">HD210</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/mighty-n250">New Mighty N250</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/new-porter-150">NEW PORTER 150</a>
+                                    </li>
+                                    <li>
+                                        <a href="/san-pham/solati">Solati</a>
+                                    </li>
+                                </ul>
+                        </li>
                     </ul>
                     <ul class="f_menu">
                         <li>Mua xe</li>
-                        <li><a href="#">Chọn xe</a></li>
-                        <li><a href="#">So sánh xe</a></li>
-                        <li><a href="#">Khuyến mãi</a></li>
-                        <li><a href="#">Đăng ký lái thử</a></li>
-                        <li><a href="#">Tìm đại lý</a></li>
-                        <li><a href="#">Tải Catalog</a></li>
+                        <li><a href="/mua-xe/chon-xe">Chọn xe</a></li>
+                        <li><a href="/mua-xe/so-sanh">So sánh xe</a></li>
+                        <li><a href="/mua-xe/khuyen-mai">Khuyến mại</a></li>
+                        <li><a href="/mua-xe/dang-ky-lai-thu">Đăng ký lái thử</a></li>
+                        <li><a class="login-window" href="#login-box">Tìm đại lý</a></li>
+                        <li><a href="/mua-xe/tai-catalogue">Tải catalog</a></li>
                     </ul>
                     <ul class="f_menu">
                         <li>Giới thiệu</li>
-                        <li><a href="#">Thương hiệu Hyundai</a></li>
+                        <li class="f_menu_h"><a>Thương hiệu Hyundai</a>
+                        <ul class="sub_menu">
+                        <!---->
+                        <li><a href="/thuong-hieu/lich-su">Lịch sử</a></li>
+                        <li><a href="/thuong-hieu/lich-su-hyundai-thuong-mai">Lịch sử Hyundai Thương Mại</a></li>
+                        <li><a href="/thuong-hieu-hyundai/cong-nghe" target="_blank">Công nghệ</a></li>
+                        <li><a href="/thuong-hieu-hyundai/thiet-ke" target="_blank">Thiết kế</a></li>
+                    </ul>
+                        </li>
                         <li class="mb50"><a href="#">TC Motor</a></li>
                         <ul class="f_menu">
                             <li>Hyundai Thành Công</li>
-                            <li><a href="#">Tin công ty</a></li>
-                            <li><a href="#">Đăng ký làm đại lý</a></li>
-                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="/hyundai-thanh-cong/tin-tuc/tin-cong-ty">Tin công ty</a></li>
+                            <li><a href="/hyundai-thanh-cong/dang-ky-lam-dai-ly">Đăng ký làm đại lý</a></li>
+                            <li><a href="/hyundai-thanh-cong/tin-tuc/tin-tuyen-dung">Tuyển dụng</a></li>
                         </ul>
                     </ul>
                     <ul class="f_menu">
                         <li>Dịch vụ</li>
-                        <li><a href="#">Ứng dụng Hyundai ME!</a></li>
-                        <li><a href="#">Chương trình dịch vụ</a></li>
-                        <li><a href="#">Phụ tùng & Phụ kiện chính hãng</a></li>
-                        <li><a href="#">Chăm sóc khách hàng</a></li>
-                        <li><a href="#">Cập nhật AVN</a></li>
+                                <li><a href="/dich-vu/ung-dung-hyundai-me">Ứng dụng Hyundai ME!</a></li>
+                                <li><a href="/dich-vu/chuong-trinh-dich-vu">Chương trình dịch vụ</a></li>
+                                <li><a href="/dich-vu/chinh-sach-bao-hanh">Chính sách bảo hành</a></li>
+                                <li><a href="/dich-vu/phu-tung-phu-kien-chinh-hang">Phụ tùng &amp; phụ kiện chính hãng</a></li>
+                                <li class="f_menu_h"><a>Chăm sóc khách hàng</a>
+                                    <ul class="sub_menu">
+                                <li>
+                                    <a href="/dich-vu/gioi-thieu-chung">Giới thiệu chung</a>
+                                </li>
+                                <li>
+                                    <a href="/dich-vu/hoi-vien-hyundai">Hội viên</a>
+                                </li>
+                            </ul>
+                                </li>
+                        <li><a href="/hyundai-thanh-cong/cap-nhat-avn/cap-nhat-avn">Cập nhật AVN</a></li>
                     </ul>
                 </div>
             </div>
