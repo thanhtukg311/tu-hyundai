@@ -12,7 +12,8 @@
 <script>
     export default {
         name: "PrevNextComponent",
-        props:['prev', 'next']
+        props:['prev', 'next'],
+
     }
 </script>
 

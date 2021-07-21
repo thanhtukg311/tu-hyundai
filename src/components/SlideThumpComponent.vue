@@ -16,7 +16,11 @@
             <p class="stt_slide">1/4</p>
         </div>
         <div class="thumbnails">
+            <span @click="prevImage" class="prev">
+                    &#8249;
+                </span>
             <div
+
                     v-for="(image, index) in  images"
                     :key="image.id"
                     :class="['thumbnail-image', (activeImage == index) ? 'active' : '']"
@@ -24,6 +28,9 @@
             >
                 <img :src="image.thumb">
             </div>
+            <span @click="nextImage" class="next">
+                    &#8250;
+            </span>
         </div>
     </div>
 </template>

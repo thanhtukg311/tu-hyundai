@@ -6,7 +6,7 @@
             <!-- Percentage Loader -->
             <div class="v360-viewport" v-if="!imagesLoaded">
                 <div class="v360-spinner-grow"></div>
-                <p ref="viewPercentage" class="v360-percentage-text"></p>
+                <p ref="viewPercentage" class="v360-percentage-text" style="display:none;"></p>
             </div>
             <!--/ Percentage Loader -->
 
@@ -410,7 +410,7 @@
                 this.$refs.viewport.addEventListener('mousedown', this.startDragging);
                 this.$refs.viewport.addEventListener('mousemove', this.doDragging);
 
-                this.$refs.viewport.addEventListener('wheel', this.onScroll);
+               // this.$refs.viewport.addEventListener('wheel', this.onScroll);
             },
             bind360ModeEvents(){
                 this.$refs.viewport.removeEventListener('touchend', this.stopDragging);
@@ -429,7 +429,7 @@
                 this.$refs.viewport.addEventListener('mousedown', this.startMoving);
                 this.$refs.viewport.addEventListener('mousemove', this.doMoving);
 
-                this.$refs.viewport.addEventListener('wheel', this.onScroll);
+                //this.$refs.viewport.addEventListener('wheel', this.onScroll);
             },
             togglePanMode(){
                 this.panmode = !this.panmode

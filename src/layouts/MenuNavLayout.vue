@@ -18,11 +18,11 @@
         <div id="content">
             <div class="menu_content">
                 <ul class="container menu_cnt_top">
-                    <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe"><p><i class="fal fa-sliders-h"></i><span>Chọn xe</span></p></a></li>
-                    <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/tim-dai-ly"><p><i class="fal fa-map-marker-alt"></i><span>Tìm đại lý</span></p></a></li>
-                    <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/dang-ky-lai-thu"><p><i class="far fa-steering-wheel"></i><span>Đăng ký lái thử</span></p></a></li>
-                    <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/so-sanh"><p><i class="fal fa-repeat"></i><span>So sánh</span></p></a></li>
-                    <li><a href="#"><p><i class="fal fa-arrow-to-bottom"></i><span>Tải catalog</span></p></a></li>
+                    <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe"><p><i class="fal fa-sliders-h"></i><span>Chọn xe</span></p></a></li>
+                    <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/tim-dai-ly"><p><i class="fal fa-map-marker-alt"></i><span>Tìm đại lý</span></p></a></li>
+                    <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/dang-ky-lai-thu"><p><i class="far fa-steering-wheel"></i><span>Đăng ký lái thử</span></p></a></li>
+                    <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/so-sanh"><p><i class="fal fa-repeat"></i><span>So sánh</span></p></a></li>
+                    <li><a target="_blank" href="#"><p><i class="fal fa-arrow-to-bottom"></i><span>Tải catalog</span></p></a></li>
                 </ul>
             </div>
             <div class="sub_menu_content">
