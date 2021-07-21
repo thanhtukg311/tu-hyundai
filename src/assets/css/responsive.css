@@ -455,7 +455,9 @@
     }
     .tlt_slider_main {
         left: 0 !important;
-        margin-left: 120px;
+        margin-left: 185px;
+        width:100%;
+        top:85px !important;
         font-size: 38px !important;
     }
     .VueCarousel-dot{
@@ -513,9 +515,12 @@
         background: #0009;
     }
     #slide_pc .VueCarousel-navigation-button{
-        top:25%;
+        top:28% !important;
         font-size: 12px;
         background-color: #0009 !important;
+    }
+    #slide_pc .VueCarousel-wrapper {
+        height: auto !important;
     }
     .item_box_tgle{
         height:380px !important;

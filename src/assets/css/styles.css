@@ -928,6 +928,16 @@ section, .section {
 .VueCarousel img{
     width:100%;
 }
+#slide_pc .VueCarousel-navigation-button{
+    top:42%; 
+    background: #000000a8;
+}
+#slide_pc .VueCarousel-pagination{
+    bottom:200px;
+}
+#slide_pc .VueCarousel-wrapper{
+    height:810px;
+}
 /******************************Footer********************************/
 
 /*******************************************************************/
