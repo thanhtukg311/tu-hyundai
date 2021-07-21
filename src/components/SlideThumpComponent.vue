@@ -16,7 +16,7 @@
             <p class="stt_slide">{{this.activeImage + 1}}/{{this.total_img}}</p>
         </div>
         <div class="thumbnails">
-            <carousel  :per-page="4" :mouse-drag="false" :navigationEnabled="true" :paginationEnabled="false">
+            <carousel  :per-page="4" :mouse-drag="true" :touch-drag="true" :navigationEnabled="true" :paginationEnabled="false">
                 <slide  v-for="(image, index) in  images"
                         :key="image.id">
                     <div :class="['thumbnail-image', (activeImage == index) ? 'active' : '']" @click="activateImage(index)">
@@ -144,11 +144,10 @@
 <style scoped>
 .stt_slide{
     color: #fff;
-    font-size: 16px;
+    font-size: 16px !important;
     position: absolute;
     right: 15px;
-    bottom: 15px;
-    font-weight: 600;
+    bottom: 5px;
     letter-spacing: 0.1em;
 }
 .img_lib{

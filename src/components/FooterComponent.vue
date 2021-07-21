@@ -7,7 +7,13 @@
                 <div class="container f_menu_flex">
                     <ul class="f_menu">
                         <li>Sản phẩm</li>
-                        <li><a href="#">Xe du lịch</a></li>
+                        <li class="f_menu_h"><a href="#">Xe du lịch</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">Xe du lịch</a></li>
+                            <li><a href="#">Xe du lịch</a></li>
+                            <li><a href="#">Xe du lịch</a></li>
+                        </ul>
+                        </li>
                         <li><a href="#">Xe SUV, Xe MPV</a></li>
                         <li><a href="#">Xe chuyên dụng, tải nhẹ</a></li>
                         <li><a href="#">Xe thương mại</a></li>
@@ -61,8 +67,8 @@
                         <div class="img_app">
                             <img src="./../assets/images/qr_code.png" width="170">
                             <p class="btn_app">
-                                <a class="btn_store" href="#">Apple Store<i class="fab fa-apple"></i></a>
-                                <a class="btn_store" href="#">Google Play<i class="fab fa-google-play"></i></a>
+                                <a class="btn_store" href="https://hyundaime.hyundai-thanhcong.vn/mobile-platform-detection/">Apple Store<i class="fab fa-apple"></i></a>
+                                <a class="btn_store" href="https://hyundaime.hyundai-thanhcong.vn/mobile-platform-detection/">Google Play<i class="fab fa-google-play"></i></a>
                             </p>
                         </div>
                     </div>

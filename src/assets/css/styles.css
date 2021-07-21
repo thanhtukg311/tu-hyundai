@@ -120,7 +120,11 @@ p:last-child {
 #gnavi {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right:20px;
+}
+.btn_share{
+    margin-right:20px
 }
 
 .logo {
@@ -912,15 +916,6 @@ section, .section {
 .lib_img{
     position: relative;
 }
-.stt_slide{
-    position: absolute;
-    color: #fff;
-    right: 15px;
-    bottom: 195px;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-}
 .tab{
     display:flex;
     justify-content: flex-end;
@@ -928,7 +923,21 @@ section, .section {
 /******************************Footer********************************/
 
 /*******************************************************************/
-
+.sub_menu{
+    display:none;
+    padding-left:10px
+}
+.sub_menu li{
+    margin-bottom:0px !important;
+    line-height:1.5em !important;
+}
+.sub_menu li a:hover{
+    text-decoration: underline;
+    color:#377db8
+}
+.f_menu_h:hover .sub_menu{
+    display:block
+}
 #totop {
     position: fixed;
     bottom: 48px;

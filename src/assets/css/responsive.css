@@ -30,10 +30,13 @@
         font-size: 26px;
     }
     .img_app img{
-        width:120px;
+        width:42%;
     }
     .btn_app{
-        margin-left:15px;
+        margin-left:0 !important;
+    }
+    .btn_app .btn_store{
+        min-width:180px !important;
     }
     .btn_app .btn_store{
         padding:10px;
@@ -601,6 +604,22 @@
     }
     .tbl_select .tlt_select{
         font-size:16px !important
+    }
+    .btn_share {
+        position: absolute;
+        margin-right: 20px;
+        right: 70px;
+    }
+    .dow_app{
+        width:100%
+    }
+    .stt_slide{
+        color: #fff;
+        font-size: 14px !important;
+        position: absolute;
+        right: 15px;
+        bottom: 0px !important;
+        letter-spacing: 0.1em;
     }
     /*******************************************************/
     /******************Footer********************************/
