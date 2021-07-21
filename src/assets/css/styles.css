@@ -82,7 +82,6 @@ td {
 
 img {
     max-width: 100%;
-    width:100%;
 }
 
 p {
@@ -920,6 +919,9 @@ section, .section {
 .tab{
     display:flex;
     justify-content: flex-end;
+}
+.VueCarousel img{
+    width:100%;
 }
 /******************************Footer********************************/
 
