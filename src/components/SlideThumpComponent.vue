@@ -13,6 +13,7 @@
                     &#8250;
                 </span>
             </div>
+            <p class="stt_slide">1/4</p>
         </div>
         <div class="thumbnails">
             <div

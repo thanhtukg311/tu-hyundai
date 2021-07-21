@@ -4,7 +4,7 @@
             <div class="container header_main">
                 <div class="h_box">
                     <h1>
-                        <a href="#">
+                        <a href="https://www.hyundai.tcmotor.vn/">
                             <img src="./../assets/images/logo.png" width="250px" alt="logo">
                         </a>
                     </h1>
@@ -14,7 +14,7 @@
                 </div>
                 <nav id="gnavi" v-bind:class="{'open' : this.isOpen}" ref="mobileMenu">
                     <ul class="gnavi_pc" @click="openMenuMobile()">
-                        <li><router-link to="/">Trang chủ</router-link></li>
+                        <li><router-link to="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">Trang chủ</router-link></li>
                         <li><router-link to="/">Giới thiệu</router-link></li>
                         <li><router-link :to="{name: 'san-pham', params:{slug: 'i10-2020'}}">Sản phẩm</router-link></li>
                         <li><router-link to="/">Mua xe</router-link></li>
