@@ -13,7 +13,7 @@
                     <img :src="prod.img_url">
             </div>
             <h2 class="tlt_slider_main">{{prod.description}}<br/>
-                {{prod.name}}</h2>
+               <span> {{prod.name}}</span></h2>
         </div>
         <div id="content">
             <div class="menu_content">
