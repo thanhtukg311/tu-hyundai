@@ -30,11 +30,13 @@
                 <div class="tlt_left">
                     <h3 class="tlt_h3">So sánh các phiên bản</h3>
                 </div>
-                 <div class="row_cnt tab">
+                <div class="tbl_select_ss">
+                    <div class="tab">
                     <p></p>
                     <p class="btn_tab" v-for="(version,index) in this.prod.specification.version_info" :key="index" >{{version.version_name}}</p>
                 </div>
                 <table-multi-component v-for="(version,index) in this.prod.specification.version_compare" :key="index" :data="version"/>
+                </div>
             </div>
         </section>
         <prev-next-component :prev="{slug:prod.slug, menu:'tien-nghi', name:'Tiện nghi'}" :next="false"/>

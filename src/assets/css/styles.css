@@ -304,6 +304,7 @@ p:last-child {
     font-weight: bold;
     line-height: 1.2em;
     margin-bottom: 30px;
+    letter-spacing: -1px;
 }
 
 .tlt_h4 {
@@ -386,6 +387,7 @@ section, .section {
     font-weight: bold;
     text-decoration: none;
     position: relative;
+    letter-spacing: -1px;
 }
 
 .prev_cate {
@@ -919,7 +921,10 @@ section, .section {
     font-size: 18px;
     letter-spacing: 0.1em;
 }
-
+.tab{
+    display:flex;
+    justify-content: flex-end;
+}
 /******************************Footer********************************/
 
 /*******************************************************************/
