@@ -13,31 +13,26 @@
                     &#8250;
                 </span>
             </div>
-            <p class="stt_slide">1/4</p>
+            <p class="stt_slide">{{this.activeImage + 1}}/{{this.total_img}}</p>
         </div>
         <div class="thumbnails">
-            <span @click="prevImage" class="prev">
-                    &#8249;
-                </span>
-            <div
-
-                    v-for="(image, index) in  images"
-                    :key="image.id"
-                    :class="['thumbnail-image', (activeImage == index) ? 'active' : '']"
-                    @click="activateImage(index)"
-            >
-                <img :src="image.thumb">
-            </div>
-            <span @click="nextImage" class="next">
-                    &#8250;
-            </span>
+            <carousel  :per-page="4" :mouse-drag="false" :navigationEnabled="true" :paginationEnabled="false">
+                <slide  v-for="(image, index) in  images"
+                        :key="image.id">
+                    <div :class="['thumbnail-image', (activeImage == index) ? 'active' : '']" @click="activateImage(index)">
+                    <img :src="image.thumb">
+                    </div>
+                </slide>
+            </carousel>
         </div>
     </div>
 </template>
 
 <script>
+    import { Carousel, Slide } from 'vue-carousel';
     export default {
         name: "SlideThumpComponent",
+        components: {Carousel, Slide},
         props: ['startingImage', 'images', 'autoSlideInterval', 'showProgressBar'],
         data() {
             return {
@@ -52,7 +47,9 @@
                 //Hold the interval so we can clear it when needed
                 timerInterval: null,
                 //Every 10ms decrease the timeLeft
-                countdownInterval: 10
+                countdownInterval: 10,
+                total_img: this.images.length
+
             }
         },
         computed: {
