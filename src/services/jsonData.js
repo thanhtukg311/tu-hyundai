@@ -28,6 +28,18 @@ const products = [
                     'title': 'Cửa gió điều hòa và cổng sạc USB hàng ghế 2',
                     'desc': 'Tận hưởng hàng ghế thứ 2 với cửa gió điều hòa và cổng sạc USB',
                 },
+            ],
+            'img_slide' : [
+                {
+                    'img': '/product_new/tien_nghi/Rectangle91-min.jpg',
+                    'title': 'Màn hình tầm trung cảm ứng 8 inch',
+                    'desc': 'màn hình cảm ứng trung tâm kích cỡ 8 inch đa chức năng, hỗ trợ giải trí với các kết nối các chức năng Bluetooth/MP3/Radio, hỗ trợ kết nối Apple Carplay và Android Auto, cùng với bản đồ tích hợp',
+                },
+                {
+                    'img': '/product_new/tien_nghi/Asset5-min.jpg',
+                    'title': 'Màn hình thông tin LCD 5.3 inch',
+                    'desc': 'Màn hình thông tin dạng semi-digital cung cấp đầy đủ các thông tin trực quan cho người lái',
+                },
             ]
         },
         'highlights': {
@@ -133,6 +145,23 @@ const products = [
                     'title': 'Màn hình trung tâm cảm ứng 8 inch',
                     'desc': 'màn hình cảm ứng trung tâm kích cỡ 8 inch đa chức năng, hỗ trợ giải trí với các kết nối các chức năng Bluetooth/MP3/Radio, hỗ trợ kết nối Apple Carplay và Android Auto, cùng với bản đồ tích hợp',
                     'img': '/product/fu_i2_3.jpg',
+                },
+            ],
+            'img_slide2' : [
+                {
+                    'img': '/product_new/tien_nghi/Rectangle91-min.jpg',
+                    'title': 'Màn hình tầm trung cảm ứng 8 inch',
+                    'desc': 'màn hình cảm ứng trung tâm kích cỡ 8 inch đa chức năng, hỗ trợ giải trí với các kết nối các chức năng Bluetooth/MP3/Radio, hỗ trợ kết nối Apple Carplay và Android Auto, cùng với bản đồ tích hợp',
+                },
+                {
+                    'img': '/product_new/tien_nghi/Asset5-min.jpg',
+                    'title': 'Màn hình thông tin LCD 5.3 inch',
+                    'desc': 'Màn hình thông tin dạng semi-digital cung cấp đầy đủ các thông tin trực quan cho người lái',
+                },
+                {
+                    'img': '/product_new/noi_that/Asset8-min.jpg',
+                    'title': 'Cụm điểu chỉnh media tích hợp nhận diện giọng nói',
+                    'desc': 'Dễ dàng điều chỉnh media với cụm nút tích hợp và chức năng nhận diện giọng nói.\n',
                 },
             ]
         },
@@ -1042,8 +1071,31 @@ const products = [
             ],
         },
         'safe': {
-            'title': 'Ấn tượng từ cái nhìn đầu tiên',
-            'desc': 'Mọi đường nét trên Grand i10 đều để lại ấn tượng về sự cá tính, thời trang và phong cách',
+            'title': 'An toàn vượt trội',
+            'desc': '',
+            'list_desc' : [
+                {
+                    'img': '/product_new/an_toan/Asset6-min.png',
+                    'title': 'Cảm biến va chạm phía sau',
+                    'desc': '',
+                },
+                {
+                    'img': '/product_new/an_toan/Asset7-min.png',
+                    'title': 'Camera lùi hỗ trợ đỗ xe',
+                    'desc': '',
+                },
+                {
+                    'img': '/product_new/an_toan/Rectangle91min.png',
+                    'title': 'Hệ thống khung mới cứng vững hơn với thép cường độ cao AHSS',
+                    'desc': '',
+                },
+                {
+                    'img': '/product_new/an_toan/Asset3-min.png',
+                    'title': 'Hệ thống an toàn 2 túi khí',
+                    'desc': '',
+                },
+
+            ]
         }
     },
     {

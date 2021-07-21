@@ -30,6 +30,13 @@
                 menuSlug: 'noi-bat'
             }
         },
+        created: function () {
+            let vm = this;
+            jsonData.getProduct(this.$route.params.slug, (response) => {
+                vm.prod = response.data;
+            });
+            this.menuSlug = this.$route.params.menu
+        },
         watch: {
             $route (){
                 if(this.$route.params.menu){

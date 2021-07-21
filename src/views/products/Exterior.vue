@@ -64,9 +64,9 @@
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img01.png">
                 <p class="tlt_item">Mặt trước</p>
-                <a href="#item_anchor" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
+                <a class="btnShow" v-on:click="myFilter('item_anchor')" v-smooth-scroll></a>
             </div>
-            <div id="item_anchor" class="item_content container">
+            <div ref="item_anchor" class="item_content container">
                 <div class="transition">
                     <title-component :desc="prod.exterior.main_desc" :title="prod.exterior.main_title"/>
                     <image-center-component :img-url="prod.exterior.main_img"/>
@@ -79,9 +79,9 @@
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img02.png">
                 <p class="tlt_item">Cạnh bên</p>
-                <a href="#item_anchor_second" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
+                <a class="btnShow" v-on:click="myFilter('item_anchor_second')" v-smooth-scroll></a>
             </div>
-            <div class="item_content container" id="item_anchor_second">
+            <div class="item_content container" ref="item_anchor_second">
                 <triple-component :list-desc="prod.exterior.list_desc2" v-if="!isMobile()"/>
                 <slide-image-mobile-component :items="prod.exterior.list_desc2" v-else/>
             </div>
@@ -90,9 +90,9 @@
             <div class="item_toggle">
                 <img src="./../../assets/images/item_img03.png">
                 <p class="tlt_item">Mặt sau</p>
-                <a href="#item_anchor_third" class="btnShow" v-on:click="myFilter" v-smooth-scroll></a>
+                <a class="btnShow" v-on:click="myFilter('item_anchor_third')" v-smooth-scroll></a>
             </div>
-            <div class="item_content container" id="item_anchor_third">
+            <div class="item_content container" ref="item_anchor_third">
                 <double-component :list-desc="prod.exterior.list_desc3" v-if="!isMobile()"/>
                 <slide-image-mobile-component :items="prod.exterior.list_desc3" v-else/>
             </div>
@@ -123,9 +123,13 @@
             }
         },
         methods: {
-            myFilter: function (event) {
+            myFilter: function (refName) {
                 if (event.target.parentElement.parentElement.className === 'item_box_tgle') {
                     event.target.parentElement.parentElement.className += ' on';
+                    let element = this.$refs[refName];
+                    let top = element.offsetTop;
+
+                    window.scrollTo({top: top, behavior: 'smooth'});
                 } else {
                     event.target.parentElement.parentElement.className = 'item_box_tgle';
                 }
@@ -142,6 +146,7 @@
                     return false;
                 }
             }
+
         }
     }
 </script>

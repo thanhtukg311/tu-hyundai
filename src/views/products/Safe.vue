@@ -2,8 +2,8 @@
     <div>
         <section class="box01">
             <div class="container">
-                <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
-                <slide-image-component :items="prod.furniture.img_slide"
+                <title-component :desc="prod.safe.desc" :title="prod.safe.title"/>
+                <slide-image-component :items="prod.safe.list_desc"
                                        :settings="false"/>
             </div>
         </section>

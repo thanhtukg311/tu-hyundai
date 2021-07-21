@@ -14,7 +14,7 @@
                 </div>
                 <nav id="gnavi" v-bind:class="{'open' : this.isOpen}" ref="mobileMenu">
                     <ul class="gnavi_pc" @click="openMenuMobile()">
-                        <li><router-link to="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">Trang chủ</router-link></li>
+                        <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">Trang chủ</a></li>
                         <li><router-link to="/">Giới thiệu</router-link></li>
                         <li><router-link :to="{name: 'san-pham', params:{slug: 'i10-2020'}}">Sản phẩm</router-link></li>
                         <li><router-link to="/">Mua xe</router-link></li>
