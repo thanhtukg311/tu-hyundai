@@ -1,7 +1,7 @@
 const products = [
     {
         'slug' : 'i10-2020',
-        'code' : 'i10 2020',
+        'code' : 'Grand i10',
         'name' : 'TẬN HƯỞNG HÀNH TRÌNH MỚI',
         'description' : 'All New Grand i10',
         'img_url' : '/product/i10-ac3-highlights-kv-pc.jpg',
@@ -491,7 +491,7 @@ const products = [
                                 },
                                 {
                                     "title": "Hộp số",
-                                    "desc": "5 AT"
+                                    "desc": "5 MT"
                                 },
                                 {
                                     "title": "Hệ thống dẫn động",
@@ -576,7 +576,7 @@ const products = [
                                 },
                                 {
                                     "title": "Chỉnh ghế lái",
-                                    "desc": "Chỉnh cơ 6 hướng"
+                                    "desc": "Chỉnh cơ 4 hướng"
                                 },
                                 {
                                     "title": "Cửa sổ điều chỉnh điện, xuống kính một chạm vị trí ghế lái",
@@ -698,7 +698,7 @@ const products = [
                                 },
                                 {
                                     "title": "Hộp số",
-                                    "desc": "4 AT"
+                                    "desc": "5 MT"
                                 },
                                 {
                                     "title": "Hệ thống dẫn động",
@@ -722,7 +722,7 @@ const products = [
                                 },
                                 {
                                     "title": "Thông số lốp",
-                                    "desc": "175/60R15"
+                                    "desc": "175/60R14"
                                 },
                                 {
                                     "title": "Lốp dự phòng",
@@ -730,7 +730,7 @@ const products = [
                                 },
                                 {
                                     "title": "Chất liệu lazang",
-                                    "desc": "Vành Đúc hợp kim"
+                                    "desc": "Vành thép"
                                 },
 
                             ]
@@ -743,11 +743,11 @@ const products = [
                                 },
                                 {
                                     "title": "Đèn ban ngày",
-                                    "desc": "LED"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Đèn sương mù phía trước",
-                                    "desc": "Halogen Projector"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Gương chiếu hậu chỉnh điện",

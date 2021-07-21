@@ -27,7 +27,10 @@ export const router = new VueRouter({
         },
     ],
     scrollBehavior () {
-                return {
-                     x: 0, y: 0 }
+        return {
+            x: 0,
+            y: 715,
+            behavior: 'smooth'
+        }
     }
 })
