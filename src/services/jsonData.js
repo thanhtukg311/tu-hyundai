@@ -2,6 +2,7 @@ const products = [
     {
         'slug' : 'i10-2020',
         'code' : 'Grand i10',
+        'title': 'Grand i10 Sedan',
         'name' : 'TẬN HƯỞNG HÀNH TRÌNH MỚI',
         'description' : 'All New Grand i10',
         'img_url' : '/product/i10-ac3-highlights-kv-pc.jpg',

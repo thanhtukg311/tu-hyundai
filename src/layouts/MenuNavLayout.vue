@@ -4,7 +4,7 @@
             <ul class="topic_path">
                 <li><router-link to="./">Trang chủ</router-link></li>
                 <li>Sản phẩm</li>
-                <li>{{prod.code}}</li>
+                <li>{{prod.title}}</li>
                 <li>{{this.menu}}</li>
             </ul>
         </div>

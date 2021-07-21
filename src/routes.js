@@ -32,5 +32,5 @@ export const router = new VueRouter({
             y: 715,
             behavior: 'smooth'
         }
-    }
+    },
 })

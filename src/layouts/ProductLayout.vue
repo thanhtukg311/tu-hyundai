@@ -36,6 +36,7 @@
                 vm.prod = response.data;
             });
             this.menuSlug = this.$route.params.menu
+            document.title = vm.prod.title
         },
         watch: {
             $route (){
