@@ -1,5 +1,5 @@
 <template>
-            <carousel :per-page="1" :mouse-drag="false" :autoplay="true"  :autoplayTimeout="2000" v-if="items.length > 0"  :navigationEnabled="true" :loop="true" id="slide_pc">
+            <carousel :per-page="1" :mouse-drag="false" :autoplay="true"  :autoplayTimeout="2000" v-if="items.length > 0"  :navigationEnabled="true" :loop="true" ref="carousel" id="slide_pc">
                 <slide v-for="(item, index) in items" :key="index">
                     <img :src="item.img" alt="" title="" style="margin-bottom: 30px">
                     <div class="tlt_center">

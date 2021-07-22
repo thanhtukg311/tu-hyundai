@@ -16,7 +16,7 @@
                     <ul class="gnavi_pc" @click="openMenuMobile()">
                         <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">Trang chủ</a></li>
                         <li><router-link to="/">Giới thiệu</router-link></li>
-                        <li><router-link :to="{name: 'san-pham', params:{slug: 'i10-2020'}}">Sản phẩm</router-link></li>
+                        <li><router-link :to="{name: 'san-pham', params:{slug: 'i10-2020', menu: 'noi-bat'}}">Sản phẩm</router-link></li>
                         <li><router-link to="/">Mua xe</router-link></li>
                         <li><router-link to="/">Dịch vụ</router-link></li>
                         <li><router-link to="/">Tin tức</router-link></li>
