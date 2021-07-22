@@ -116,6 +116,9 @@ p:last-child {
     z-index: 9999;
     background: #fff;
 }
+.cnt.pd_t{
+    padding-top:230px;
+}
 #header {
     box-shadow: 2px 3px 4px -1px #33333340;
 }

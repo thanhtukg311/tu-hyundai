@@ -1,8 +1,8 @@
 <template>
     <div>
         <menu-nav-layout :prod="this.prod" :menu-slug="this.menuSlug"/>
-        <highlights v-if="this.menuSlug == 'noi-bat'" :prod="this.prod"/>
-        <exterior v-if="this.menuSlug == 'ngoai-that'" :prod="this.prod"/>
+        <highlights class="cntttt" v-if="this.menuSlug == 'noi-bat'" :prod="this.prod"/>
+        <exterior class="cntttt" v-if="this.menuSlug == 'ngoai-that'" :prod="this.prod"/>
         <furniture v-if="this.menuSlug == 'noi-that'" :prod="this.prod"/>
         <operate v-if="this.menuSlug == 'van-hanh'" :prod="this.prod"/>
         <safe v-if="this.menuSlug == 'an-toan'" :prod="this.prod"/>
