@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="box01">
+        <section class="box01 arr_sp">
             <div class="container">
                 <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
                 <slide-image-component :items="prod.utilities.img_slide"

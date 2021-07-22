@@ -894,6 +894,7 @@ section, .section {
 }
 .img_carcl{
     position: relative;
+    text-align: center;
 }
 .scroll360{
     position:absolute;
@@ -1001,6 +1002,9 @@ section, .section {
 }
 .f_menu_h:hover .sub_menu{
     display:block
+}
+.f_menu_h{
+    position: relative;
 }
 #totop {
     position: fixed;

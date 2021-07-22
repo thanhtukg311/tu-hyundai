@@ -23,8 +23,14 @@
 
 
 
-
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:640px) {
+    .f_menu_h.open .sub_menu{
+        display:block !important;
+    }
+    .f_menu_h.open:after{
+        transform: translate(50%, 55%) rotate(-45deg) scale(0.5) skew(2deg, 2deg) !important;
+    transition: 0.3s;
+    }
     .menu_cnt_top li a p i {
         margin: 0;
         font-size: 26px;
@@ -486,7 +492,6 @@
     }
     #slide_sp .VueCarousel-slide{
         height:100%;
-        padding: 0 10px;
     }
     #slide_sp .VueCarousel-slide img{
         height:250px;
@@ -627,10 +632,52 @@
         bottom: 0px !important;
         letter-spacing: 0.1em;
     }
+    .arr_sp #slide_sp .VueCarousel-navigation-button {
+        top: 30% !important;
+    }
+    .arr_sp .VueCarousel-navigation-prev {
+        left:24px !important;
+        transform: translateY(-50%) translateX(-65%) !important;
+    }
+    .arr_sp .VueCarousel-navigation-next {
+        transform: translateY(-50%) translateX(65%) !important;
+    }
+    .arr_sp #slide_pc .VueCarousel-navigation-button {
+        top: 23% !important;
+        background-color: #0009 !important;
+    }
+    .arr_sp  .VueCarousel-navigation-button.VueCarousel-navigation-prev{
+        left:24px !important;
+    }
+    .arr_sp  .VueCarousel-navigation-button.VueCarousel-navigation-next{
+        right:24px !important;
+    }
+    .scroll360{
+        left:0 !important;
+    }
     /*******************************************************/
     /******************Footer********************************/
     .f_menu_flex, .f_box02_flex, .f_box03_flex{
         flex-wrap:wrap;
+    }
+    .f_menu_h:after{
+        display: block;
+        position: absolute;
+        top: 0;
+        content: '';
+        width: 21px;
+        right:10px;
+        height: 21px;
+        transform: translate(50%) rotate(135deg) scale(0.5) skew(2deg, 2deg);
+        transition: 0.3s;
+        border-top: 3px solid #000;
+        border-right: 3px solid #000;
+    }
+    .f_menu_flex{
+        flex-direction: column;
+    }
+    .f_menu{
+        width:100% !important;
     }
     .f_menu_flex .f_menu, .f_box02_flex .f_menu, .f_box03_flex .f_menu{
         width:50%;
