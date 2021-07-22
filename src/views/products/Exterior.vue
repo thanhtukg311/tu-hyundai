@@ -133,6 +133,7 @@
                 } else {
                     event.target.parentElement.parentElement.className = 'item_box_tgle';
                 }
+                window.dispatchEvent(new Event('resize'))
             },
             play(){
                 //document.getElementsByClassName('fa-sync').add;

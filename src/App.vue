@@ -8,6 +8,9 @@
 export default {
   name: 'App',
   components: {
+  },
+  created(){
+    document.title = 'Grand i10 Sedan'
   }
 }
 </script>
