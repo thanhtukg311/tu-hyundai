@@ -136,8 +136,8 @@
                         <div class="img_app">
                             <img src="./../assets/images/qr_code.png" width="170">
                             <p class="btn_app">
-                                <a class="btn_store" href="https://hyundaime.hyundai-thanhcong.vn/mobile-platform-detection/">Apple Store<i class="fab fa-apple"></i></a>
-                                <a class="btn_store" href="https://hyundaime.hyundai-thanhcong.vn/mobile-platform-detection/">Google Play<i class="fab fa-google-play"></i></a>
+                                <a target="_blank" class="btn_store" href="https://hyundaime.hyundai-thanhcong.vn/mobile-platform-detection/">Apple Store<i class="fab fa-apple"></i></a>
+                                <a target="_blank" class="btn_store" href="https://hyundaime.hyundai-thanhcong.vn/mobile-platform-detection/">Google Play<i class="fab fa-google-play"></i></a>
                             </p>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                         <span>Chính sách bảo mật thông tin</span>
                         <span>© Copyright 2021 Hyundai TC Motor. All rights Reserved</span>
                     </div>
-                    <img src="./../assets/images/img_bcn.png" width="140">
+                  <a href="http://online.gov.vn/Home/WebDetails/76931?AspxAutoDetectCookieSupport=1"  target="_blank"><img src="./../assets/images/img_bcn.png" width="140"></a>
                 </div>
             </div>
             <ul class="sliderbar_fix">

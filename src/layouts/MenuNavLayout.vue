@@ -89,6 +89,9 @@
             this.top = this.$refs.menu_fix.offsetTop
             document.addEventListener('scroll', this.scrollMenu)
         },
+        destroyed () {
+            window.removeEventListener('scroll', this.scrollMenu);
+        },
         methods: {
             scrollMenu(){
                 if(window.scrollY > this.top){

@@ -26,10 +26,17 @@ export const router = new VueRouter({
             ]
         },
     ],
-    scrollBehavior () {
+    scrollBehavior (to) {
+        if(to.params.menu == 'noi-bat'){
+            return {
+                x: 0,
+                y: 0,
+                behavior: 'smooth'
+            }
+        }
         return {
             x: 0,
-            y: 715,
+            y: 711,
             behavior: 'smooth'
         }
     },
