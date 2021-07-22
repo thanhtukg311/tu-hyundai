@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="top_bar">
         <div class="container">
             <ul class="topic_path">
                 <li><router-link to="./">Trang chủ</router-link></li>

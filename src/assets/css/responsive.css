@@ -240,6 +240,7 @@
     .header_main #gnavi.open{
         right:0;
         opacity: 1;
+        margin-right:0;
     }
 
     .gnavi_pc {

@@ -109,9 +109,18 @@ p:last-child {
 }
 
 #header {
+    position: fixed;
+    box-shadow: 2px 3px 4px -1px #33333340;
+    width: 101vw;
+    left: 50%;
+    z-index: 9999;
+    background: #fff;
+    transform: translate(-50%);
     box-shadow: 2px 3px 4px -1px #33333340;
 }
-
+.top_bar{
+    padding-top:45px;
+}
 .header_main {
     display: flex;
     align-items: center;
@@ -937,6 +946,16 @@ section, .section {
 }
 #slide_pc .VueCarousel-wrapper{
     height:810px;
+}
+#furni #slide_pc .VueCarousel-wrapper{
+    height:auto !important
+}
+#furni #slide_pc .VueCarousel-pagination {
+    bottom: 245px;
+}
+#furni #slide_pc .VueCarousel-navigation-button {
+    top: 36%;
+    background: #000000a8;
 }
 /******************************Footer********************************/
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="box01">
+        <section class="box01" id="furni">
             <div class="container">
                 <title-component :desc="prod.furniture.desc" :title="prod.furniture.title"/>
                 <image-center-component :img-url="prod.furniture.img1"/>
