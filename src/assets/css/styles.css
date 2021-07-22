@@ -107,19 +107,17 @@ p:last-child {
 .header_sp {
     display: none;
 }
-
-#header {
+.menu_fix.fixed{
     position: fixed;
-    box-shadow: 2px 3px 4px -1px #33333340;
+    top: 0;
     width: 101vw;
     left: 50%;
+    transform: translate(-50%);
     z-index: 9999;
     background: #fff;
-    transform: translate(-50%);
-    box-shadow: 2px 3px 4px -1px #33333340;
 }
-.top_bar{
-    padding-top:45px;
+#header {
+    box-shadow: 2px 3px 4px -1px #33333340;
 }
 .header_main {
     display: flex;

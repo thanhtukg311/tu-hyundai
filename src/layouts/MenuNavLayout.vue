@@ -16,6 +16,7 @@
                <span> {{prod.name}}</span></h2>
         </div>
         <div id="content">
+            <div  class="menu_fix">
             <div class="menu_content">
                 <ul class="container menu_cnt_top">
                     <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe"><p><i class="fal fa-sliders-h"></i><span>Chọn xe</span></p></a></li>
@@ -38,6 +39,7 @@
                     <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'tien-nghi' }}" v-bind:class="{'active': menuSlug == 'tien-nghi'}">Tiện nghi</router-link></li>
                     <li><router-link :to="{name: 'san-pham', params:{slug: prod.slug, menu: 'thong-so' }}" v-bind:class="{'active': menuSlug == 'thong-so'}">Thông số xe</router-link></li>
                 </ul>
+            </div>
             </div>
         </div>
     </div>
