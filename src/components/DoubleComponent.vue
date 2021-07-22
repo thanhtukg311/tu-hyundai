@@ -7,7 +7,7 @@
                     <p class="tlt_blog">
                         {{desc.title}}
                     </p>
-                    <span>{{desc.desc}}</span>
+                    <span style="font-size: 16px;">{{desc.desc}}</span>
             </li>
         </ul>
 </template>

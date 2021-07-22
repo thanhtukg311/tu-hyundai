@@ -486,6 +486,7 @@
     }
     #slide_sp .VueCarousel-slide{
         height:100%;
+        padding: 0 10px;
     }
     #slide_sp .VueCarousel-slide img{
         height:250px;
@@ -513,12 +514,10 @@
     }
     #slide_sp .VueCarousel-navigation-button {
         top: 42%;
-        font-size: 12px;
         background: #0009;
     }
     #slide_pc .VueCarousel-navigation-button{
         top:28% !important;
-        font-size: 12px;
         background-color: #0009 !important;
     }
     #slide_pc .VueCarousel-wrapper {
@@ -668,7 +667,9 @@
     .item_toggle img{
         height:100% !important; 
     }
-
+    .d-show {
+        display: none;
+    }
 }
 
 @media only screen and (max-width:374px) {

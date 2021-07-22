@@ -12,12 +12,13 @@
 <!--                <sub-title-component :desc="prod.utilities.main_desc" :title="prod.utilities.main_title"/>-->
 <!--            </div>-->
 <!--        </section>-->
+        <div style="height: 20px" class="d-show"></div>
         <section class="box02"  v-if="!isMobileCheck()">
             <div class="container">
                 <triple-component :list-desc="prod.utilities.list_desc"/>
             </div>
         </section>
-        <prev-next-component :prev="{slug:prod.slug, menu:'an-toan', name:'An toàn'}" :next="{slug:prod.slug, menu:'thong-so', name:'Thông số'}"/>
+        <prev-next-component :prev="{slug:prod.slug, menu:'an-toan', name:'An toàn'}" :next="{slug:prod.slug, menu:'thong-so', name:'Thông số xe'}"/>
     </div>
 </template>
 <script>

@@ -8,7 +8,7 @@
             <div class="tbl_content">
                 <div class="row_cnt" v-for="(content, index) in data.content" :key="index">
                     <p>{{content.title}}</p>
-                    <p class="w20" v-for="(desc, index) in content.desc" :key="index">{{desc}}</p>
+                    <p class="w20" v-for="(desc, index) in content.desc" :key="index" style="color: #000">{{desc}}</p>
                 </div>
             </div>
         </div>

@@ -62,9 +62,9 @@
         </section>
         <div class="item_box_tgle">
             <div class="item_toggle">
-                <img src="./../../assets/images/item_img01.png">
+                <img src="./../../assets/images/item_img01.jpg">
                 <p class="tlt_item">Mặt trước</p>
-                <a class="btnShow" v-on:click="myFilter('item_anchor')" v-smooth-scroll></a>
+                <a class="btnShow" v-on:click="myFilter('item_anchor')" ></a>
             </div>
             <div ref="item_anchor" class="item_content container">
                 <div class="transition">
@@ -77,9 +77,9 @@
         </div>
         <div class="item_box_tgle">
             <div class="item_toggle">
-                <img src="./../../assets/images/item_img02.png">
+                <img src="./../../assets/images/item_img02.jpg">
                 <p class="tlt_item">Cạnh bên</p>
-                <a class="btnShow" v-on:click="myFilter('item_anchor_second')" v-smooth-scroll></a>
+                <a class="btnShow" v-on:click="myFilter('item_anchor_second')" ></a>
             </div>
             <div class="item_content container" ref="item_anchor_second">
                 <triple-component :list-desc="prod.exterior.list_desc2" v-if="!isMobile()"/>
@@ -88,9 +88,9 @@
         </div>
         <div class="item_box_tgle">
             <div class="item_toggle">
-                <img src="./../../assets/images/item_img03.png">
+                <img src="./../../assets/images/item_img03.jpg">
                 <p class="tlt_item">Mặt sau</p>
-                <a class="btnShow" v-on:click="myFilter('item_anchor_third')" v-smooth-scroll></a>
+                <a class="btnShow" v-on:click="myFilter('item_anchor_third')" ></a>
             </div>
             <div class="item_content container" ref="item_anchor_third">
                 <double-component :list-desc="prod.exterior.list_desc3" v-if="!isMobile()"/>

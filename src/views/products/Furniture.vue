@@ -5,7 +5,7 @@
                 <title-component :desc="prod.furniture.desc" :title="prod.furniture.title"/>
                 <image-center-component :img-url="prod.furniture.img1"/>
                 <slide-image-component :items="prod.furniture.img_slide2"
-                               :settings="carouselSettings"/>
+                               :settings="carouselSettings" :singlestyle="true" />
             </div>
         </section>
 <!--        <section class="box02">-->

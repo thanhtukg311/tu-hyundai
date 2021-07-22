@@ -74,13 +74,16 @@
                         this.menu = 'Nội thất'
                         break;
                     case "thong-so":
-                        this.menu = 'Thông số'
+                        this.menu = 'Thông số xe'
                         break;
                     case "tien-nghi":
                         this.menu = 'Tiện nghi'
                         break;
                     case "van-hanh":
                         this.menu = 'Vận hành'
+                        break;
+                    case "an-toan":
+                        this.menu = 'An toàn'
                         break;
                 }
             }

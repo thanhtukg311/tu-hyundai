@@ -1,13 +1,13 @@
 <template>
     <div>
         <menu-nav-layout :prod="this.prod" :menu-slug="this.menuSlug"/>
-        <highlights class="cntttt" v-if="this.menuSlug == 'noi-bat'" :prod="this.prod"/>
-        <exterior class="cntttt" v-if="this.menuSlug == 'ngoai-that'" :prod="this.prod"/>
-        <furniture v-if="this.menuSlug == 'noi-that'" :prod="this.prod"/>
-        <operate v-if="this.menuSlug == 'van-hanh'" :prod="this.prod"/>
-        <safe v-if="this.menuSlug == 'an-toan'" :prod="this.prod"/>
-        <utilities v-if="this.menuSlug == 'tien-nghi'" :prod="this.prod"/>
-        <specifications v-if="this.menuSlug == 'thong-so'" :prod="this.prod"/>
+        <highlights class="cnt" v-if="this.menuSlug == 'noi-bat'" :prod="this.prod"/>
+        <exterior class="cnt" v-if="this.menuSlug == 'ngoai-that'" :prod="this.prod"/>
+        <furniture class="cnt" v-if="this.menuSlug == 'noi-that'" :prod="this.prod"/>
+        <operate class="cnt" v-if="this.menuSlug == 'van-hanh'" :prod="this.prod"/>
+        <safe class="cnt" v-if="this.menuSlug == 'an-toan'" :prod="this.prod"/>
+        <utilities class="cnt" v-if="this.menuSlug == 'tien-nghi'" :prod="this.prod"/>
+        <specifications class="cnt" v-if="this.menuSlug == 'thong-so'" :prod="this.prod"/>
     </div>
 </template>
 

@@ -45,7 +45,7 @@ const products = [
         },
         'highlights': {
             'title': 'Không gian rộng rãi trong một thiết kế nhỏ gọn',
-            'desc': 'Grand i10 sở hữu kích thước lớn hàng đầu phân khúc, đem đến một không gian thoải mái tối đa. Bên cạnh đó là sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích.',
+            'desc': 'Grand i10 sở hữu kích thước lớn hàng đầu phân khúc, đem đến một không gian thoải mái tối đa.<br> Bên cạnh đó là sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích.',
             'img1': '/product/hi_i1.jpg',
             'img2': '/product/hi_i2.jpg',
             'img3': '/product/hi_i3.jpg',
@@ -98,28 +98,38 @@ const products = [
                 },
                 {
                     'id': '2',
-                    'big': '/product/hi_desc3.jpg',
-                    'thumb': '/product/hi_desc3.jpg'
+                    'big': '/product/hi_i2.jpg',
+                    'thumb': '/product/hi_i2.jpg'
                 },
                 {
                     'id': '3',
-                    'big': '/product/hi_i4.jpg',
-                    'thumb': '/product/hi_i4.jpg'
+                    'big': '/product/hi_i3.jpg',
+                    'thumb': '/product/hi_i3.jpg'
                 },
                 {
                     'id': '4',
-                    'big': '/product/c799fdcc50ef7dba5bd13dea37b46c43.jpg',
-                    'thumb': '/product/c799fdcc50ef7dba5bd13dea37b46c43.jpg'
-                },
-                {
-                    'id': '5',
                     'big': '/product/hi_i4.jpg',
                     'thumb': '/product/hi_i4.jpg'
                 },
                 {
+                    'id': '5',
+                    'big': '/product/hi_i5.jpg',
+                    'thumb': '/product/hi_i5.jpg'
+                },
+                {
                     'id': '6',
-                    'big': '/product/hi_desc3.jpg',
-                    'thumb': '/product/hi_desc3.jpg'
+                    'big': '/product/hi_i6.jpg',
+                    'thumb': '/product/hi_i6.jpg'
+                },
+                {
+                    'id': '7',
+                    'big': '/product/hi_i7.jpg',
+                    'thumb': '/product/hi_i7.jpg'
+                },
+                {
+                    'id': '8',
+                    'big': '/product/hi_i8.jpg',
+                    'thumb': '/product/hi_i8.jpg'
                 },
             ]
         },
@@ -449,6 +459,213 @@ const products = [
             ],
             'version_info': [
                 {
+                    'version_id': 1,
+                    'version_name': '1.2 MT Tiêu chuẩn',
+                    'version_table':[
+                        {'name': 'Kích thước & Trọng lượng',
+                            "content":[
+                                {
+                                    "title": "Kích thước tổng thể (DxRxC) (mm)",
+                                    "desc": "3,995 x 1,680 x 1,520"
+                                },
+                                {
+                                    "title": "Chiều dài cơ sở (mm)",
+                                    "desc": "2,450"
+                                },
+                                {
+                                    "title": "Khoảng sáng gầm xe (mm)",
+                                    "desc": "157"
+                                },
+                                {
+                                    "title": "Dung tích bình nhiên liệu (Lít)",
+                                    "desc": "37"
+                                },
+                            ]
+                        },
+                        {'name': 'Động Cơ, Hộp số & Vận hành',
+                            "content":[
+                                {
+                                    "title": "Động cơ",
+                                    "desc": "Kappa 1.2 MPI"
+                                },
+                                {
+                                    "title": "Đung tích xi lanh (cc)",
+                                    "desc": "1197"
+                                },
+                                {
+                                    "title": "Công suất cực đại (PS/rpm)",
+                                    "desc": "83/6,000"
+                                },
+                                {
+                                    "title": "Mô men xoắn cực đại (Nm/rpm)",
+                                    "desc": "114/4,000"
+                                },
+                                {
+                                    "title": "Hộp số",
+                                    "desc": "5 MT"
+                                },
+                                {
+                                    "title": "Hệ thống dẫn động",
+                                    "desc": "Dẫn động cầu trước"
+                                },
+                                {
+                                    "title": "Phanh trước/sau",
+                                    "desc": "Đĩa/Tang trống"
+                                },
+                                {
+                                    "title": "Hệ thống treo trước",
+                                    "desc": "MacPherson"
+                                },
+                                {
+                                    "title": "Hệ thống treo sau",
+                                    "desc": "Thanh xoắn"
+                                },
+                                {
+                                    "title": "Trợ lực lái",
+                                    "desc": "Trợ lực lái điện"
+                                },
+                                {
+                                    "title": "Thông số lốp",
+                                    "desc": "175/60R14"
+                                },
+                                {
+                                    "title": "Lốp dự phòng",
+                                    "desc": "Vành giảm cỡ"
+                                },
+                                {
+                                    "title": "Chất liệu lazang",
+                                    "desc": "Vành thép"
+                                },
+
+                            ]
+                        },
+                        {'name': 'Ngoại thất',
+                            "content":[
+                                {
+                                    "title": "Cụm đèn pha (pha/cos)",
+                                    "desc": "Halogen"
+                                },
+                                {
+                                    "title": "Đèn ban ngày",
+                                    "desc": ""
+                                },
+                                {
+                                    "title": "Đèn sương mù phía trước",
+                                    "desc": ""
+                                },
+                                {
+                                    "title": "Gương chiếu hậu chỉnh điện",
+                                    "desc": "Có gập điện, tích hợp đèn báo rẽ có sấy"
+                                },
+                                {
+                                    "title": "Tay nắm cửa mạ crom",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Ăng ten",
+                                    "desc": "Vây cá"
+                                },
+                            ]
+                        },
+                        {'name': 'Nội thất',
+                            "content":[
+                                {
+                                    "title": "Vô lăng điều chỉnh 2 hướng",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Vô lăng bọc da",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Chất liệu ghế",
+                                    "desc": "Nỉ"
+                                },
+                                {
+                                    "title": "Màu nội thất",
+                                    "desc": "Đen Đỏ"
+                                },
+                                {
+                                    "title": "Chỉnh ghế lái",
+                                    "desc": "Chỉnh cơ 6 hướng"
+                                },
+                                {
+                                    "title": "Cửa sổ điều chỉnh điện, xuống kính một chạm vị trí ghế lái",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Điều hòa",
+                                    "desc": "Chỉnh cơ"
+                                },
+                                {
+                                    "title": "Cụm màn thông tin",
+                                    "desc": "Màn hình LCD 5.3 inch"
+                                },
+                                {
+                                    "title": "Màn hình AVN cảm ứng 8 inch tích hợp hệ thống hệ thống định vị dẫn đường.",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Hệ thống giải trí",
+                                    "desc": "Bluetooth/ Radio/ MP4/Apple Carplay/Android Auto"
+                                },
+                                {
+                                    "title": "Số loa",
+                                    "desc": "4"
+                                },
+                                {
+                                    "title": "Cụm điều khiển media kết hợp với nhận diện giọng nói",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Cửa gió điều hòa và cổng sạc USB hàng ghế thứ 2 ",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Chìa khóa thông minh và Khởi động nút bấm",
+                                    "desc": "Có"
+                                },
+                            ]
+                        },
+                        {'name': 'An toàn',
+                            "content":[
+                                {
+                                    "title": "Camera lùi",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Cảm biến lùi ",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Cảm biến áp suất lốp",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Chống bó cứng phanh ABS",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Phân bổ lực phanh điện tử EBD",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Hỗ trợ lực phanh khẩn cấp BA",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Chìa khóa mã hóa & hệ thống chống trộm Immobilizer",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Số túi khí",
+                                    "desc": "2"
+                                },
+                            ]
+                        },
+                    ],
+                },
+                {
                     'version_id': 2,
                     'version_name': '1.2 MT',
                     'version_table':[
@@ -657,213 +874,6 @@ const products = [
                 },
                 {
                     'version_id': 3,
-                    'version_name': '1.2 MT Tiêu chuẩn',
-                    'version_table':[
-                        {'name': 'Kích thước & Trọng lượng',
-                            "content":[
-                                {
-                                    "title": "Kích thước tổng thể (DxRxC) (mm)",
-                                    "desc": "3,995 x 1,680 x 1,520"
-                                },
-                                {
-                                    "title": "Chiều dài cơ sở (mm)",
-                                    "desc": "2,450"
-                                },
-                                {
-                                    "title": "Khoảng sáng gầm xe (mm)",
-                                    "desc": "157"
-                                },
-                                {
-                                    "title": "Dung tích bình nhiên liệu (Lít)",
-                                    "desc": "37"
-                                },
-                            ]
-                        },
-                        {'name': 'Động Cơ, Hộp số & Vận hành',
-                            "content":[
-                                {
-                                    "title": "Động cơ",
-                                    "desc": "Kappa 1.2 MPI"
-                                },
-                                {
-                                    "title": "Đung tích xi lanh (cc)",
-                                    "desc": "1197"
-                                },
-                                {
-                                    "title": "Công suất cực đại (PS/rpm)",
-                                    "desc": "83/6,000"
-                                },
-                                {
-                                    "title": "Mô men xoắn cực đại (Nm/rpm)",
-                                    "desc": "114/4,000"
-                                },
-                                {
-                                    "title": "Hộp số",
-                                    "desc": "5 MT"
-                                },
-                                {
-                                    "title": "Hệ thống dẫn động",
-                                    "desc": "Dẫn động cầu trước"
-                                },
-                                {
-                                    "title": "Phanh trước/sau",
-                                    "desc": "Đĩa/Tang trống"
-                                },
-                                {
-                                    "title": "Hệ thống treo trước",
-                                    "desc": "MacPherson"
-                                },
-                                {
-                                    "title": "Hệ thống treo sau",
-                                    "desc": "Thanh xoắn"
-                                },
-                                {
-                                    "title": "Trợ lực lái",
-                                    "desc": "Trợ lực lái điện"
-                                },
-                                {
-                                    "title": "Thông số lốp",
-                                    "desc": "175/60R14"
-                                },
-                                {
-                                    "title": "Lốp dự phòng",
-                                    "desc": "Vành giảm cỡ"
-                                },
-                                {
-                                    "title": "Chất liệu lazang",
-                                    "desc": "Vành thép"
-                                },
-
-                            ]
-                        },
-                        {'name': 'Ngoại thất',
-                            "content":[
-                                {
-                                    "title": "Cụm đèn pha (pha/cos)",
-                                    "desc": "Halogen"
-                                },
-                                {
-                                    "title": "Đèn ban ngày",
-                                    "desc": ""
-                                },
-                                {
-                                    "title": "Đèn sương mù phía trước",
-                                    "desc": ""
-                                },
-                                {
-                                    "title": "Gương chiếu hậu chỉnh điện",
-                                    "desc": "Có gập điện, tích hợp đèn báo rẽ có sấy"
-                                },
-                                {
-                                    "title": "Tay nắm cửa mạ crom",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Ăng ten",
-                                    "desc": "Vây cá"
-                                },
-                            ]
-                        },
-                        {'name': 'Nội thất',
-                            "content":[
-                                {
-                                    "title": "Vô lăng điều chỉnh 2 hướng",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Vô lăng bọc da",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Chất liệu ghế",
-                                    "desc": "Nỉ"
-                                },
-                                {
-                                    "title": "Màu nội thất",
-                                    "desc": "Đen Đỏ"
-                                },
-                                {
-                                    "title": "Chỉnh ghế lái",
-                                    "desc": "Chỉnh cơ 6 hướng"
-                                },
-                                {
-                                    "title": "Cửa sổ điều chỉnh điện, xuống kính một chạm vị trí ghế lái",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Điều hòa",
-                                    "desc": "Chỉnh cơ"
-                                },
-                                {
-                                    "title": "Cụm màn thông tin",
-                                    "desc": "Màn hình LCD 5.3 inch"
-                                },
-                                {
-                                    "title": "Màn hình AVN cảm ứng 8 inch tích hợp hệ thống hệ thống định vị dẫn đường.",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Hệ thống giải trí",
-                                    "desc": "Bluetooth/ Radio/ MP4/Apple Carplay/Android Auto"
-                                },
-                                {
-                                    "title": "Số loa",
-                                    "desc": "4"
-                                },
-                                {
-                                    "title": "Cụm điều khiển media kết hợp với nhận diện giọng nói",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Cửa gió điều hòa và cổng sạc USB hàng ghế thứ 2 ",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Chìa khóa thông minh và Khởi động nút bấm",
-                                    "desc": "Có"
-                                },
-                            ]
-                        },
-                        {'name': 'An toàn',
-                            "content":[
-                                {
-                                    "title": "Camera lùi",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Cảm biến lùi ",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Cảm biến áp suất lốp",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Chống bó cứng phanh ABS",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Phân bổ lực phanh điện tử EBD",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Hỗ trợ lực phanh khẩn cấp BA",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Chìa khóa mã hóa & hệ thống chống trộm Immobilizer",
-                                    "desc": "Có"
-                                },
-                                {
-                                    "title": "Số túi khí",
-                                    "desc": "2"
-                                },
-                            ]
-                        },
-                    ],
-                },
-                {
-                    'version_id': 1,
                     'version_name': '1.2 AT',
                     'version_table':[
                         {'name': 'Kích thước & Trọng lượng',

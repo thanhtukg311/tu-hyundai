@@ -6,7 +6,7 @@
         <div class="tbl_content">
             <div class="row_cnt" v-for="(content, index) in data.content" :key="index">
                 <p>{{content.title}}</p>
-                <p>{{content.desc}}</p>
+                <p style="color: #000">{{content.desc}}</p>
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@
                 </div>
                 <div class="select_ver">
                     <p class="tlt_ver">Chọn phiên bản</p>
+                    <div style="width: 56px"></div>
                     <div class="custom-select-wrapper">
                         <div class="custom-select">
                             <div class="custom-select__trigger" v-on:click="openSelect">
@@ -39,6 +40,7 @@
                 </div>
             </div>
         </section>
+        <div style="height: 70px" class="d-show"></div>
         <prev-next-component :prev="{slug:prod.slug, menu:'tien-nghi', name:'Tiện nghi'}" :next="false"/>
     </div>
 </template>

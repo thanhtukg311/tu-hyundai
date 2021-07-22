@@ -8,6 +8,7 @@
                 <image-center-component :img-url="prod.operate.img2"/>
                 <double-component :list-desc="prod.operate.list_desc" v-if="!isMobile()"/>
                 <slide-image-mobile-component :items="prod.operate.list_desc" v-else/>
+                <div style="height: 70px" class="d-show"></div>
             </div>
         </section>
         <!-- <section class="box02">
