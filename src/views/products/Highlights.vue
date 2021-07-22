@@ -32,7 +32,7 @@
                                        :auto-slide-interval="5500"/>
                 </div>
                 <p class="btn_r">
-                    <a class="btn_down" target="_blank" href="./public/product_new/Grand_i10_Sedan_Catalogue.pdf" download><span><img src="./../../assets/images/btn_download.png"></span>Tải
+                    <a class="btn_down" target="_blank" href="./public/product_new/Grand-i10-Sedan-Catalogue.pdf" download><span><img src="./../../assets/images/btn_download.png"></span>Tải
                         Catalog</a>
                 </p>
             </div>
