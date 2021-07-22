@@ -220,7 +220,7 @@ p:last-child {
 .tlt_slider_main {
     position: absolute;
     top: 70px;
-    left: calc(50% - 445px);
+    left: calc(50% - 400px);
     font-size: 54px;
     font-weight: bold;
     color: #fff;
