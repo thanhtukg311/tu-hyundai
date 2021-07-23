@@ -62,7 +62,7 @@
         </section>
         <div class="item_box_tgle">
             <div class="item_toggle">
-                <img src="./../../assets/images/item_img01.jpg">
+                <img :src="prod.exterior.img_toggle1">
                 <p class="tlt_item">Mặt trước</p>
                 <a class="btnShow" v-on:click="myFilter('item_anchor')" ></a>
             </div>
@@ -77,7 +77,7 @@
         </div>
         <div class="item_box_tgle">
             <div class="item_toggle">
-                <img src="./../../assets/images/item_img02.jpg">
+                <img :src="prod.exterior.img_toggle2">
                 <p class="tlt_item">Cạnh bên</p>
                 <a class="btnShow" v-on:click="myFilter('item_anchor_second')" ></a>
             </div>
@@ -88,12 +88,14 @@
         </div>
         <div class="item_box_tgle">
             <div class="item_toggle">
-                <img src="./../../assets/images/item_img03.jpg">
+                <img :src="prod.exterior.img_toggle3">
                 <p class="tlt_item">Mặt sau</p>
                 <a class="btnShow" v-on:click="myFilter('item_anchor_third')" ></a>
             </div>
             <div class="item_content container" ref="item_anchor_third">
-                <double-component :list-desc="prod.exterior.list_desc3" v-if="!isMobile()"/>
+
+                <triple-component :list-desc="prod.exterior.list_desc3" v-if="!isMobile() && prod.exterior.list_desc3.length == 3"/>
+                <double-component :list-desc="prod.exterior.list_desc3" v-else-if="!isMobile() && prod.exterior.list_desc3.length == 2"/>
                 <slide-image-mobile-component :items="prod.exterior.list_desc3" v-else/>
             </div>
         </div>

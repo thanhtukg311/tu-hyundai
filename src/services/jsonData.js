@@ -202,6 +202,9 @@ const products = [
             'desc': 'Mọi đường nét trên Grand i10 đều để lại ấn tượng về sự cá tính, thời trang và phong cách',
             'img1': '/product/op_i1.jpg',
             'img2': '/product/op_i2.png',
+            'img_toggle1': '/product_new/ngoai_that/MaskGroup-min.jpg',
+            'img_toggle2': '/product_new/ngoai_that/MaskGroup2-min.jpg',
+            'img_toggle3': '/product_new/ngoai_that/MaskGroup3-min.jpg',
             'main_img': '/product/c799fdcc50ef7dba5bd13dea37b46c43.jpg',
             'main_title': 'Mặt trước thiết kế thể thao mạnh mẽ',
             'main_desc': 'Kích thích thị giác bằng lưới tản nhiệt thác nước mới cùng cụm đèn ban ngày DRL thiết kế phá cách dạng boomerang và đèn sương mù.',
@@ -1130,7 +1133,7 @@ const products = [
                     'desc': 'Việc di chuyển lùi cũng như đỗ xe trở nên dễ dàng hơn với hình ảnh sắc nét từ camera lùi',
                 },
                 {
-                    'img': '/product/3e67a52f6b99a0c8812f5e2d41e594db.jpg',
+                    'img': '/Grandi10/tiennghi/tienghi1.png',
                     'title': 'Cảm biến áp suất lốp',
                     'desc': 'Loại bỏ nỗi lo về các vấn đề về lốp xe, an tâm tận hưởng các chuyến đi',
                 },
@@ -1246,7 +1249,7 @@ const products = [
         'furniture': {
             'title': 'Tiện nghi trên từng cây số',
             'desc': 'Khoang nội thất của Grand i10 All New là tất cả những gì bạn cần. Đó là sự rộng rãi của không gian kết hợp cùng sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích vượt tầm phân khúc.',
-            'img1': '/product/fu_i1.jpg',
+            'img1': '/Grandi10/noibat/h4.jpg',
             'img2': '/product/fu_i2.jpg',
             'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
             'main_title': 'Màn hình trung tâm cảm ứng 8 inch',
@@ -1280,6 +1283,11 @@ const products = [
                     'desc': 'Màn hình thông tin dạng semi-digital cung cấp đầy đủ các thông tin trực quan cho người lái',
                 },
                 {
+                    'img': '/Grandi10/noithat/Rectangle 93-min.jpg',
+                    'title': 'Điều khiển hành trình',
+                    'desc': 'Tận hưởng trọn vẹn chuyến đi với tính năng vượt tầm phân khúc',
+                },
+                {
                     'img': '/product_new/noi_that/Asset8-min.jpg',
                     'title': 'Cụm điểu chỉnh media tích hợp nhận diện giọng nói',
                     'desc': 'Dễ dàng điều chỉnh media với cụm nút tích hợp và chức năng nhận diện giọng nói.\n',
@@ -1289,7 +1297,7 @@ const products = [
         'operate': {
             'title': 'Khả năng vận hành xuất sắc',
             'desc': 'Grand i10 được tối ưu với hệ thống khung gầm, động cơ, hộp số đem đến khả năng vận hành xuất sắc, cân bằng giữa những yếu tố bền bỉ và tiết kiệm.',
-            'img1': '/product/op_i1.jpg',
+            'img1': '/Grandi10/AI3_2020_GEN_LHD_EXTERIOR_REAR_PARKING_ASSIST_SYSTEM_CMYK 1.png',
             'img2': '/product/op_i2.png',
             'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
             'main_title': 'Động cơ Kappa 1.2L',
@@ -1312,17 +1320,20 @@ const products = [
             'desc': 'Mọi đường nét trên Grand i10 đều để lại ấn tượng về sự cá tính, thời trang và phong cách',
             'img1': '/product/op_i1.jpg',
             'img2': '/product/op_i2.png',
-            'main_img': '/product/c799fdcc50ef7dba5bd13dea37b46c43.jpg',
+            'main_img': '/Grandi10/b81f9824cb4a5fd7a73acb7989c6f8c2.jpg',
             'main_title': 'Mặt trước thiết kế thể thao mạnh mẽ',
             'main_desc': 'Kích thích thị giác bằng lưới tản nhiệt thác nước mới cùng cụm đèn ban ngày DRL thiết kế phá cách dạng boomerang và đèn sương mù.',
+            'img_toggle1': '/Grandi10/ngoaithat/Mask Group-min.png',
+            'img_toggle2': '/Grandi10/ngoaithat/Mask Group-1-min.png',
+            'img_toggle3': '/Grandi10/ngoaithat/Mask Group-2-min.png',
             'list_desc' : [
                 {
-                    'img': '/product/ex_i1.jpg',
+                    'img': '/Grandi10/ngoaithat/h1.png',
                     'title': 'Cụm đèn ban ngày DRL (Daytime Running Light) được thiết kế phá cách dạng boomerang',
                     'desc': '',
                 },
                 {
-                    'img': '/product/ex_i2.jpg',
+                    'img': '/Grandi10/ngoaithat/h2.jpg',
                     'title': 'Đèn sương mù tích hợp trên cản trước thể thao',
                     'desc': '',
                 },
@@ -1346,12 +1357,17 @@ const products = [
             ],
             'list_desc3' : [
                 {
-                    'img': '/product/highligt2.jpg',
+                    'img': '/Grandi10/ngoaithat/h3.jpg',
                     'title': 'Đèn hậu dạng LED thiết kế cách điệu, đồng bộ với cụm đèn phía trước',
                     'desc': '',
                 },
                 {
-                    'img': '/product/ex_i5.jpg',
+                    'img': '/Grandi10/ngoaithat/h4.png',
+                    'title': 'Đèn hậu dạng LED thiết kế cách điệu, đồng bộ với cụm đèn phía trước',
+                    'desc': '',
+                },
+                {
+                    'img': '/Grandi10/ngoaithat/h5.jpg',
                     'title': 'Đèn phanh trên cao',
                     'desc': '',
                 },
@@ -2196,17 +2212,17 @@ const products = [
             'desc': '',
             'list_desc' : [
                 {
-                    'img': '/product_new/an_toan/Asset6-min.png',
+                    'img': '/Grandi10/antoan/Asset 4-min.jpg',
                     'title': 'Cảm biến va chạm phía sau',
                     'desc': '',
                 },
                 {
-                    'img': '/product_new/an_toan/Asset7-min.png',
+                    'img': '/Grandi10/antoan/Asset 8-min.jpg',
                     'title': 'Camera lùi hỗ trợ đỗ xe',
                     'desc': '',
                 },
                 {
-                    'img': '/product_new/an_toan/Rectangle91min.png',
+                    'img': '/Grandi10/antoan/z2615763810024_91f88c75a978fb053beaf1ce9f552b43-min.jpg',
                     'title': 'Hệ thống khung mới cứng vững hơn với thép cường độ cao AHSS',
                     'desc': '',
                 },
