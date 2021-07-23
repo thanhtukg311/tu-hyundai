@@ -319,11 +319,17 @@ p:last-child {
 }
 
 .tlt_h3 {
+    width:75%;
     font-size: 44px;
     font-weight: bold;
     line-height: 1.2em;
-    margin-bottom: 30px;
-    letter-spacing: -1px;
+    margin-top: 0 !important;
+    margin:30px auto !important;
+    letter-spacing: -2px;
+}
+.tlt_left .tlt_h3{
+    margin:0 !important;
+    margin-bottom:30px !important;
 }
 
 .tlt_h4 {
@@ -984,6 +990,11 @@ section, .section {
 #furni #slide_pc .VueCarousel-navigation-button {
     top: 36%;
     background: #000000a8;
+}
+.slide_tn .VueCarousel .tlt_h3{
+    font-size:40px !important;
+    margin:0 auto !important;
+    margin-bottom:30px !important
 }
 /******************************Footer********************************/
 
