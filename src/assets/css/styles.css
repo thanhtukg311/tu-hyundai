@@ -901,7 +901,7 @@ section, .section {
     width:100px;
     height:100px;
     top:40%;
-    left:50%;
+    left:0;
     z-index: 1;
 }
 .scroll360 img{
