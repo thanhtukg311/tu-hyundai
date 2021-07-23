@@ -58,7 +58,7 @@
                     <a
                         class="btn_down"
                         target="_blank"
-                        href="../../../product_new/Grandi10SedanCatalogue.pdf"
+                        :href="prod.catalog"
                         download
                         ><span
                             ><img

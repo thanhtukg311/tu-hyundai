@@ -5,6 +5,7 @@ const products = [
         'title': 'Grand i10 Sedan',
         'name' : 'TẬN HƯỞNG HÀNH TRÌNH MỚI',
         'description' : 'All New Grand i10',
+        'catalog':'/product_new/Grandi10SedanCatalogue.pdf',
         'img_url' : '/product/i10-ac3-highlights-kv-pc.jpg',
         'utilities': {
             'title': 'Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn',
@@ -1118,6 +1119,7 @@ const products = [
         'title': 'Grand i10',
         'name' : 'TẬN HƯỞNG HÀNH TRÌNH MỚI',
         'description' : 'All New Grand i10',
+        'catalog':'/Grandi10/Grandi10Catalogue.pdf',
         'img_url' : '/Grandi10/b81f9824cb4a5fd7a73acb7989c6f8c2.jpg',
         'utilities': {
             'title': 'Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn',
@@ -1445,7 +1447,7 @@ const products = [
                         },
                         {
                             "title": "Thông số lốp",
-                            "desc": ["165/70R14", "165/70R14", "175/60R15"]
+                            "desc": ["165/70R14", "165/70R15", "175/60R15"]
                         },
                         {
                             "title": "Lốp dự phòng",
@@ -1473,20 +1475,24 @@ const products = [
                             "desc": ["","","Halogen Projector"]
                         },
                         {
-                            "title": "Gương chiếu hậu chỉnh điện",
-                            "desc":  ["Có","Có gập điện, tích hợp đèn báo rẽ", "Có gập điện, tích hợp đèn báo rẽ có sấy "]
+                            "title": "Gương chiếu hậu",
+                            "desc":  ["Chỉnh điện","Có gập điện, tích hợp đèn báo rẽ có sấy", "Có gập điện, tích hợp đèn báo rẽ có sấy "]
                         },
                         {
-                            "title": "Tay nắm cửa mạ crom",
-                            "desc": ["","Có","Có"]
+                            "title": "Sấy kính sau",
+                            "desc": ["Có","Có","Có"]
+                        },
+                        {
+                            "title": "Tay nắm cửa",
+                            "desc": ["","Mạ crom","Mạ crom"]
                         },
                         {
                             "title": "Ăng ten",
-                            "desc": ["Dạng dây","Vây cá","Vây cá"]
+                            "desc": ["Dạng dây"]
                         },
                     ]
                 },
-                {'name': 'Nội thất',
+                {'name': 'Nội thất và Tiện nghi',
                     "content":[
                         {
                             "title": "Vô lăng điều chỉnh 2 hướng",
@@ -1541,6 +1547,10 @@ const products = [
                             "desc": ["Có","Có","Có"]
                         },
                         {
+                            "title": "Điều khiển hành trình Cruise Control ",
+                            "desc": ["","","Có"]
+                        },
+                        {
                             "title": "Chìa khóa thông minh và Khởi động nút bấm",
                             "desc": ["","Có","Có"]
                         },
@@ -1571,6 +1581,14 @@ const products = [
                         {
                             "title": "Hỗ trợ lực phanh khẩn cấp BA",
                             "desc": ["","Có","Có"]
+                        },
+                        {
+                            "title": "Cân bằng điện tử ESC",
+                            "desc": ["","","Có"]
+                        },
+                        {
+                            "title": "Hổ trợ khởi hành ngang dốc HAC",
+                            "desc": ["","","Có"]
                         },
                         {
                             "title": "Chìa khóa mã hóa & hệ thống chống trộm Immobilizer",
@@ -1680,20 +1698,20 @@ const products = [
                                     "desc": ""
                                 },
                                 {
-                                    "title": "Gương chiếu hậu chỉnh điện",
-                                    "desc": "Có gập điện, tích hợp đèn báo rẽ có sấy"
+                                    "title": "Gương chiếu hậu",
+                                    "desc": "Chỉnh điện"
                                 },
                                 {
                                     "title": "Tay nắm cửa mạ crom",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Ăng ten",
-                                    "desc": "Vây cá"
+                                    "desc": "Dạng dây"
                                 },
                             ]
                         },
-                        {'name': 'Nội thất',
+                        {'name': 'Nội thất và tiện nghi',
                             "content":[
                                 {
                                     "title": "Vô lăng điều chỉnh 2 hướng",
@@ -1701,7 +1719,7 @@ const products = [
                                 },
                                 {
                                     "title": "Vô lăng bọc da",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Chất liệu ghế",
@@ -1713,11 +1731,11 @@ const products = [
                                 },
                                 {
                                     "title": "Chỉnh ghế lái",
-                                    "desc": "Chỉnh cơ 6 hướng"
+                                    "desc": "Chỉnh cơ 4 hướng"
                                 },
                                 {
                                     "title": "Cửa sổ điều chỉnh điện, xuống kính một chạm vị trí ghế lái",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Điều hòa",
@@ -1725,11 +1743,11 @@ const products = [
                                 },
                                 {
                                     "title": "Cụm màn thông tin",
-                                    "desc": "Màn hình LCD 5.3 inch"
+                                    "desc": "Màn hình LCD 2.8 inch"
                                 },
                                 {
                                     "title": "Màn hình AVN cảm ứng 8 inch tích hợp hệ thống hệ thống định vị dẫn đường.",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Hệ thống giải trí",
@@ -1741,15 +1759,19 @@ const products = [
                                 },
                                 {
                                     "title": "Cụm điều khiển media kết hợp với nhận diện giọng nói",
+                                    "desc": ""
+                                },
+                                {
+                                    "title": "Cửa gió điều hòa và cổng sạc USB hàng ghế thứ 2",
                                     "desc": "Có"
                                 },
                                 {
-                                    "title": "Cửa gió điều hòa và cổng sạc USB hàng ghế thứ 2 ",
-                                    "desc": "Có"
+                                    "title": "Điều khiển hành trình Cruise Control",
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Chìa khóa thông minh và Khởi động nút bấm",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                             ]
                         },
@@ -1757,27 +1779,35 @@ const products = [
                             "content":[
                                 {
                                     "title": "Camera lùi",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Cảm biến lùi ",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Cảm biến áp suất lốp",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Chống bó cứng phanh ABS",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Phân bổ lực phanh điện tử EBD",
-                                    "desc": "Có"
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Hỗ trợ lực phanh khẩn cấp BA",
-                                    "desc": "Có"
+                                    "desc": ""
+                                },
+                                {
+                                    "title": "Cân bằng điện tử ESC",
+                                    "desc": ""
+                                },
+                                {
+                                    "title": "Hổ trợ khởi hành ngang dốc HAC",
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Chìa khóa mã hóa & hệ thống chống trộm Immobilizer",
@@ -1863,11 +1893,11 @@ const products = [
                                 },
                                 {
                                     "title": "Lốp dự phòng",
-                                    "desc": "Vành cùng cỡ"
+                                    "desc": "Vành giảm cỡ"
                                 },
                                 {
                                     "title": "Chất liệu lazang",
-                                    "desc": "Vành Thép"
+                                    "desc": "Vành đúc hợp kim"
                                 },
 
                             ]
@@ -1900,7 +1930,7 @@ const products = [
                                 },
                             ]
                         },
-                        {'name': 'Nội thất',
+                        {'name': 'Nội thất và tiện nghi',
                             "content":[
                                 {
                                     "title": "Vô lăng điều chỉnh 2 hướng",
@@ -1955,6 +1985,10 @@ const products = [
                                     "desc": "Có"
                                 },
                                 {
+                                    "title": "Điều khiển hành trình Cruise Control",
+                                    "desc": ""
+                                },
+                                {
                                     "title": "Chìa khóa thông minh và Khởi động nút bấm",
                                     "desc": "Có"
                                 },
@@ -1985,6 +2019,14 @@ const products = [
                                 {
                                     "title": "Hỗ trợ lực phanh khẩn cấp BA",
                                     "desc": "Có"
+                                },
+                                {
+                                    "title": "Cân bằng điện tử ESC",
+                                    "desc": ""
+                                },
+                                {
+                                    "title": "Hổ trợ khởi hành ngang dốc HAC",
+                                    "desc": ""
                                 },
                                 {
                                     "title": "Chìa khóa mã hóa & hệ thống chống trộm Immobilizer",
@@ -2107,7 +2149,7 @@ const products = [
                                 },
                             ]
                         },
-                        {'name': 'Nội thất',
+                        {'name': 'Nội thất và tiện nghi',
                             "content":[
                                 {
                                     "title": "Vô lăng điều chỉnh 2 hướng",
@@ -2162,6 +2204,10 @@ const products = [
                                     "desc": "Có"
                                 },
                                 {
+                                    "title": "Điều khiển hành trình Cruise Control",
+                                    "desc": "Có"
+                                },
+                                {
                                     "title": "Chìa khóa thông minh và Khởi động nút bấm",
                                     "desc": "Có"
                                 },
@@ -2191,6 +2237,14 @@ const products = [
                                 },
                                 {
                                     "title": "Hỗ trợ lực phanh khẩn cấp BA",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Cân bằng điện tử ESC",
+                                    "desc": "Có"
+                                },
+                                {
+                                    "title": "Hổ trợ khởi hành ngang dốc HAC",
                                     "desc": "Có"
                                 },
                                 {

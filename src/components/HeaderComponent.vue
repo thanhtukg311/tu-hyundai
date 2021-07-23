@@ -9,9 +9,6 @@
                         </a>
                     </h1>
                 </div>
-                <div class="tlt_page_top">
-                    <span>Nổi bật</span>
-                </div>
                 <nav id="gnavi" v-bind:class="{'open' : this.isOpen}" ref="mobileMenu">
                     <ul class="gnavi_pc" @click="openMenuMobile()">
                         <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">Trang chủ</a></li>
