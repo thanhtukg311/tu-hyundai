@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="box01 arr_sp" id="furni">
-            <div class="container slide_tn">
+            <div class="container">
                 <title-component :desc="prod.furniture.desc" :title="prod.furniture.title"/>
                 <image-center-component :img-url="prod.furniture.img1"/>
                 <slide-image-component :items="prod.furniture.img_slide2"

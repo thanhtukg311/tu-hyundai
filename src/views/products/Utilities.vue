@@ -1,12 +1,17 @@
 <template>
     <div>
         <section class="box01 arr_sp">
-            <div class="container slide_tn">
+            <div class="container">
                 <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
                 <slide-image-component :items="prod.utilities.img_slide"
                                        :settings="carouselSettings"/>
             </div>
         </section>
+<!--        <section>-->
+<!--            <div class="container">-->
+<!--                <sub-title-component :desc="prod.utilities.main_desc" :title="prod.utilities.main_title"/>-->
+<!--            </div>-->
+<!--        </section>-->
         <div style="height: 20px" class="d-show"></div>
         <section class="box02">
             <div class="container">
