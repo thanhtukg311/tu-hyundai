@@ -93,7 +93,7 @@ p:last-child {
     margin-bottom: 0
 }
 
-#wrapper {
+#app {
     min-width: 1220px;
     overflow: hidden
 }
@@ -620,7 +620,7 @@ section, .section {
 .custom-select-wrapper {
    position: relative;
    user-select: none;
-   width: 75%;
+   width: 76%;
 }
 .custom-select {
    position: relative;
