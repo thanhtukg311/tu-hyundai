@@ -2,7 +2,7 @@
     <div id="content">
         <!--box01-->
         <section class="box01">
-            <div class="container">
+            <div class="inner">
                 <div class="tlt_left">
                     <h3 class="tlt_h3">Thông số xe</h3>
                 </div>
@@ -27,7 +27,7 @@
             </div>
         </section>
         <section class="box02">
-            <div class="container">
+            <div class="inner">
                 <div class="tlt_left">
                     <h3 class="tlt_h3">So sánh các phiên bản</h3>
                 </div>

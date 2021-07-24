@@ -86,7 +86,7 @@
         min-width: 100% !important
     }
 
-    .container {
+    .inner {
         width: 100%  !important;
 
     }
@@ -466,7 +466,7 @@
     }
     .tlt_slider_main {
         left: 0 !important;
-        margin-left: 185px;
+        margin-left: 285px;
         width:100%;
         top:85px !important;
         font-size: 38px !important;
@@ -723,4 +723,11 @@
 }
 
 @media only screen and (max-width:374px) {
+    .tlt_slider_main {
+        margin-left: 175px;
+        font-size:34px;
+    }
+    .tlt_slider_main span {
+        font-size: 22px;
+    }
 }

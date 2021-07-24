@@ -1,7 +1,7 @@
 <template>
   <div>
     <header id="header">
-      <div class="container header_main">
+      <div class="inner header_main">
         <div class="h_box">
           <h1>
             <a href="https://www.hyundai.tcmotor.vn/">
@@ -9,9 +9,9 @@
             </a>
           </h1>
         </div>
-        <div class="tlt_page_top">
+        <!-- <div class="tlt_page_top">
           <span>Nổi bật</span>
-        </div>
+        </div> -->
         <nav id="gnavi" v-bind:class="{ open: this.isOpen }" ref="mobileMenu">
           <ul class="gnavi_pc" @click="openMenuMobile()">
             <li>

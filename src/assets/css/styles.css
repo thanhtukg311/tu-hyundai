@@ -98,7 +98,7 @@ p:last-child {
     overflow: hidden
 }
 
-.container {
+.inner {
     width: 1180px;
     margin: 0 auto;
 }
@@ -323,7 +323,6 @@ p:last-child {
     font-weight: bold;
     line-height: 1.2em;
     margin-bottom: 30px;
-    letter-spacing: -1px;
 }
 
 .tlt_h4 {

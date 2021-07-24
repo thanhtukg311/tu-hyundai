@@ -1,6 +1,6 @@
 <template>
     <div class="top_bar">
-        <div class="container">
+        <div class="inner">
             <ul class="topic_path">
                 <li><router-link to="./">Trang chủ</router-link></li>
                 <li>Sản phẩm</li>
@@ -18,7 +18,7 @@
         <div id="content">
             <div ref="menu_fix" class="menu_fix">
             <div class="menu_content">
-                <ul class="container menu_cnt_top">
+                <ul class="inner menu_cnt_top">
                     <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe"><p><i class="fal fa-sliders-h"></i><span>Chọn xe</span></p></a></li>
                     <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/tim-dai-ly"><p><i class="fal fa-map-marker-alt"></i><span>Tìm đại lý</span></p></a></li>
                     <li><a target="_blank" href="https://www.hyundai.tcmotor.vn/mua-xe/dang-ky-lai-thu"><p><i class="far fa-steering-wheel"></i><span>Đăng ký lái thử</span></p></a></li>
@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="sub_menu_content">
-                <ul class="container sub_menu_cnt_top">
+                <ul class="inner sub_menu_cnt_top">
                     <p class="tlt_type_car">
                         {{prod.code}}
                     </p>

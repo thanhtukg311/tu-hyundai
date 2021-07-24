@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="box01 arr_sp">
-            <div class="container">
+            <div class="inner">
                 <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
                 <slide-image-component :items="prod.utilities.img_slide"
                                        :settings="carouselSettings"/>
@@ -14,7 +14,7 @@
 <!--        </section>-->
         <div style="height: 20px" class="d-show"></div>
         <section class="box02">
-            <div class="container">
+            <div class="inner">
                 <triple-component :list-desc="prod.utilities.list_desc"  v-if="!isMobile()"/>
                 <slide-image-mobile-component :items="prod.utilities.list_desc" v-else/>
             </div>

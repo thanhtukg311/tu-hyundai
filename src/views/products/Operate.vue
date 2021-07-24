@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="box01 arr_sp">
-            <div class="container">
+            <div class="inner">
                 <title-component :desc="prod.operate.desc" :title="prod.operate.title"/>
                 <image-center-component :img-url="prod.operate.img1"/>
                 <title-component :desc="prod.operate.main_desc" :title="prod.operate.main_title"/>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="box01">
-            <div class="container">
+            <div class="inner">
                 <title-component
                     :desc="prod.highlights.desc"
                     :title="prod.highlights.title"
@@ -10,7 +10,7 @@
             </div>
         </section>
         <section class="box02 bg_02">
-            <div class="container">
+            <div class="inner">
                 <title-component
                     :desc="prod.highlights.main_desc"
                     :title="prod.highlights.main_title"
@@ -27,7 +27,7 @@
             </div>
         </section>
         <section class="box03">
-            <div class="container">
+            <div class="inner">
                 <title-component
                     :desc="prod.highlights.main_desc2"
                     :title="prod.highlights.main_title2"
@@ -45,7 +45,7 @@
         </section>
         <!--box03-->
         <section class="box04">
-            <div class="container">
+            <div class="inner">
                 <title-component :title="'Thư Viện'" />
                 <div class="lib_img">
                     <slide-thump-component

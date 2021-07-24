@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="box01">
-            <div class="container">
+            <div class="inner">
                 <title-component :desc="prod.safe.desc" :title="prod.safe.title"/>
                 <slide-image-component :items="prod.safe.list_desc"
                                        :settings="false"/>
