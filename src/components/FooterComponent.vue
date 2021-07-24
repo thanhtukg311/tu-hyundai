@@ -6,114 +6,95 @@
             <div class="f_box01">
                 <div class="container f_menu_flex">
                     <ul class="f_menu">
-                        <li>Sản phẩm</li>
-                        <li class="f_menu_h"><a>Xe du lịch</a>
-                        <ul class="sub_menu">
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/elantra">Elantra</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/elantra-sport">Elantra Sport</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/accent">Accent</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/i10-2017">Grand i10 2017</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/grand-i10-sedan">Grand i10 sedan</a></li>
-                        </ul>
+                        <li class="f_menu_h">
+                            Xe du lịch
+                            <ul class="sub_menu">
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/i10-2017">Grand i10 Hatchback</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/grand-i10-sedan">Grand i10 Sedan</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/accent-2021">Accent</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/elantra-2019">Elantra</a></li>
+                            </ul>
                         </li>
-                        <li class="f_menu_h"><a>Xe SUV, Xe MPV</a>
-                        <ul class="sub_menu">
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/santa-fe">Santa Fe</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/tucson">Tucson</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/kona">Kona</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/starex-h1">Starex (H1)</a></li>
-                        </ul>
-                        </li>
-                        <li class="f_menu_h"><a>Xe chuyên dụng, tải nhẹ</a>
-                        <ul class="sub_menu">
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/santa-fe-cho-tien">Santa fe chở tiền</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/starex-cho-tien">Starex chở tiền</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/san-pham/starex-cuu-thuong">Starex cứu thương</a></li>
-                        </ul>
-                        </li>
-                        <li class="f_menu_h"><a href="#">Xe thương mại</a>
-                        <ul class="sub_menu">
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/new-mighty-75s-110s">NEW MIGHTY 75S &amp; 110S</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/universe">Universe</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/HD700-1000%20tractor">HD700-1000 Đầu kéo</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/hd270-Dump">HD270 Tự đổ</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/hd270-mixer">HD270 Trộn bê tông</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/new-county">New County</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/hd260-320">HD260-320</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/hd210">HD210</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/mighty-n250">New Mighty N250</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/new-porter-150">NEW PORTER 150</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.hyundai.tcmotor.vn/san-pham/solati">Solati</a>
-                                    </li>
-                                </ul>
+                        <li class="f_menu_h">
+                            Mua xe
+                            <ul class="sub_menu">
+                                <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">Chọn xe</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/so-sanh">So sánh xe</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/khuyen-mai">Khuyến mãi</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/dang-ky-lai-thu">Đăng ký lái thử</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/tim-dai-ly">Tìm đại lý</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/tai-catalogue">Tải Catalog</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <ul class="f_menu">
-                        <li>Mua xe</li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">Chọn xe</a></li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/so-sanh">So sánh xe</a></li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/khuyen-mai">Khuyến mại</a></li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/dang-ky-lai-thu">Đăng ký lái thử</a></li>
-                        <li><a class="login-window" href="#login-box">Tìm đại lý</a></li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/mua-xe/tai-catalogue">Tải catalog</a></li>
-                    </ul>
-                    <ul class="f_menu">
-                        <li>Giới thiệu</li>
-                        <li class="f_menu_h"><a>Thương hiệu Hyundai</a>
-                        <ul class="sub_menu">
-                        <!---->
-                        <li><a href="https://www.hyundai.tcmotor.vn/thuong-hieu/lich-su">Lịch sử</a></li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/thuong-hieu/lich-su-hyundai-thuong-mai">Lịch sử Hyundai Thương Mại</a></li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/thuong-hieu-hyundai/cong-nghe" target="_blank">Công nghệ</a></li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/thuong-hieu-hyundai/thiet-ke" target="_blank">Thiết kế</a></li>
-                    </ul>
+                        <li>
+                            Xe SUV
+                            <ul class="sub_menu">
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/kona">Kona</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/tucson-2019">Tucson</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/santafe-2021">Santafe</a></li>
+                            </ul>
                         </li>
-                        <li class="mb50"><a href="#">TC Motor</a></li>
-                        <ul class="f_menu">
-                            <li>Hyundai Thành Công</li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/tin-tuc/tin-cong-ty">Tin công ty</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/dang-ky-lam-dai-ly">Đăng ký làm đại lý</a></li>
-                            <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/tin-tuc/tin-tuyen-dung">Tuyển dụng</a></li>
-                        </ul>
+                        <li>
+                            Thương hiệu Hyundai
+                            <ul class="sub_menu">
+                                <li><a href="://www.hyundai.tcmotor.vn/thuong-hieu/lich-su">Lịch sử</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/thuong-hieu/lich-su-hyundai-thuong-mai">Lịch sử Hyundai Thương mại</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/thuong-hieu-hyundai/cong-nghe">Công nghệ</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/thuong-hieu-hyundai/thiet-ke">Thiết kế</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Hyundai Thành Công
+                            <ul class="sub_menu">
+                                <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/tin-tuc/tin-cong-ty">Tin công ty</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/dang-ky-lam-dai-ly">Đăng ký làm đại lý</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/tin-tuc/tin-tuyen-dung">Tuyển dụng</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="f_menu">
-                        <li>Dịch vụ</li>
+                        <li>
+                            Xe chuyên dụng, tải nhẹ
+                            <ul class="sub_menu">
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/starex-h1">Starex (H1)</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/santafe-cho-tien">Santa Fe chở tiền</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/starex-cho-tien">Starex chở tiền</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/starex-cuu-thuong">Starex cứu thương</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Dịch vụ
+                            <ul class="sub_menu">
                                 <li><a href="https://www.hyundai.tcmotor.vn/dich-vu/ung-dung-hyundai-me">Ứng dụng Hyundai ME!</a></li>
                                 <li><a href="https://www.hyundai.tcmotor.vn/dich-vu/chuong-trinh-dich-vu">Chương trình dịch vụ</a></li>
-                                <li><a href="https://www.hyundai.tcmotor.vn/dich-vu/chinh-sach-bao-hanh">Chính sách bảo hành</a></li>
-                                <li><a href="https://www.hyundai.tcmotor.vn/dich-vu/phu-tung-phu-kien-chinh-hang">Phụ tùng &amp; phụ kiện chính hãng</a></li>
-                                <li class="f_menu_h"><a>Chăm sóc khách hàng</a>
-                                    <ul class="sub_menu">
-                                <li>
-                                    <a href="https://www.hyundai.tcmotor.vn/dich-vu/gioi-thieu-chung">Giới thiệu chung</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.hyundai.tcmotor.vn/dich-vu/hoi-vien-hyundai">Hội viên</a>
-                                </li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/dich-vu/phu-tung-phu-kien-chinh-hang">Phụ tùng & Phụ kiện chính hãng</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/dich-vu/gioi-thieu-chung">Chăm sóc khách hàng</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/cap-nhat-avn/cap-nhat-avn">Cập nhật AVN</a></li>
                             </ul>
-                                </li>
-                        <li><a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/cap-nhat-avn/cap-nhat-avn">Cập nhật AVN</a></li>
+                        </li>
+                    </ul>
+                    <ul class="f_menu">
+                        <li>
+                            Xe thương mại
+                            <ul class="sub_menu">
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/new-mighty-75s-110s">New Mighty 75S & 110S/110SP</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/ex-series-gt">Mighty EX8 GT</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/new-universe">New Universe</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/HD1000">HD 1000 Đầu kéo</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/hd270-Dump">HD270 tự đổ</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/new-county">New County</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/xcient-gt">Đầu kéo Xcient GT</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/hd270-mixer">HD270 Trộn bê tông</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/HD260-320">HD260-320</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/hd240">HD240</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/mighty-n250">New Mighty N250-N250SL</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/new-porter-150">New Porter 150</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/solati">Solati</a></li>
+                                <li><a href="https://www.hyundai.tcmotor.vn/san-pham/ex-series">Mighty Ex Series</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>

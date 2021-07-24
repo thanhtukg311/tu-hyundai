@@ -57,6 +57,9 @@
     .next_cate {
         padding-right: 25px;
     }
+    .cnt.pd_t{
+        padding-top:200px !important;
+    }
     h1,
     h2,
     h3,

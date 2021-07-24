@@ -98,9 +98,15 @@
         methods: {
             scrollMenu(){
                 if(window.scrollY > this.top){
-                    this.$refs.menu_fix.classList.add('fixed')
+                    if(this.$refs.menu_fix.classList){
+                        this.$refs.menu_fix.classList.add('fixed')
+                        this.$emit('fixed',true)
+                    }
                 } else {
-                    this.$refs.menu_fix.classList.remove('fixed')
+                    if(this.$refs.menu_fix.classList){
+                        this.$refs.menu_fix.classList.remove('fixed')
+                        this.$emit('fixed',false)
+                    }
                 }
             }
         }
