@@ -10,33 +10,17 @@ export default {
   components: {
   },
   created(){
-    document.title = 'Grand i10 Sedan'
+    document.title = 'Grand i10 Sedan';
+
   },
-  mounted() {
-      // let url = window.location.href;
-      renderJs('/js/bootstrap.min.js');
-//       var coll = document.getElementsByClassName("collapsible");
-//       var i;
+  mounted() {}
+}
 
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
+// function renderJs(url){
+//   let recaptchaScript = document.createElement('script');
+//   recaptchaScript.setAttribute('src', url);
+//   document.body.appendChild(recaptchaScript);
 // }
-    }
-}
-
-function renderJs(url){
-  let recaptchaScript = document.createElement('script');
-  recaptchaScript.setAttribute('src', url);
-  document.body.appendChild(recaptchaScript);
-}
 
 </script>
 

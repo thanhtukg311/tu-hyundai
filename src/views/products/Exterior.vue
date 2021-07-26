@@ -130,6 +130,7 @@
                     event.target.parentElement.parentElement.className += ' on';
                     let element = this.$refs[refName];
                     let top = element.offsetTop;
+                    top = top - 100
 
                     window.scrollTo({top: top, behavior: 'smooth'});
                 } else {

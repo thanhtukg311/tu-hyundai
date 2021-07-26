@@ -599,6 +599,7 @@ section, .section {
     font-weight:600;
     line-height: 40px;
     margin-bottom: 0;
+    padding-right: 15px;
 }
 .slt_car {
     width: 75%;
@@ -619,7 +620,7 @@ section, .section {
 .custom-select-wrapper {
    position: relative;
    user-select: none;
-   width: 76%;
+   width: 75%;
 }
 .custom-select {
    position: relative;

@@ -1,6 +1,7 @@
 <template>
   <div>
     <header id="header">
+      <div class="overlay" v-if="this.isOpen"></div>
       <div class="inner header_main">
         <div class="h_box">
           <h1>
@@ -13,7 +14,7 @@
           <span>Nổi bật</span>
         </div> -->
         <nav id="gnavi" v-bind:class="{ open: this.isOpen }" ref="mobileMenu">
-          <ul class="gnavi_pc" @click="openMenuMobile()">
+          <ul class="gnavi_pc">
             <li>
               <a
                 target="_blank"
@@ -22,15 +23,20 @@
               >
             </li>
             <li>
-              <a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong-thuong-mai/tin-tuc/tin-cong-ty-thuong-mai">Giới thiệu</a>
+              <a
+                href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong-thuong-mai/tin-tuc/tin-cong-ty-thuong-mai"
+                >Giới thiệu</a
+              >
             </li>
             <li>
               <router-link
+                :data-bs-toggle="this.isCollapse"
+                data-bs-target=".dropdown-menu--product"
                 :to="{
                   name: 'san-pham',
                   params: { slug: 'i10-2020', menu: 'noi-bat' },
                 }"
-                >Sản phẩm <span class="ic ic--plus"></span
+                >Sản phẩm <span class="ic"></span
               ></router-link>
               <div class="dropdown-menu dropdown-menu--product">
                 <nav>
@@ -99,298 +105,306 @@
                     role="tabpanel"
                     aria-labelledby="nav-home-tab"
                   >
-                    <a href="#" class="tt-mb">Tất cả</a>
-                    <div class="content-mb">
-                      <div class="sb-title">Xe du lịch</div>
-                      <div class="row">
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/i10-2017"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/i102017/i10-menu.png"
-                              class="img-responsive"
-                            />
-                            Grand i10 Hatchback
-                          </a>
+                    <a
+                      href="#"
+                      class="tt-mb"
+                      :data-bs-toggle="this.isCollapse"
+                      data-bs-target=".content-mb--all"
+                      >Tất cả</a
+                    >
+                    <div class="content-mb content-mb--all">
+                      <div class="content-mb__wrap">
+                        <div class="sb-title">Xe du lịch</div>
+                        <div class="row">
+                          <div class="col-sm-2 itemmenu">
+                            <a href="/san-pham/i10-2020/noi-bat">
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/i102017/i10-menu.png"
+                                class="img-responsive"
+                              />
+                              Grand i10 Hatchback
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a href="/san-pham/i10-2020-sedan/noi-bat">
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/sedan.png"
+                                class="img-responsive"
+                              />
+                              Grand i10 Sedan
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/accent-2021"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/Accent2021/accent-2021-menu.png"
+                                class="img-responsive"
+                              />
+                              Accent
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/elantra-2019"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/elantra-2019.png"
+                                class="img-responsive"
+                              />
+                              Elantra
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/kona"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/hyundai-kona-side-view.png"
+                                class="img-responsive"
+                              />
+                              Kona
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/tucson-2019"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/tucson-2019.png"
+                                class="img-responsive"
+                              />
+                              Tucson
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/santafe-2021"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Products/MapProduct/newsantafe-2021.png"
+                                class="img-responsive"
+                              />
+                              Santafe
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/starex-h1"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/h-1.png"
+                                class="img-responsive"
+                              />
+                              Starex (H1)
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/santafe-cho-tien"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/santafe.png"
+                                class="img-responsive"
+                              />
+                              Santa Fe chở tiền
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/starex-cho-tien"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anh-menu/Starex_Ambu.png"
+                                class="img-responsive"
+                              />
+                              Starex chở tiền
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/starex-cuu-thuong"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anh-menu/Starex_Ambu.png"
+                                class="img-responsive"
+                              />
+                              Starex cứu thương
+                            </a>
+                          </div>
                         </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/grand-i10-sedan"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/sedan.png"
-                              class="img-responsive"
-                            />
-                            Grand i10 Sedan
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/accent-2021"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/Accent2021/accent-2021-menu.png"
-                              class="img-responsive"
-                            />
-                            Accent
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/elantra-2019"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/elantra-2019.png"
-                              class="img-responsive"
-                            />
-                            Elantra
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/kona"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/hyundai-kona-side-view.png"
-                              class="img-responsive"
-                            />
-                            Kona
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/tucson-2019"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/tucson-2019.png"
-                              class="img-responsive"
-                            />
-                            Tucson
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/santafe-2021"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Products/MapProduct/newsantafe-2021.png"
-                              class="img-responsive"
-                            />
-                            Santafe
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/starex-h1"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/h-1.png"
-                              class="img-responsive"
-                            />
-                            Starex (H1)
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/santafe-cho-tien"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/santafe.png"
-                              class="img-responsive"
-                            />
-                            Santa Fe chở tiền
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/starex-cho-tien"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anh-menu/Starex_Ambu.png"
-                              class="img-responsive"
-                            />
-                            Starex chở tiền
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/starex-cuu-thuong"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anh-menu/Starex_Ambu.png"
-                              class="img-responsive"
-                            />
-                            Starex cứu thương
-                          </a>
-                        </div>
-                      </div>
-                      <div class="sb-title">Xe thương mại</div>
-                      <div class="row" style="">
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/new-mighty-75s-110s"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/mighty-menu.png"
-                              class="img-responsive"
-                            />
-                            NEW MIGHTY 75S &amp; 110S/110SP
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/ex-series-gt"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhdaidien/ex-series-gt.png"
-                              class="img-responsive"
-                            />
-                            Mighty EX8 GT
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/new-universe"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/New-Universe.png"
-                              class="img-responsive"
-                            />
-                            New Universe
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/HD1000"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/HTCV/XE/tractor/truck_tractor-truck-quarter-view-thumb.png"
-                              class="img-responsive"
-                            />
-                            HD1000 Đầu k&#233;o
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/hd270-Dump"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/HD270 dump/avt(1).png"
-                              class="img-responsive"
-                            />
-                            HD270 Tự đổ
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/new-county"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/new-county.png"
-                              class="img-responsive"
-                            />
-                            New County
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/xcient-gt"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/Xcient GT/134.png"
-                              class="img-responsive"
-                            />
-                            Đầu K&#233;o Xcient GT
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/hd270-mixer"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/HD270 Mixer/avt.png"
-                              class="img-responsive"
-                            />
-                            HD270 Trộn b&#234; t&#244;ng
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/HD260-320"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/HTCV/XE/ERcargo/hd260-320.png"
-                              class="img-responsive"
-                            />
-                            HD260-320
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/hd240"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/HTCV/XE/HD210/hd210.png"
-                              class="img-responsive"
-                            />
-                            HD240
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/mighty-n250"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/MightyN250/mighty-n250-menu.png"
-                              class="img-responsive"
-                            />
-                            New Mighty N250 - N250SL
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/new-porter-150"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/h100.png"
-                              class="img-responsive"
-                            />
-                            NEW PORTER 150
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/solati"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/solati.png"
-                              class="img-responsive"
-                            />
-                            Solati
-                          </a>
-                        </div>
-                        <div class="col-sm-2 itemmenu">
-                          <a
-                            href="https://www.hyundai.tcmotor.vn/san-pham/ex-series"
-                          >
-                            <img
-                              src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/ex-series-1.png"
-                              class="img-responsive"
-                            />
-                            Mighty Ex Series
-                          </a>
+                        <div class="sb-title">Xe thương mại</div>
+                        <div class="row" style="">
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/new-mighty-75s-110s"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/mighty-menu.png"
+                                class="img-responsive"
+                              />
+                              NEW MIGHTY 75S &amp; 110S/110SP
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/ex-series-gt"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhdaidien/ex-series-gt.png"
+                                class="img-responsive"
+                              />
+                              Mighty EX8 GT
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/new-universe"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/New-Universe.png"
+                                class="img-responsive"
+                              />
+                              New Universe
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/HD1000"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/HTCV/XE/tractor/truck_tractor-truck-quarter-view-thumb.png"
+                                class="img-responsive"
+                              />
+                              HD1000 Đầu k&#233;o
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/hd270-Dump"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/HD270 dump/avt(1).png"
+                                class="img-responsive"
+                              />
+                              HD270 Tự đổ
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/new-county"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/new-county.png"
+                                class="img-responsive"
+                              />
+                              New County
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/xcient-gt"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/Xcient GT/134.png"
+                                class="img-responsive"
+                              />
+                              Đầu K&#233;o Xcient GT
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/hd270-mixer"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/HD270 Mixer/avt.png"
+                                class="img-responsive"
+                              />
+                              HD270 Trộn b&#234; t&#244;ng
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/HD260-320"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/HTCV/XE/ERcargo/hd260-320.png"
+                                class="img-responsive"
+                              />
+                              HD260-320
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/hd240"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/HTCV/XE/HD210/hd210.png"
+                                class="img-responsive"
+                              />
+                              HD240
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/mighty-n250"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/MightyN250/mighty-n250-menu.png"
+                                class="img-responsive"
+                              />
+                              New Mighty N250 - N250SL
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/new-porter-150"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/h100.png"
+                                class="img-responsive"
+                              />
+                              NEW PORTER 150
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/solati"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/solati.png"
+                                class="img-responsive"
+                              />
+                              Solati
+                            </a>
+                          </div>
+                          <div class="col-sm-2 itemmenu">
+                            <a
+                              href="https://www.hyundai.tcmotor.vn/san-pham/ex-series"
+                            >
+                              <img
+                                src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/ex-series-1.png"
+                                class="img-responsive"
+                              />
+                              Mighty Ex Series
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="nav-0" role="tabpanel">
-                    <a href="#" class="tt-mb">Xe du lịch</a>
-                    <div class="row content-mb">
+                    <a
+                      href="#"
+                      class="tt-mb"
+                      :data-bs-toggle="this.isCollapse"
+                      data-bs-target=".content-mb--touring"
+                      >Xe du lịch</a
+                    >
+                    <div class="row content-mb content-mb--touring">
                       <div class="col-sm-2 itemmenu">
-                        <a
-                          href="https://www.hyundai.tcmotor.vn/san-pham/i10-2017"
-                        >
+                        <a href="/san-pham/i10-2020/noi-bat">
                           <img
                             src="https://www.hyundai.tcmotor.vn/Uploads/SanPham/i102017/i10-menu.png"
                             class="img-responsive"
@@ -401,9 +415,7 @@
                         </a>
                       </div>
                       <div class="col-sm-2 itemmenu">
-                        <a
-                          href="https://www.hyundai.tcmotor.vn/san-pham/grand-i10-sedan"
-                        >
+                        <a href="/san-pham/i10-2020-sedan/noi-bat">
                           <img
                             src="https://www.hyundai.tcmotor.vn/Uploads/Anhmenu/sedan.png"
                             class="img-responsive"
@@ -447,8 +459,14 @@
                     role="tabpanel"
                     aria-labelledby="nav-contact-tab"
                   >
-                    <a href="#" class="tt-mb">Xe SUV</a>
-                    <div class="row content-mb">
+                    <a
+                      href="#"
+                      class="tt-mb"
+                      :data-bs-toggle="this.isCollapse"
+                      data-bs-target=".content-mb--suv"
+                      >Xe SUV</a
+                    >
+                    <div class="row content-mb content-mb--suv">
                       <div class="col-sm-2 itemmenu">
                         <a href="https://www.hyundai.tcmotor.vn/san-pham/kona">
                           <img
@@ -494,8 +512,14 @@
                     role="tabpanel"
                     aria-labelledby="nav-contact-tab"
                   >
-                    <a href="#" class="tt-mb">Xe chuyên dụng, tải nhẹ</a>
-                    <div class="row content-mb">
+                    <a
+                      href="#"
+                      class="tt-mb"
+                      :data-bs-toggle="this.isCollapse"
+                      data-bs-target=".content-mb--dedicated"
+                      >Xe chuyên dụng, tải nhẹ</a
+                    >
+                    <div class="row content-mb content-mb--dedicated">
                       <div class="col-sm-2 itemmenu">
                         <a
                           href="https://www.hyundai.tcmotor.vn/san-pham/starex-h1"
@@ -556,8 +580,14 @@
                     role="tabpanel"
                     aria-labelledby="nav-contact-tab"
                   >
-                    <a href="#" class="tt-mb">Xe thương mại</a>
-                    <div class="row content-mb">
+                    <a
+                      href="#"
+                      class="tt-mb"
+                      :data-bs-toggle="this.isCollapse"
+                      data-bs-target=".content-mb--commerce"
+                      >Xe thương mại</a
+                    >
+                    <div class="row content-mb content-mb--commerce">
                       <div class="col-sm-2 itemmenu">
                         <a
                           href="https://www.hyundai.tcmotor.vn/san-pham/new-mighty-75s-110s"
@@ -744,10 +774,13 @@
               </div>
             </li>
             <li>
-              <router-link to="/"
-                >Mua xe <span class="ic ic--plus"></span
+              <router-link
+                :data-bs-toggle="this.isCollapse"
+                data-bs-target=".dropdown-menu--buying"
+                to="/"
+                >Mua xe <span class="ic"></span
               ></router-link>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu dropdown-menu--buying">
                 <div class="row equal-height">
                   <div class="col-sm-2">
                     <a href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe">
@@ -823,8 +856,11 @@
               </div>
             </li>
             <li>
-              <router-link to="/"
-                >Dịch vụ <span class="ic ic--plus"></span
+              <router-link
+                :data-bs-toggle="this.isCollapse"
+                data-bs-target=".dropdown-menu--service"
+                to="/"
+                >Dịch vụ <span class="ic"></span
               ></router-link>
               <div class="dropdown-menu dropdown-menu--service">
                 <div class="row equal-height">
@@ -905,7 +941,9 @@
                     </a>
                   </div>
                   <div class="col-sm-2 last-item" style="">
-                    <a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/cap-nhat-avn/cap-nhat-avn">
+                    <a
+                      href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/cap-nhat-avn/cap-nhat-avn"
+                    >
                       <img
                         src="https://www.hyundai.tcmotor.vn//Uploads/dichvu/icon%20avn2.png"
                         class="img-responsive"
@@ -919,10 +957,16 @@
               </div>
             </li>
             <li>
-              <a href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/tin-tuc/tin-cong-ty">Tin tức</a>
+              <a
+                href="https://www.hyundai.tcmotor.vn/hyundai-thanh-cong/tin-tuc/tin-cong-ty"
+                >Tin tức</a
+              >
             </li>
             <li>
-              <a href="https://www.hyundai.tcmotor.vn/vi/d/dang-ky-lam-dai-ly-xe-thuong-mai">Liên hệ</a>
+              <a
+                href="https://www.hyundai.tcmotor.vn/vi/d/dang-ky-lam-dai-ly-xe-thuong-mai"
+                >Liên hệ</a
+              >
             </li>
           </ul>
         </nav>
@@ -942,9 +986,12 @@
             </svg>
           </a>
         </div>
-        <div class="btn_search">
+        <a
+          href="https://www.hyundai.tcmotor.vn/mua-xe/chon-xe"
+          class="btn_search"
+        >
           <img src="./../assets/images/search.png" alt="search" width="15px" />
-        </div>
+        </a>
         <div class="header_sp">
           <p class="logo">
             <a href=""><img src="" alt=""/></a>
@@ -972,8 +1019,15 @@
 <script>
 export default {
   name: "HeaderComponent",
+  created() {
+    window.addEventListener("resize", this.myEventHandler);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.myEventHandler);
+  },
   data() {
     return {
+      isCollapse: "collapse",
       isOpen: false,
     };
   },
@@ -981,6 +1035,17 @@ export default {
     openMenuMobile() {
       this.isOpen = !this.isOpen;
     },
+    myEventHandler() {
+      var width = window.innerWidth;
+      if (width > 640) {
+        this.isCollapse = "";
+      } else {
+        this.isCollapse = "collapse";
+      }
+    },
+  },
+  mounted() {
+    // $('body').addClass('abc');
   },
 };
 </script>

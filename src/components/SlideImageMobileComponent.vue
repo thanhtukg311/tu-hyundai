@@ -26,10 +26,6 @@
             }
         },
         mounted() {
-            setTimeout(() => {
-
-                this.$refs['carousel'].click();
-            }, 200);
         }
     }
 </script>
