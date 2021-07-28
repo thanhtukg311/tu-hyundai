@@ -224,7 +224,7 @@ p:last-child {
     left: calc(50% - 400px);
     font-size: 54px;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
     transform: translate(-42%);
 }
 .tlt_slider_main span{
@@ -1236,9 +1236,6 @@ section, .section {
     }
     .next_cate {
         padding-right: 25px;
-    }
-    .cnt.pd_t{
-        padding-top:200px !important;
     }
     h1,
     h2,

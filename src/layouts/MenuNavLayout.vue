@@ -65,9 +65,11 @@
         </div>
         <div class="sub_menu_content" ref="sub_menu_content">
           <ul class="inner sub_menu_cnt_top" ref="sub_menu_content_ul">
-            <p ref="sub_0" class="tlt_type_car">
-              {{ prod.code }}
-            </p>
+            <li ref="sub_0" class="tlt_type_car">
+              <p>
+                {{ prod.code }}
+              </p>
+            </li>
             <li ref="sub_1">
               <router-link
                 :to="{

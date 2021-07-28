@@ -34,6 +34,13 @@ export const router = new VueRouter({
                 behavior: 'smooth'
             }
         }
+        if( screen.width <= 375 ) {
+            return {
+                x: 0,
+                y: 500,
+                behavior: 'smooth'
+            }
+        }
         if( screen.width <= 760 ) {
             return {
                 x: 0,

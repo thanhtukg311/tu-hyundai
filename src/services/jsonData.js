@@ -6,7 +6,7 @@ const products = [
         'name' : 'Kích hoạt một tôi mới',
         'description' : 'All New Grand i10',
         'catalog':'/product_new/Grandi10SedanCatalogue.pdf',
-        'img_url' : '/product/i10-ac3-highlights-kv-pc.jpg',
+        'img_url' : '/20210728/sedan_banner.jpg',
         'utilities': {
             'title': 'Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn',
             'desc': 'Những chuyến hành trình của bạn sẽ trở nên thú vị với những công nghệ tiện ích được trang bị bên trong Grand i10',
@@ -85,7 +85,7 @@ const products = [
                     'desc': '',
                 },
                 {
-                    'img': '/product/hi_desc3.jpg',
+                    'img': '/20210728/i10-noibat3.jpg',
                     'title': '2 túi khí cho hàng ghế trước',
                     'desc': '',
                 },
@@ -1116,7 +1116,7 @@ const products = [
             'desc': '',
             'list_desc' : [
                 {
-                    'img': '/product_new/an_toan/Asset6-min.png',
+                    'img': '/20210728/sedan-antoan-min.jpg',
                     'title': 'Cảm biến va chạm phía sau',
                     'desc': '',
                 },
@@ -1146,7 +1146,7 @@ const products = [
         'name' : 'Kích hoạt một tôi mới',
         'description' : 'All New Grand i10',
         'catalog':'/Grandi10/Grandi10Catalogue.pdf',
-        'img_url' : '/Grandi10/b81f9824cb4a5fd7a73acb7989c6f8c2.jpg',
+        'img_url' : '/20210728/i10_banner.jpg',
         'utilities': {
             'title': 'Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn',
             'desc': 'Những chuyến hành trình của bạn sẽ trở nên thú vị với những công nghệ tiện ích được trang bị bên trong Grand i10',
@@ -1187,10 +1187,10 @@ const products = [
         'highlights': {
             'title': 'Không gian rộng rãi trong một thiết kế nhỏ gọn',
             'desc': 'Grand i10 sở hữu kích thước lớn hàng đầu phân khúc, đem đến một không gian thoải mái tối đa.<br> Bên cạnh đó là sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích.',
-            'img1': '/Grandi10/1addc9f4af1659d8d76e141b873351b1.jpg',
-            'img2': '/Grandi10/ea0199b136082651c948aab19fdbad38.jpg',
-            'img3': '/Grandi10/noibat/h4.jpg',
-            'img4': '/Grandi10/noibat/h4.jpg',
+            'img1': '/20210728/i10-noibat1.jpg',
+            'img2': '/20210728/i10-noibat2.jpg',
+            'img3': '/20210728/i10-noibat-noithat.jpg',
+            'img4': '/20210728/i10-noibat-noithat.jpg',
             'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
             'main_title': 'Thiết kế đậm chất thể thao',
             'main_desc': 'Grand i10 All New thu hút mọi ánh nhìn trên mọi góc độ với các đường nét thời trang thể thao phá cách mang màu sắc của nghệ thuật đương đại',
@@ -1225,7 +1225,7 @@ const products = [
                     'desc': '',
                 },
                 {
-                    'img': '/product/hi_desc3.jpg',
+                    'img': '/20210728/i10-noibat3.jpg',
                     'title': '2 túi khí cho hàng ghế trước',
                     'desc': '',
                 },
@@ -1277,7 +1277,7 @@ const products = [
         'furniture': {
             'title': 'Tiện nghi trên từng cây số',
             'desc': 'Khoang nội thất của Grand i10 All New là tất cả những gì bạn cần. Đó là sự rộng rãi của không gian kết hợp cùng sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích vượt tầm phân khúc.',
-            'img1': '/Grandi10/noibat/h4.jpg',
+            'img1': '/20210728/i10-noibat-noithat.jpg',
             'img2': '/product/fu_i2.jpg',
             'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
             'main_title': 'Màn hình trung tâm cảm ứng 8 inch',
@@ -1348,7 +1348,7 @@ const products = [
             'desc': 'Mọi đường nét trên Grand i10 đều để lại ấn tượng về sự cá tính, thời trang và phong cách',
             'img1': '/product/op_i1.jpg',
             'img2': '/product/op_i2.png',
-            'main_img': '/Grandi10/b81f9824cb4a5fd7a73acb7989c6f8c2.jpg',
+            'main_img': '/20210728/i10-ngoaithat.jpg',
             'main_title': 'Mặt trước thiết kế thể thao mạnh mẽ',
             'main_desc': 'Kích thích thị giác bằng lưới tản nhiệt thác nước mới cùng cụm đèn ban ngày DRL thiết kế phá cách dạng boomerang và đèn sương mù.',
             'img_toggle1': '/Grandi10/ngoaithat/Mask Group-min.png',

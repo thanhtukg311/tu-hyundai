@@ -24,6 +24,9 @@
 
 
 @media only screen and (max-width:640px) {
+    .tlt_choose_cl {
+        width: 40% !important;
+    }
     .f_menu_h.open .sub_menu{
         display:block !important;
     }
@@ -56,9 +59,6 @@
     }
     .next_cate {
         padding-right: 25px;
-    }
-    .cnt.pd_t{
-        padding-top:200px !important;
     }
     h1,
     h2,
@@ -729,5 +729,8 @@
     }
     .tlt_slider_main span {
         font-size: 22px;
+    }
+    .cnt.pd_t{
+        padding-top:123px !important;
     }
 }
