@@ -17,16 +17,16 @@
               />
             </div>
 
-            <span
-              class="scroll360"
-              v-bind:class="{ hide: isOpen }"
-              style="width: 100%;"
-            >
-              <img
-                src="./../../assets/images/scroll360.png"
-                style="opacity: 0.5;"
-              />
-            </span>
+<!--            <span-->
+<!--              class="scroll360"-->
+<!--              v-bind:class="{ hide: isOpen }"-->
+<!--              style="width: 100%;"-->
+<!--            >-->
+<!--              <img-->
+<!--                src="./../../assets/images/scroll360.png"-->
+<!--                style="opacity: 0.5;"-->
+<!--              />-->
+<!--            </span>-->
           </div>
           <div class="car_color">
             <div class="tlt_choose_cl">

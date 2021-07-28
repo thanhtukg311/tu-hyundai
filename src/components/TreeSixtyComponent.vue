@@ -5,6 +5,7 @@
 
             <!-- Percentage Loader -->
             <div class="v360-viewport" v-if="!imagesLoaded">
+                <img src="./../assets/images/Rolling-1s-44px.gif">
                 <div class="v360-spinner-grow"></div>
                 <p ref="viewPercentage" class="v360-percentage-text" style=""></p>
             </div>
