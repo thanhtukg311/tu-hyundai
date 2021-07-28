@@ -3,7 +3,7 @@ const products = [
         'slug' : 'i10-2020-sedan',
         'code' : 'Grand i10',
         'title': 'Grand i10 Sedan',
-        'name' : 'TẬN HƯỞNG HÀNH TRÌNH MỚI',
+        'name' : 'Kích hoạt một tôi mới',
         'description' : 'All New Grand i10',
         'catalog':'/product_new/Grandi10SedanCatalogue.pdf',
         'img_url' : '/product/i10-ac3-highlights-kv-pc.jpg',
@@ -250,12 +250,38 @@ const products = [
                     'desc': '',
                 },
             ],
-            'prod_360' : {
-                'first_img': '/product/typhoon-silver_0.png',
-                'total_img': 35,
-                'file_name': 'typhoon-silver_{index}.png',
-                'file_url': 'http://ydigital.vn/360'
-            }
+            'prod_360' : [
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'fiery-red-turbo-pack_{index}-min.PNG',
+                    'file_url': '/product/sedan/1'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'alpha-blue_{index}-min.PNG',
+                    'file_url': '/product/sedan/2'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'polar-white_{index}-min.png',
+                    'file_url': '/product/sedan/3'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'typhoon-silver-turbo-pack_{index}-min.PNG',
+                    'file_url': '/product/sedan/4'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'vintage-brown_{index}-min.PNG',
+                    'file_url': '/product/sedan/5'
+                }   
+            ]
         },
         'specification':{
             'version_compare':[
@@ -1117,7 +1143,7 @@ const products = [
         'slug' : 'i10-2020',
         'code' : 'Grand i10',
         'title': 'Grand i10',
-        'name' : 'TẬN HƯỞNG HÀNH TRÌNH MỚI',
+        'name' : 'Kích hoạt một tôi mới',
         'description' : 'All New Grand i10',
         'catalog':'/Grandi10/Grandi10Catalogue.pdf',
         'img_url' : '/Grandi10/b81f9824cb4a5fd7a73acb7989c6f8c2.jpg',
@@ -1374,12 +1400,38 @@ const products = [
                     'desc': '',
                 },
             ],
-            'prod_360' : {
-                'first_img': '/product/typhoon-silver_0.png',
-                'total_img': 35,
-                'file_name': 'typhoon-silver_{index}.png',
-                'file_url': 'http://ydigital.vn/360'
-            }
+            'prod_360' : [
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'fiery-red_{index}-min.png',
+                    'file_url': '/product/hatchback/1'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'aqua-teal_{index}-min.png',
+                    'file_url': '/product/hatchback/2'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'polar-white_{index}-min.png',
+                    'file_url': '/product/hatchback/3'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'typhoon-silver_{index}-min.png',
+                    'file_url': '/product/hatchback/4'
+                },
+                {
+                    'first_img': '/product/typhoon-silver_0.png',
+                    'total_img': 35,
+                    'file_name': 'fiery-red_{index} copy-min.png',
+                    'file_url': '/product/hatchback/5'
+                }   
+            ]
         },
         'specification':{
             'version_compare':[
