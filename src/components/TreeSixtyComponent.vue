@@ -6,7 +6,7 @@
             <!-- Percentage Loader -->
             <div class="v360-viewport" v-if="!imagesLoaded">
                 <div class="v360-spinner-grow"></div>
-                <p ref="viewPercentage" class="v360-percentage-text" style="display:none;"></p>
+                <p ref="viewPercentage" class="v360-percentage-text" style=""></p>
             </div>
             <!--/ Percentage Loader -->
 

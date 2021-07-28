@@ -244,8 +244,10 @@ p:last-child {
 .img_main img {
     width: 100%;
     position: relative;
-    top: 25%;
+    top: 50%;
     transform: translateY(-50%);
+    object-fit: cover;
+    height: 100%;
 }
 
 .menu_content {
