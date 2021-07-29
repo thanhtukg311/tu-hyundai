@@ -23,7 +23,7 @@
         mounted() {
         },
         created() {
-            this.getVersionDefault()
+
         },
         methods:{
             openSelect(){

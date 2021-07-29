@@ -7,7 +7,6 @@ import { VueHammer } from 'vue2-hammer'
 import VueSmoothScroll from 'v-smooth-scroll'
 
 Vue.use(VueSmoothScroll)
-Vue.use(VueSmoothScroll)
 Vue.use(VueThreeSixty)
 Vue.use(VueHammer)
 Vue.config.productionTip = false

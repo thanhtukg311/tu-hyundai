@@ -10,7 +10,10 @@
     </div>
     <div id="mainvisual">
       <div class="img_main">
-        <img :src="prod.img_url" />
+        <img v-if="isTablet" :src="prod.img_url" />
+        <img v-else-if="isMobile" :src="prod.img_url_mobile" />
+        <img v-else :src="prod.img_url" />
+
       </div>
       <h2 class="tlt_slider_main">
         {{ prod.description }}<br />
@@ -148,6 +151,7 @@
 </template>
 
 <script>
+  import * as mobileDetect from 'mobile-device-detect';
 export default {
   name: "MenuNavLayout",
   computed: {},
@@ -158,6 +162,8 @@ export default {
       slug: "",
       menu: "Nổi bật",
       top: 750,
+      isMobile: false,
+      isTablet: false
     };
   },
   watch: {
@@ -196,6 +202,12 @@ export default {
     },
   },
   mounted() {
+    if (mobileDetect.isTablet){
+      this.isTablet = true;
+    }
+    if(mobileDetect.isAndroid || mobileDetect.isIOS){
+      this.isMobile = true;
+    }
     this.top = this.$refs.menu_fix.offsetTop;
     document.addEventListener("scroll", this.scrollMenu);
   },

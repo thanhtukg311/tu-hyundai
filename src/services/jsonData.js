@@ -6,7 +6,8 @@ const products = [
         'name' : 'Kích hoạt một tôi mới',
         'description' : 'All New Grand i10',
         'catalog':'/product_new/Grandi10SedanCatalogue.pdf',
-        'img_url' : '/20210728/z2644331916297_db037914faec527c224cfe23974d4302-min.jpg',
+        'img_url' : '/20210728/sedan_banner.jpg',
+        'img_url_mobile' : '/20210728/sedan_banner_mobile.jpg',
         'utilities': {
             'title': 'Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn',
             'desc': 'Những chuyến hành trình của bạn sẽ trở nên thú vị với những công nghệ tiện ích được trang bị bên trong Grand i10',
@@ -1146,7 +1147,8 @@ const products = [
         'name' : 'Kích hoạt một tôi mới',
         'description' : 'All New Grand i10',
         'catalog':'/Grandi10/Grandi10Catalogue.pdf',
-        'img_url' : '/20210728/z2644399085128_b7e69ce996e24a2bbd648291fc9492a2-min.jpg',
+        'img_url' : '/20210728/i10_banner.jpg',
+        'img_url_mobile' : '/20210728/i10_banner_mobile.jpg',
         'utilities': {
             'title': 'Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn',
             'desc': 'Những chuyến hành trình của bạn sẽ trở nên thú vị với những công nghệ tiện ích được trang bị bên trong Grand i10',

@@ -5,8 +5,14 @@
   --cl-gray-1: #687074;
   --cl-gray-2: #eee;
   --cl-gray-3: #676767;
+  --cl-gray-4: #999;
   --cl-line: rgba(0, 0, 0, 0.1);
 }
+.fs12{font-size: 12px;}
+.fs14{font-size: 14px;}
+
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
 
 @mixin css3-prefix($property, $value) {
   -webkit-#{$property}: #{$value};
@@ -83,19 +89,53 @@
   @include box-ratio;
   @include m("plus") {
     width: 24px;
-    background: url(../images/plus.svg) no-repeat;
+    background-image: url(../images/plus.svg);
   }
 
   @include m("minus") {
     width: 24px;
-    background: url(../images/minus.svg) no-repeat;
+    background-image: url(../images/minus.svg);
+  }
+
+  @include m("qr-ft") {
+    width: 58px;
+    background-image: url(../images/ic_qr_ft.jpg);
+  }
+
+  @include m("down-ios") {
+    width: 68px;
+    background-image: url(../images/img_down_ios.png);
+    &::before{
+      padding-top: percentage(22/68);
+    }
+  }
+
+  @include m("down-android") {
+    width: 68px;
+    background-image: url(../images/img_down_android.png);
+    &::before{
+      padding-top: percentage(22/68);
+    }
   }
 }
 
 #footer {
   .f_menu {
+    .fab{
+      font-size: 26px;
+      &.fa-youtube{
+        margin-left: 25px;
+      }
+    }
+
     li {
-      margin-top: 16px;
+      margin-top: 8px;
+      line-height: 1.3em;
+      font-size: 12px;
+      a{
+        color: var(--cl-white);
+        font-size: 12px;
+      }
     }
   }
 
@@ -103,8 +143,9 @@
     & > li {
       margin-top: 40px;
       & > a {
-        font-size: 16px;
-        color: var(--cl-black);
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--cl-white);
       }
     }
   }
@@ -112,11 +153,37 @@
   .sub_menu {
     display: block;
     padding-left: 0;
+    @include m('sub'){
+      @include collapse();
+      display: block;
+      padding-left: 15px;
+    }
   }
 
   .f_box01 {
     padding-bottom: 100px;
   }
+
+  .f_box02{
+    padding-bottom: 0;
+  }
+
+  .f_box03{
+    border-top: 0;
+  }
+
+  .f_box03_flex{
+    color: var(--cl-gray-4);
+  }
+
+  .logo-footer{
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    background: url(../images/logo_footer.png) no-repeat;
+  }
+
+
 }
 
 #header {
@@ -255,6 +322,7 @@
           position: relative;
           &:before {
             @include arrow;
+            border-top-color: var(--cl-white);
             position: absolute;
             top: 50%;
             right: 0;

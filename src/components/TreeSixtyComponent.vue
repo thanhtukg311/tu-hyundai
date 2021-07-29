@@ -237,7 +237,9 @@
                 this.loadInitialImage()
 
                 this.canvas = this.$refs.imageContainer
-                this.ctx = this.canvas.getContext('2d')
+                if(this.canvas != undefined){
+                    this.ctx = this.canvas.getContext('2d')
+                }
                 this.attachEvents();
                 window.addEventListener('resize', this.resizeWindow);
                 this.resizeWindow()
@@ -274,7 +276,7 @@
                         console.error(`Something went wrong while loading images: ${error.message}`);
                     }
                 } else {
-                    console.log('No Images Found')
+                    //console.log('No Images Found')
                 }
             },
             addImage(resultSrc){
@@ -297,7 +299,7 @@
                     this.onAllImagesLoaded(event);
                 } else if (this.loadedImages === 1) {
                     //this.onFirstImageLoaded(event);
-                    console.log('load first image')
+                    //console.log('load first image')
                 }
             },
             updatePercentageInLoader(percentage) {
@@ -308,8 +310,9 @@
                 if (this.view360Icon) {
                     this.view360Icon.innerText = percentage + '%';
                 } */
-
-                this.$refs.viewPercentage.innerHTML = percentage + '%';
+                if(this.$refs.viewPercentage != undefined){
+                    this.$refs.viewPercentage.innerHTML = percentage + '%';
+                }
                 //console.log(percentage + '%')
             },
             onAllImagesLoaded(){
@@ -362,7 +365,7 @@
                 this.moveActiveIndexUp(1);
             },
             loadImages(){
-                console.log('load image')
+                //('load image')
             },
             checkMobile(){
                 this.isMobile = !!('ontouchstart' in window || navigator.msMaxTouchPoints);
@@ -375,7 +378,7 @@
                 this.setImage()
             },
             onPinch(){
-                console.log('on tap')
+                //console.log('on tap')
             },
             onPinchEnd(){
                 this.tempScale = 0
@@ -395,25 +398,29 @@
                 }
             },
             bindPanModeEvents(){
-                this.$refs.viewport.removeEventListener('touchend', this.touchEnd);
-                this.$refs.viewport.removeEventListener('touchstart', this.touchStart);
-                this.$refs.viewport.removeEventListener('touchmove', this.touchMove);
+                if(this.$refs.viewport != undefined){
+                    this.$refs.viewport.removeEventListener('touchend', this.touchEnd);
+                    this.$refs.viewport.removeEventListener('touchstart', this.touchStart);
+                    this.$refs.viewport.removeEventListener('touchmove', this.touchMove);
 
-                this.$refs.viewport.addEventListener('touchend', this.stopDragging);
-                this.$refs.viewport.addEventListener('touchstart', this.startDragging);
-                this.$refs.viewport.addEventListener('touchmove', this.doDragging);
+                    this.$refs.viewport.addEventListener('touchend', this.stopDragging);
+                    this.$refs.viewport.addEventListener('touchstart', this.startDragging);
+                    this.$refs.viewport.addEventListener('touchmove', this.doDragging);
 
-                this.$refs.viewport.removeEventListener('mouseup', this.stopMoving);
-                this.$refs.viewport.removeEventListener('mousedown', this.startMoving);
-                this.$refs.viewport.removeEventListener('mousemove', this.doMoving);
+                    this.$refs.viewport.removeEventListener('mouseup', this.stopMoving);
+                    this.$refs.viewport.removeEventListener('mousedown', this.startMoving);
+                    this.$refs.viewport.removeEventListener('mousemove', this.doMoving);
 
-                this.$refs.viewport.addEventListener('mouseup', this.stopDragging);
-                this.$refs.viewport.addEventListener('mousedown', this.startDragging);
-                this.$refs.viewport.addEventListener('mousemove', this.doDragging);
+                    this.$refs.viewport.addEventListener('mouseup', this.stopDragging);
+                    this.$refs.viewport.addEventListener('mousedown', this.startDragging);
+                    this.$refs.viewport.addEventListener('mousemove', this.doDragging);
 
-               // this.$refs.viewport.addEventListener('wheel', this.onScroll);
+                    // this.$refs.viewport.addEventListener('wheel', this.onScroll);
+                }
+
             },
             bind360ModeEvents(){
+                if(this.$refs.viewport != undefined){
                 this.$refs.viewport.removeEventListener('touchend', this.stopDragging);
                 this.$refs.viewport.removeEventListener('touchstart', this.startDragging);
                 this.$refs.viewport.removeEventListener('touchmove', this.doDragging);
@@ -429,8 +436,9 @@
                 this.$refs.viewport.addEventListener('mouseup', this.stopMoving);
                 this.$refs.viewport.addEventListener('mousedown', this.startMoving);
                 this.$refs.viewport.addEventListener('mousemove', this.doMoving);
+                    //this.$refs.viewport.addEventListener('wheel', this.onScroll);
+                }
 
-                //this.$refs.viewport.addEventListener('wheel', this.onScroll);
             },
             togglePanMode(){
                 this.panmode = !this.panmode
@@ -474,27 +482,33 @@
                     this.currentCanvasImage.src = this.currentImage
 
                     this.currentCanvasImage.onload = () => {
-                        let viewportElement = this.$refs.viewport.getBoundingClientRect()
-                        this.canvas.width  = (this.isFullScreen) ? viewportElement.width : this.currentCanvasImage.width
-                        this.canvas.height = (this.isFullScreen) ? viewportElement.height : this.currentCanvasImage.height
-                        this.trackTransforms(this.ctx)
-                        this.redraw()
+                        if (this.$refs.viewport != undefined){
+                            let viewportElement = this.$refs.viewport.getBoundingClientRect()
+                            this.canvas.width  = (this.isFullScreen) ? viewportElement.width : this.currentCanvasImage.width
+                            this.canvas.height = (this.isFullScreen) ? viewportElement.height : this.currentCanvasImage.height
+                            this.trackTransforms(this.ctx)
+                            this.redraw()
+                        }
                     }
                     this.currentCanvasImage.onerror = () => {
-                        this.currentCanvasImage = this.images[0]
-                        let viewportElement = this.$refs.viewport.getBoundingClientRect()
-                        this.canvas.width  = (this.isFullScreen) ? viewportElement.width : this.currentCanvasImage.width
-                        this.canvas.height = (this.isFullScreen) ? viewportElement.height : this.currentCanvasImage.height
-                        this.trackTransforms(this.ctx)
-                        this.redraw()
+                        if (this.$refs.viewport != undefined){
+                            this.currentCanvasImage = this.images[0]
+                            let viewportElement = this.$refs.viewport.getBoundingClientRect()
+                            this.canvas.width  = (this.isFullScreen) ? viewportElement.width : this.currentCanvasImage.width
+                            this.canvas.height = (this.isFullScreen) ? viewportElement.height : this.currentCanvasImage.height
+                            this.trackTransforms(this.ctx)
+                            this.redraw()
+                        }
                     }
                 }else{
                     this.currentCanvasImage = this.images[0]
+                    if (this.$refs.viewport != undefined){
                     let viewportElement = this.$refs.viewport.getBoundingClientRect()
                     this.canvas.width  = (this.isFullScreen) ? viewportElement.width : this.currentCanvasImage.width
                     this.canvas.height = (this.isFullScreen) ? viewportElement.height : this.currentCanvasImage.height
                     this.trackTransforms(this.ctx)
                     this.redraw()
+                    }
                 }
 
             },
@@ -562,13 +576,13 @@
 
                     imgElement.addEventListener('click', (e) => {
                         e.preventDefault()
-                        console.log('show edit hotspot form')
+                        //console.log('show edit hotspot form')
                         this.selectedHotspot = hotspotElement
                         this.openHotspotForm(true)
                     })
 
                     if(hotspotElement.action){
-                        console.log('add this function: ' + hotspotElement.action)
+                        //console.log('add this function: ' + hotspotElement.action)
                     }
 
                     this.$refs.viewport.appendChild(divElement)

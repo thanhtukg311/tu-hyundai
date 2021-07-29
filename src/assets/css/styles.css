@@ -397,6 +397,7 @@ section, .section {
     display: flex;
     align-items: center;
     padding: 60px 0;
+    margin-bottom: 0;
 }
 
 .flex_cate_bottom {

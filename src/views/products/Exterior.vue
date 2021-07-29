@@ -75,7 +75,6 @@
         <a class="btnShow" v-on:click="myFilter('item_anchor')"></a>
       </div>
       <div ref="item_anchor" class="item_content container">
-        <div class="transition">
           <title-component
             :desc="prod.exterior.main_desc"
             :title="prod.exterior.main_title"
@@ -89,7 +88,6 @@
             :items="prod.exterior.list_desc"
             v-else
           />
-        </div>
       </div>
     </div>
     <div class="item_box_tgle">
@@ -169,19 +167,23 @@ export default {
       this.activeCar = index;
     },
     myFilter: function(refName) {
-      if (
-        event.target.parentElement.parentElement.className === "item_box_tgle"
-      ) {
-        event.target.parentElement.parentElement.className += " on";
-        let element = this.$refs[refName];
-        let top = element.offsetTop;
-        top = top - 100;
-
-        window.scrollTo({ top: top, behavior: "smooth" });
-      } else {
-        event.target.parentElement.parentElement.className = "item_box_tgle";
-      }
       window.dispatchEvent(new Event("resize"));
+
+        if (
+                event.target.parentElement.parentElement.className === "item_box_tgle"
+        ) {
+          event.target.parentElement.parentElement.className += " on";
+          let element = this.$refs[refName];
+          let top = element.offsetTop;
+          top = top - 100;
+          if(this.isMobile()) {
+            element.getElementsByClassName("VueCarousel-dot")[0].click()
+          }
+          window.scrollTo({ top: top, behavior: "smooth" });
+        } else {
+          event.target.parentElement.parentElement.className = "item_box_tgle";
+        }
+
     },
     play() {
       //document.getElementsByClassName('fa-sync').add;
