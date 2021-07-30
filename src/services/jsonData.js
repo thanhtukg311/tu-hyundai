@@ -1,7 +1,7 @@
 const products = [
     {
         'slug' : 'i10-2020-sedan',
-        'code' : 'Grand i10',
+        'code' : 'Grand i10 Sedan',
         'title': 'Grand i10 Sedan',
         'name' : 'Kích hoạt một tôi mới',
         'description' : 'All New Grand i10',
@@ -138,7 +138,7 @@ const products = [
         'furniture': {
             'title': 'Tiện nghi trên từng cây số',
             'desc': 'Khoang nội thất của Grand i10 All New là tất cả những gì bạn cần. Đó là sự rộng rãi của không gian kết hợp cùng sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích vượt tầm phân khúc.',
-            'img1': '/product/fu_i1.jpg',
+            'img1': '/product/13-min.jpg',
             'img2': '/product/fu_i2.jpg',
             'main_img': '/product/67dbb3a5a1a5719bf5ce31ff653a759e.jpg',
             'main_title': 'Màn hình trung tâm cảm ứng 8 inch',
@@ -252,31 +252,35 @@ const products = [
                 },
             ],
             'prod_360' : [
-                {
+                {   'id': 0,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'fiery-red-turbo-pack_{index}-min.PNG',
                     'file_url': '/product/sedan/1'
                 },
                 {
+                    'id': 1,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'alpha-blue_{index}-min.PNG',
                     'file_url': '/product/sedan/2'
                 },
                 {
+                    'id': 2,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'polar-white_{index}-min.png',
                     'file_url': '/product/sedan/3'
                 },
                 {
+                    'id': 3,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'typhoon-silver-turbo-pack_{index}-min.PNG',
                     'file_url': '/product/sedan/4'
                 },
                 {
+                    'id': 4,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'vintage-brown_{index}-min.PNG',
@@ -1404,30 +1408,35 @@ const products = [
             ],
             'prod_360' : [
                 {
+                    'id': 0,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'fiery-red_{index}-min.png',
                     'file_url': '/product/hatchback/1'
                 },
                 {
+                    'id': 1,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'aqua-teal_{index}-min.png',
                     'file_url': '/product/hatchback/2'
                 },
                 {
+                    'id': 2,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'polar-white_{index}-min.png',
                     'file_url': '/product/hatchback/3'
                 },
                 {
+                    'id': 3,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'typhoon-silver_{index}-min.png',
                     'file_url': '/product/hatchback/4'
                 },
                 {
+                    'id': 4,
                     'first_img': '/product/typhoon-silver_0.png',
                     'total_img': 35,
                     'file_name': 'fiery-red_{index} copy-min.png',

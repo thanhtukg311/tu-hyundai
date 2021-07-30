@@ -68,7 +68,7 @@
         </div>
         <div class="sub_menu_content" ref="sub_menu_content">
           <ul class="inner sub_menu_cnt_top" ref="sub_menu_content_ul">
-            <li ref="sub_0" class="tlt_type_car">
+            <li ref="sub_0" class="tlt_type_car" style="width: 15% !important;" v-if="!isMobile || isTablet">
               <p>
                 {{ prod.code }}
               </p>

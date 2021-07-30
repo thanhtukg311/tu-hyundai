@@ -8,11 +8,12 @@
         />
         <div>
           <div class="img_carcl" @click="play">
-            <div v-for="(item, index) in prod.exterior.prod_360" :key="index" v-bind:class="[activeCar == index ? 'show' : 'hide']">
+<!--            <div v-for="(item, index) in prod.exterior.prod_360" :key="index" v-bind:class="[activeCar == index ? 'show' : 'hide']">-->
+            <div  v-bind:class="[activeCar == listImg.id ? 'show' : 'hide']">
               <tree-sixty-component
-                :amount="item.total_img"
-                :imagePath="item.file_url"
-                :fileName="item.file_name"
+                :amount="listImg.total_img"
+                :imagePath="listImg.file_url"
+                :fileName="listImg.file_name"
                 :disableZoom="true"
               />
             </div>
@@ -159,12 +160,14 @@ export default {
     return {
       isOpen: false,
       activeCar: 0,
-      textColor: ["Màu đỏ", "Màu xanh", "Màu trắng", "Màu bạc", "Màu vàng cát"]
+      textColor: ["Màu đỏ", "Màu xanh", "Màu trắng", "Màu bạc", "Màu vàng cát"],
+      listImg: this.prod.exterior.prod_360[0]
     };
   },
   methods: {
     onChangeColor: function(index) {
       this.activeCar = index;
+      this.loadedCarImg(index)
     },
     myFilter: function(refName) {
       window.dispatchEvent(new Event("resize"));
@@ -196,6 +199,9 @@ export default {
         return false;
       }
     },
+    loadedCarImg(index){
+      this.listImg = this.prod.exterior.prod_360[index]
+    }
   },
   mounted: function() {
     this.onChangeColor(0);

@@ -4,8 +4,8 @@
         <div class="v360-viewer-container" ref="viewerContainer" :id="identifier">
 
             <!-- Percentage Loader -->
-            <div class="v360-viewport" v-if="!imagesLoaded">
-                <img src="./../assets/images/Rolling-1s-44px.gif">
+            <div class="v360-viewport"  style="position: fixed; top: 400px; left: 40%">
+                <img src="./../assets/images/Rolling-1s-64px.gif">
                 <div class="v360-spinner-grow"></div>
                 <p ref="viewPercentage" class="v360-percentage-text" style=""></p>
             </div>
@@ -42,7 +42,7 @@
             <!--/ Fullscreen Button -->
 
             <!-- Buttons Container -->
-            <div id="v360-menu-btns" :class="buttonClass" style="display:none;">
+            <div id="v360-menu-btns" :class="buttonClass"  style="display: none">
                 <div class="v360-navigate-btns">
                     <div class="v360-menu-btns" @click="togglePlay" :class="(playing) ? 'v360-btn-active' : ''">
                         <i class="fa fa-play" v-if="!playing"></i>
@@ -186,6 +186,9 @@
             }
         },
         watch: {
+            fileName(){
+                this.fetchData()
+            },
             currentLeftPosition(){
                 this.redraw()
             },
@@ -247,14 +250,14 @@
                 this.playing = this.autoplay
             },
             fetchData(){
-
+                this.imageData = []
                 for(let i=1; i <= this.amount; i++){
                     const imageIndex = (this.paddingIndex) ? this.lpad(i, "0", 2) : i
                     const fileName = this.fileName.replace('{index}', imageIndex);
                     const filePath = `${this.imagePath}/${fileName}`
                     this.imageData.push(filePath)
-                }
 
+                }
                 this.preloadImages()
             },
 
@@ -269,8 +272,12 @@
                 if (this.imageData.length) {
                     try {
                         this.amount = this.imageData.length;
+                        this.imagesLoaded = false
+                        this.images = []
+                        this.loadedImages = 0
                         this.imageData.forEach(src => {
                             this.addImage(src);
+
                         });
                     } catch (error) {
                         console.error(`Something went wrong while loading images: ${error.message}`);
@@ -294,7 +301,6 @@
 
                 this.loadedImages += 1;
                 this.updatePercentageInLoader(percentage);
-
                 if (this.loadedImages === this.amount) {
                     this.onAllImagesLoaded(event);
                 } else if (this.loadedImages === 1) {
