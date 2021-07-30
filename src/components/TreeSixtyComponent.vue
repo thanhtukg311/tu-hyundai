@@ -3,16 +3,15 @@
         <!-- 360 Viewer Container -->
         <div class="v360-viewer-container" ref="viewerContainer" :id="identifier">
 
-            <!-- Percentage Loader -->
-            <div class="v360-viewport"  style="position: fixed; top: 400px; left: 40%">
-                <img src="./../assets/images/Rolling-1s-64px.gif">
-                <div class="v360-spinner-grow"></div>
-                <p ref="viewPercentage" class="v360-percentage-text" style=""></p>
-            </div>
-            <!--/ Percentage Loader -->
-
             <!-- 360 viewport -->
             <div class="v360-viewport" ref="viewport">
+                <!-- Percentage Loader -->
+                <div class="v360-viewport" style="position: fixed; top: 400px; left: 40%">
+                    <img src="./../assets/images/Rolling-1s-64px.gif">
+                    <div class="v360-spinner-grow"></div>
+                    <p ref="viewPercentage" class="v360-percentage-text" style=""></p>
+                </div>
+                <!--/ Percentage Loader -->
                 <canvas
                         class="v360-image-container"
                         ref="imageContainer"
