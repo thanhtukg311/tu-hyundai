@@ -6,10 +6,10 @@
             <!-- 360 viewport -->
             <div class="v360-viewport" ref="viewport">
                 <!-- Percentage Loader -->
-                <div class="v360-viewport" style="position: fixed; top: 400px; left: 40%">
-                    <img src="./../assets/images/Rolling-1s-64px.gif">
+                <div class="v360-viewport" v-if="!imagesLoaded" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0">
+<!--                    <img src="./../assets/images/Rolling-1s-64px.gif">-->
                     <div class="v360-spinner-grow"></div>
-                    <p ref="viewPercentage" class="v360-percentage-text" style=""></p>
+                    <p ref="viewPercentage" class="v360-percentage-text" style="font-size: 44px"></p>
                 </div>
                 <!--/ Percentage Loader -->
                 <canvas

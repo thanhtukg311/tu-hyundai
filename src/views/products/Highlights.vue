@@ -31,6 +31,7 @@
                 <title-component
                     :desc="prod.highlights.main_desc2"
                     :title="prod.highlights.main_title2"
+                    style="width: 62% !important;"
                 />
                 <image-center-component :img-url="prod.highlights.img3" />
                 <triple-component
