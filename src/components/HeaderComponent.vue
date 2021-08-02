@@ -6,7 +6,7 @@
         <div class="h_box">
           <h1>
             <a href="https://www.hyundai.tcmotor.vn/">
-              <img src="./../assets/images/logo.png" width="250px" alt="logo" />
+              <img src="./../assets/images/HTV_Logo_Horizontal_Blue_Pantone.png" width="250px" alt="logo" />
             </a>
           </h1>
         </div>
