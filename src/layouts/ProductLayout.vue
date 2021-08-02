@@ -37,7 +37,18 @@
                 vm.prod = response.data;
             });
             this.menuSlug = this.$route.params.menu
-            document.title = vm.prod.title
+        },
+        metaInfo(){
+            return {
+                title: this.prod.title,
+                meta: [
+                    { name: 'description', content: this.prod.description},
+                    { property: 'og:title', content: this.prod.title},
+                    { property: 'og:site_name', content: 'Hyundai TC'},
+                    { property: 'og:type', content: 'website'},
+                    { property: 'og:image', content: this.prod.img_url},
+                ]
+            }
         },
         watch: {
             $route (){
