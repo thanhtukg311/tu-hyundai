@@ -1,13 +1,9 @@
 <template>
     <div>
-        <section class="box01">
-            <div class="container">
+        <section class="box01 arr_sp">
+            <div class="inner">
                 <title-component :desc="prod.utilities.desc" :title="prod.utilities.title"/>
-            </div>
-        </section>
-        <section class="box02">
-            <div class="container">
-                <slide-image-component :items="prod.furniture.img_slide"
+                <slide-image-component :items="prod.utilities.img_slide"
                                        :settings="carouselSettings"/>
             </div>
         </section>
@@ -16,12 +12,14 @@
 <!--                <sub-title-component :desc="prod.utilities.main_desc" :title="prod.utilities.main_title"/>-->
 <!--            </div>-->
 <!--        </section>-->
+        <div style="height: 20px" class="d-show"></div>
         <section class="box02">
-            <div class="container">
-                <triple-component :list-desc="prod.utilities.list_desc"/>
+            <div class="inner">
+                <triple-component :list-desc="prod.utilities.list_desc"  v-if="!isMobile()"/>
+                <slide-image-mobile-component :items="prod.utilities.list_desc" v-else/>
             </div>
         </section>
-        <prev-next-component/>
+        <prev-next-component :prev="{slug:prod.slug, menu:'an-toan', name:'An toàn'}" :next="{slug:prod.slug, menu:'thong-so', name:'Thông số xe'}"/>
     </div>
 </template>
 <script>
@@ -30,9 +28,10 @@
     import PrevNextComponent from "@/components/PrevNextComponent";
     //import SubTitleComponent from "@/components/SubTitleComponent";
     import SlideImageComponent from "@/components/SlideImageComponent";
+    import SlideImageMobileComponent from "@/components/SlideImageMobileComponent";
     export default {
         name: "Utilities",
-        components: {SlideImageComponent,  PrevNextComponent, TripleComponent, TitleComponent},
+        components: {SlideImageMobileComponent, SlideImageComponent,  PrevNextComponent, TripleComponent, TitleComponent},
         props:['prod'],
         data(){
             return {
@@ -45,6 +44,16 @@
                     show_pagination_dots: false,
                     show_pagination_arrows: true
                 },
+            }
+        },
+        methods: {
+            isMobile() {
+                if( screen.width <= 760 ) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
             }
         }
     }

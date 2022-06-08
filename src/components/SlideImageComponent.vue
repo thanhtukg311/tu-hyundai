@@ -1,10 +1,10 @@
 <template>
-            <carousel :per-page="1" :mouse-drag="false" :autoplay="true"  :autoplayTimeout="2000" v-if="items.length > 0"  :navigationEnabled="true" :loop="true">
+            <carousel :per-page="1" :mouse-drag="false" :autoplay="false"  :autoplayTimeout="2000" v-if="items.length > 0"  :navigationEnabled="true" :loop="true" ref="carousel" id="slide_pc">
                 <slide v-for="(item, index) in items" :key="index">
                     <img :src="item.img" alt="" title="" style="margin-bottom: 30px">
-                    <div class="tlt_center">
+                    <div class="tlt_center" :style="singlestyle && 'width:100%'" style="width: 70% !important;">
                         <h3 class="tlt_h3">{{item.title}}</h3>
-                        <span>{{item.desc}}</span>
+                        <span class="cnt_slide">{{item.desc}}</span>
                     </div>
                 </slide>
             </carousel>
@@ -23,6 +23,9 @@
             settings: {
                 type: Object,
                 default: () => {}
+            },
+            singlestyle: {
+                type: Boolean,
             }
         },
     }

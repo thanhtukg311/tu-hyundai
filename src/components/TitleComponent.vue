@@ -1,7 +1,7 @@
 <template>
             <div class="tlt_center">
                 <h3 class="tlt_h3">{{title}}</h3>
-                <span>{{desc}}</span>
+                <span v-html="desc"></span>
             </div>
 </template>
 

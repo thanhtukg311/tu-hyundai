@@ -1,9 +1,11 @@
 <template>
     <div>
-        <section class="box01">
+        <section class="box01 arr_sp" id="furni">
             <div class="container">
                 <title-component :desc="prod.furniture.desc" :title="prod.furniture.title"/>
                 <image-center-component :img-url="prod.furniture.img1"/>
+                <slide-image-component :items="prod.furniture.img_slide2"
+                               :settings="carouselSettings" :singlestyle="true" />
             </div>
         </section>
 <!--        <section class="box02">-->
@@ -12,12 +14,13 @@
 <!--                <title-component :desc="prod.furniture.main_desc" :title="prod.furniture.main_title"/>-->
 <!--            </div>-->
 <!--        </section>-->
-        <section class="box02">
+        <!-- <section class="box02">
             <div class="container">
             <slide-image-component :items="prod.furniture.img_slide"
                                :settings="carouselSettings"/>
             </div>
-        </section>
+        </section> -->
+        <prev-next-component :prev="{slug:prod.slug, menu:'ngoai-that', name:'Ngoại thất'}" :next="{slug:prod.slug, menu:'van-hanh', name:'Vận hành'}"/>
     </div>
 </template>
 
@@ -25,9 +28,10 @@
     import TitleComponent from "@/components/TitleComponent";
     import ImageCenterComponent from "@/components/ImageCenterComponent";
     import SlideImageComponent from "@/components/SlideImageComponent";
+    import PrevNextComponent from "@/components/PrevNextComponent";
     export default {
         name: "Furniture",
-        components: {SlideImageComponent, ImageCenterComponent, TitleComponent},
+        components: {PrevNextComponent, SlideImageComponent, ImageCenterComponent, TitleComponent},
         props:['prod'],
         data(){
             return {

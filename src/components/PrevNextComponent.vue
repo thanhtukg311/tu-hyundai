@@ -1,9 +1,9 @@
 <template>
     <section class="prev-next-cate">
-        <div class="container">
+        <div class="inner">
             <div class="flex_cate_bottom">
-                <a class="cate_btn prev_cate" href="#"><i class="fal fa-chevron-left"></i>An toàn</a>
-                <a class="cate_btn next_cate" href="#">Thông số xe<i class="fal fa-chevron-right"></i></a>
+                <router-link :to="{name: 'san-pham', params:{slug: prev.slug, menu: prev.menu }}" class="cate_btn prev_cate"><i class="fal fa-chevron-left" v-if="prev"></i>{{prev.name}}</router-link>
+                <router-link :to="{name: 'san-pham', params:{slug: next.slug, menu: next.menu }}" class="cate_btn next_cate">{{next.name}} <i class="fal fa-chevron-right" v-if="next"></i></router-link>
             </div>
         </div>
     </section>
@@ -11,7 +11,9 @@
 
 <script>
     export default {
-        name: "PrevNextComponent"
+        name: "PrevNextComponent",
+        props:['prev', 'next'],
+
     }
 </script>
 

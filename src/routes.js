@@ -7,6 +7,7 @@ import ProductLayout from "@/layouts/ProductLayout";
 Vue.use(VueRouter)
 
 export const router = new VueRouter({
+    mode: 'history',
     routes: [
         {
             path: '/',
@@ -24,5 +25,33 @@ export const router = new VueRouter({
                 },
             ]
         },
-    ]
+    ],
+    scrollBehavior (to) {
+        if(to.params.menu == 'noi-bat'){
+            return {
+                x: 0,
+                y: 0,
+                behavior: 'smooth'
+            }
+        }
+        if( screen.width <= 375 ) {
+            return {
+                x: 0,
+                y: 500,
+                behavior: 'smooth'
+            }
+        }
+        if( screen.width <= 760 ) {
+            return {
+                x: 0,
+                y: 607,
+                behavior: 'smooth'
+            }
+        }
+        return {
+            x: 0,
+            y: 711,
+            behavior: 'smooth'
+        }
+    },
 })
